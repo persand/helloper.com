@@ -1,0 +1,46 @@
+---
+layout: default
+title: Per Sandström
+body_class: home
+---
+
+<header class="header" role="header">
+  <figure>
+    <img src="/images/per-sandstrom.jpg" alt="Photo of Per Sandström">
+    <figcaption>Photo by <a href="http://www.evilvendingmachine.net">Peter Olofsson</a></figcaption>
+  </figure>
+
+  <h1>Hello there, my name is Per Sandström.</h1>
+  <p>
+    I design, develop and lead web projects at <a href="http://www.kollegorna.se">Kollegorna</a> – a web agency based in Stockholm, Sweden which I co-founded in 2010.
+  </p>
+  <p>
+    I'm a <a href="http://drupal.org">Drupal</a> specialist.
+  </p>
+</header>
+<!-- / .header -->
+
+<section role="main">
+  <article class="blog-posts">
+    <h2>Blog</h2>
+    <ul>
+      {% for post in site.posts limit:5 %}
+        <li>
+          <time pubdate>{{ post.date | date_to_string }}</time>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </article>
+  <!-- / .blog-posts -->
+
+  <article class="projects">
+
+  </article>
+  <!-- / .projects -->
+</section>
+
+<footer class="footer" role="contentinfo">
+
+</footer>
+<!-- / .footer -->

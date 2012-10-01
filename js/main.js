@@ -1,0 +1,2 @@
+MBP.scaleFix();
+MBP.hideUrlBar();

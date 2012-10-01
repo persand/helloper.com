@@ -1,0 +1,44 @@
+@import 'compass';
+
+// PLUGINS ----------
+
+// Breakpoint
+//@import 'breakpoint'; // https://github.com/canarymason/breakpoint;
+
+// VARIABLES ----------
+
+// Breakpoints
+
+$break-small: 320px;
+$break-large: 1024px;
+
+// Colors
+
+$color-background: #0B1C33;
+$color-text: #222;
+$color-text-dark: #000;
+$color-link: #1b8dad;
+$color-heading: #2FDBA8;
+$color-light: #fff;
+
+// Layout
+
+$body_margin: 20px;
+$radius: 5px;
+$page-max-width: 1280px;
+
+// Typography
+
+$font-family: "anonymous-pro", sans-serif;
+$font-family-headings: "futura-pt", sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+
+// MIXINS ----------
+
+@mixin box-sizing($box-sizing: border-box) {
+  -moz-box-sizing: $box-sizing;
+  -webkit-box-sizing: $box-sizing;
+  box-sizing: $box-sizing;
+}

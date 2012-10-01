@@ -1,0 +1,787 @@
+/**
+ * Global styles
+ * This file contains the global styling for .
+ *
+ * 1. Setup
+ *    Global, general stuff.
+ *
+ * 2. Useful classes
+ *    Non semantic helper classes.
+ */
+/** 1. SETUP ---------- */
+/**
+ * Box sizing border box
+ */
+/* line 17, ../../sass/globals/setup.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/**
+ * Typeface Nimbus Sans ('nimbus-sans') via Typekit
+ *
+ * Nimbus Sans Regular (400)
+ * Nimbus Sans Regular Italic (400)
+ * Nimbus Sans Bold (700)
+ * Nimbus Sans Bold Italic (700)
+ */
+/* line 32, ../../sass/globals/setup.scss */
+html {
+  background: #f4f4f4;
+  font: 400 100%/1.5 "nimbus-sans", "Helvetica Neue", sans-serif;
+  /* 16px */
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 41, ../../sass/globals/setup.scss */
+body {
+  font-size: 1.125em;
+  /* 18px */
+  line-height: 1.6666;
+  /* 30px */
+  margin: 0 auto;
+  padding: 2.5em 0 0;
+  /* 40px 20px */
+  max-width: 600px;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 50, ../../sass/globals/setup.scss */
+  body {
+    font-size: 0.875em;
+    /* 14px */
+    line-height: 1.4285;
+    /* 20px */
+    padding: 1.4285;
+    /* 20px */
+  }
+}
+/** 2. LINKS ---------- */
+/* line 59, ../../sass/globals/setup.scss */
+a {
+  color: #27a2c4;
+  text-decoration: none;
+}
+
+/* line 64, ../../sass/globals/setup.scss */
+a:active {
+  background: #000;
+  color: #000;
+}
+
+/* line 70, ../../sass/globals/setup.scss */
+a:hover,
+a:active {
+  outline: none;
+}
+
+/* line 75, ../../sass/globals/setup.scss */
+a:focus,
+a:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 81, ../../sass/globals/setup.scss */
+a:link {
+  -webkit-tap-highlight-color: #33B4DA;
+}
+
+/** 3. HEADINGS ---------- */
+/* line 92, ../../sass/globals/setup.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+  font-weight: 700;
+}
+
+/* line 97, ../../sass/globals/setup.scss */
+h1 {
+  font-size: 2.8em;
+  /* 56px */
+  font-weight: 700;
+  letter-spacing: -0.0178em;
+  /* 1px */
+  line-height: 1.0714;
+  /* 60px */
+  margin: 0 0 0.4285em;
+  /* 24px */
+}
+
+/* line 105, ../../sass/globals/setup.scss */
+h2 {
+  font-size: 1.6em;
+  /* 32px */
+  font-weight: 700;
+  letter-spacing: -0.0312em;
+  /* 1px */
+  line-height: 1.1875;
+  /* 38px */
+  margin: 0.375em 0;
+  /* 12px */
+}
+
+/* line 113, ../../sass/globals/setup.scss */
+h3 {
+  font-size: 1.2em;
+  /* 24px */
+  line-height: 1.3333;
+  /* 32px */
+  margin: .5em 0;
+  /* 12px */
+}
+
+/* line 119, ../../sass/globals/setup.scss */
+h4 {
+  margin: .6em 0 0.3em;
+  /* 12px 0 6px */
+}
+
+/* line 123, ../../sass/globals/setup.scss */
+h5 {
+  font-size: .7em;
+  /* 14px */
+  line-height: 1.4285;
+  /* 20px */
+  margin: .8571em 0;
+  /* 12px */
+  text-transform: uppercase;
+}
+
+/* line 130, ../../sass/globals/setup.scss */
+h6 {
+  font-size: .7em;
+  /* 14px */
+  line-height: 1.4285;
+  /* 20px */
+  margin: .8571em 0;
+  /* 12px */
+}
+
+/* line 141, ../../sass/globals/setup.scss */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #000;
+}
+
+/* line 150, ../../sass/globals/setup.scss */
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  background: none;
+  color: #000;
+}
+
+/** 4. TEXT ---------- */
+/* line 157, ../../sass/globals/setup.scss */
+p {
+  margin: 0 0 .6em;
+  /* 0 0 12px */
+}
+
+/* line 161, ../../sass/globals/setup.scss */
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  clear: both;
+  display: block;
+  height: 1px;
+  margin: 1.5em 0;
+  /* 30px */
+}
+
+/* line 170, ../../sass/globals/setup.scss */
+blockquote {
+  border-left: 4px solid #000;
+  color: #666;
+  padding: .3em 0 .3em 1.2em;
+  /* 6px 0 6px 24px */
+  margin: 0 0 1.2em;
+  /* 0 0 24px */
+}
+
+/* line 178, ../../sass/globals/setup.scss */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* line 185, ../../sass/globals/setup.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 190, ../../sass/globals/setup.scss */
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 194, ../../sass/globals/setup.scss */
+q {
+  font-style: italic;
+}
+
+/* line 198, ../../sass/globals/setup.scss */
+cite {
+  color: #000;
+  font-style: italic;
+}
+
+/* line 203, ../../sass/globals/setup.scss */
+blockquote cite {
+  color: #888;
+}
+
+/* line 207, ../../sass/globals/setup.scss */
+strong {
+  color: #000;
+  font-weight: 700;
+}
+
+/* line 213, ../../sass/globals/setup.scss */
+em,
+dfn {
+  color: #000;
+  font-style: italic;
+}
+
+/* line 218, ../../sass/globals/setup.scss */
+dfn {
+  font-weight: 700;
+}
+
+/* line 223, ../../sass/globals/setup.scss */
+abbr,
+acronym {
+  border-bottom: 1px dotted #222;
+}
+
+/* line 227, ../../sass/globals/setup.scss */
+address {
+  display: block;
+  font-style: italic;
+  margin: 0 0 .6em;
+  /* 0 0 12px */
+}
+
+/* line 233, ../../sass/globals/setup.scss */
+del {
+  color: #888;
+  text-decoration: line-through;
+}
+
+/* line 238, ../../sass/globals/setup.scss */
+mark {
+  background: #F2594B;
+  color: #fff;
+  font-weight: 400;
+  padding: 0 0.15em;
+  /* 3px */
+}
+
+/* line 245, ../../sass/globals/setup.scss */
+ins {
+  background: #B5D5FF;
+  padding: 0 0.15em;
+  /* 3px */
+  text-decoration: none;
+}
+
+/* line 251, ../../sass/globals/setup.scss */
+pre {
+  padding: .6em;
+  /* 12px */
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+/* line 259, ../../sass/globals/setup.scss */
+code {
+  margin: .6em 0;
+  /* 12px */
+}
+
+/* line 267, ../../sass/globals/setup.scss */
+pre,
+code,
+tt,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
+
+/* line 272, ../../sass/globals/setup.scss */
+sup,
+sub {
+  line-height: 90%;
+}
+
+/* line 276, ../../sass/globals/setup.scss */
+sub {
+  font-size: smaller;
+  vertical-align: sub;
+}
+
+/* line 281, ../../sass/globals/setup.scss */
+sup {
+  font-size: smaller;
+  vertical-align: super;
+}
+
+/* line 290, ../../sass/globals/setup.scss */
+small {
+  font-size: 0.7em;
+  /* 14px */
+}
+
+/* line 294, ../../sass/globals/setup.scss */
+kbd {
+  background: #ccc;
+  border: 1px solid #acacac;
+  border-radius: 4px;
+  color: #666;
+  font: normal normal 0.8em/90% sans-serif;
+  /* 16px/90% */
+  margin: 0 0.2em;
+  /* 0 4px */
+  padding: 0.1em 0.3em;
+  /* 2px 6px */
+}
+
+/* line 304, ../../sass/globals/setup.scss */
+::-moz-selection {
+  background: #000;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 310, ../../sass/globals/setup.scss */
+::selection {
+  background: #000;
+  color: #fff;
+  text-shadow: none;
+}
+
+/** 5. LISTS ---------- */
+/* line 319, ../../sass/globals/setup.scss */
+li ul,
+li ol {
+  margin: 0 0 0.6em 1.2em;
+  /* 0 0 12px 24px */
+}
+
+/* line 324, ../../sass/globals/setup.scss */
+ul,
+ol {
+  list-style: disc outside;
+  margin: 0 0 0.6em;
+  /* 0 0 12px */
+  padding: 0;
+}
+
+/* line 330, ../../sass/globals/setup.scss */
+ol {
+  list-style: decimal inside;
+}
+
+/* line 334, ../../sass/globals/setup.scss */
+dl {
+  margin: 0;
+}
+
+/* line 338, ../../sass/globals/setup.scss */
+dt {
+  color: #000;
+  font-weight: 700;
+}
+
+/* line 343, ../../sass/globals/setup.scss */
+dd {
+  margin: 0 0 0.6em;
+  /* 0 0 12px */
+}
+
+/* line 348, ../../sass/globals/setup.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+}
+
+/** 6. MEDIA ---------- */
+/* line 356, ../../sass/globals/setup.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 357, ../../sass/globals/setup.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 358, ../../sass/globals/setup.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 360, ../../sass/globals/setup.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/* Fluid images: http://unstoppablerobotninja.com/entry/fluid-images/ */
+/* line 369, ../../sass/globals/setup.scss */
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/* Use clearfix on figure */
+/* line 374, ../../sass/globals/setup.scss */
+figure:before, figure:after {
+  content: "";
+  display: table;
+}
+
+/* line 375, ../../sass/globals/setup.scss */
+figure:after {
+  clear: both;
+}
+
+/* line 376, ../../sass/globals/setup.scss */
+figure {
+  *zoom: 1;
+}
+
+/* line 378, ../../sass/globals/setup.scss */
+figure {
+  margin: 0 0 .6em;
+  /* 0 0 12px */
+}
+
+/* line 382, ../../sass/globals/setup.scss */
+figure img {
+  float: left;
+}
+
+/* line 386, ../../sass/globals/setup.scss */
+figcaption {
+  clear: both;
+  color: #666;
+}
+
+/** 7. TABLES ---------- */
+/* line 393, ../../sass/globals/setup.scss */
+table {
+  margin: 0 0 .6em;
+  /* 0 0 12px */
+  width: 100%;
+}
+
+/* line 398, ../../sass/globals/setup.scss */
+caption {
+  font-size: 1.2em;
+  /* 24px */
+  font-weight: 700;
+  line-height: 1.3333;
+  /* 32px */
+  text-align: left;
+}
+
+/* line 405, ../../sass/globals/setup.scss */
+tbody {
+  border: 0;
+}
+
+/* line 409, ../../sass/globals/setup.scss */
+tbody th {
+  border: 0;
+}
+
+/* line 413, ../../sass/globals/setup.scss */
+thead th {
+  text-align: left;
+}
+
+/* line 417, ../../sass/globals/setup.scss */
+th {
+  font-weight: 700;
+  text-align: left;
+}
+
+/* line 423, ../../sass/globals/setup.scss */
+th,
+td {
+  padding: 0;
+}
+
+/* line 428, ../../sass/globals/setup.scss */
+td,
+td img {
+  vertical-align: top;
+}
+
+/* line 432, ../../sass/globals/setup.scss */
+tfoot {
+  font-style: italic;
+}
+
+/** 8. FORMS ---------- */
+/* line 438, ../../sass/globals/setup.scss */
+fieldset {
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  border-top-width: 2px;
+  border-radius: 3px;
+  margin: 0 0 .6em;
+  /* 0 0 12px */
+  padding: 1.2em;
+  /* 24px */
+}
+
+/* line 447, ../../sass/globals/setup.scss */
+fieldset fieldset {
+  margin-bottom: 1.2em;
+}
+
+/* line 451, ../../sass/globals/setup.scss */
+legend {
+  font-size: 1.2em;
+  /* 24px */
+  font-weight: 700;
+  line-height: 1.3333;
+  /* 32px */
+  margin-left: -0.8em;
+  padding: 0 .8em;
+}
+
+/* line 459, ../../sass/globals/setup.scss */
+label {
+  display: block;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* line 467, ../../sass/globals/setup.scss */
+input,
+textarea,
+select {
+  background: #FFF;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-family: inherit;
+  font-size: 1em;
+  /* 20px */
+  margin: 0 0 .6em;
+  /* 0 0 12px */
+  padding: 0.3em;
+  /* 6px */
+}
+
+/* line 480, ../../sass/globals/setup.scss */
+input:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #aaa;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* line 486, ../../sass/globals/setup.scss */
+input[type=radio],
+input[type=checkbox] {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 492, ../../sass/globals/setup.scss */
+button {
+  overflow: visible;
+  width: auto;
+}
+
+/* line 498, ../../sass/globals/setup.scss */
+button,
+input[type=submit] {
+  background: #27a2c4;
+  /*background: #0080B0;*/
+  border: 0;
+  border-radius: 5px 5px 7px 7px;
+  box-shadow: inset 0 0 1px #27a2c4, 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid #1D829B;
+  color: #FFF;
+  cursor: hand;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1em;
+  /* 20px */
+  font-weight: 700;
+  margin: 0 0 .6em;
+  /* 0 0 12px */
+  padding: 0.3em 0.6em;
+  /* 6px */
+  text-align: center;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  vertical-align: baseline;
+}
+
+/* line 525, ../../sass/globals/setup.scss */
+button:hover,
+button:focus,
+input[type=submit]:hover,
+input[type=submit]:focus {
+  background: #1E94B2;
+  box-shadow: inset 0 0 1px #1e94b2, 0 2px 4px rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+/* line 532, ../../sass/globals/setup.scss */
+button:active,
+input[type=submit]:active {
+  position: relative;
+  top: 1px;
+}
+
+/* line 537, ../../sass/globals/setup.scss */
+textarea {
+  background: #FFF;
+  overflow: auto;
+}
+
+/* line 542, ../../sass/globals/setup.scss */
+optgroup {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/** 9. STRUCTURE ---------- */
+/**
+ * Apply clearfix
+ */
+/* line 554, ../../sass/globals/setup.scss */
+article:before,
+article:after {
+  content: "";
+  display: table;
+}
+
+/* line 555, ../../sass/globals/setup.scss */
+article:after {
+  clear: both;
+}
+
+/* line 556, ../../sass/globals/setup.scss */
+article {
+  *zoom: 1;
+}
+
+/** 10. USEFUL CLASSES ---------- */
+/* For image replacement */
+/* line 561, ../../sass/globals/setup.scss */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+/* line 565, ../../sass/globals/setup.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+/* line 569, ../../sass/globals/setup.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+/* line 572, ../../sass/globals/setup.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+/* line 575, ../../sass/globals/setup.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/**
+ * Clearfix
+ *
+ * Credits:
+ * http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+/* For modern browsers */
+/* line 585, ../../sass/globals/setup.scss */
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+/* line 589, ../../sass/globals/setup.scss */
+.cf:after {
+  clear: both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+/* line 593, ../../sass/globals/setup.scss */
+.cf {
+  *zoom: 1;
+}

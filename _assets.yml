@@ -1,0 +1,11 @@
+gzip_assets: off
+
+javascripts:
+  common:
+    - js/vendor/helper.js
+    - js/main.js
+
+stylesheets:
+  common:
+    - css/vendor/normalize.css
+    - css/stylesheets/main.css
