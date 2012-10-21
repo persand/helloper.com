@@ -1,0 +1,10 @@
+
+// Used to wrap a section to divide it from other content
+.block {
+  border-bottom: 1px dashed rgba($color-link, .4);
+  margin-bottom: $margin-text-small;
+
+  @include respond-to(medium) {
+    margin-bottom: 5em;
+  }
+}

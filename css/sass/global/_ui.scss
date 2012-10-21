@@ -1,0 +1,84 @@
+
+// Override Fontelli icons opacity
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  opacity: 1;
+}
+
+// Button
+.button {
+  @include border-radius($radius);
+  background: $color-light;
+  border: 1px solid $color-light;
+  display: inline-block;
+  padding: 0 .4em;
+
+  &:hover {
+    border: 1px dashed $color-link;
+    border-color: rgba($color-link, .6);
+    color: $color-text-dark;
+  }
+
+  i {
+    color: $color-text;
+  }
+}
+
+// Actions list
+.actions {
+  list-style: none;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    margin-right: .6em;
+  }
+
+  a {
+    @extend .button;
+    margin: 0 0 $margin-text-small;
+
+    @include respond-to(medium) {
+      margin: 0 0 $margin-text-medium;
+    }
+  }
+
+  &.inline {
+    li {
+      display: block;
+      margin-right: 0;
+    }
+  }
+}
+
+.logo {
+  @include border-radius(50%);
+  background: $color-text-dark;
+  display: inline-block;
+  font-family: $font-family-headings;
+  font-size: 30px;
+  height: 60px;
+  margin-top: 2.5em;
+  width: 60px;
+
+  .text {
+    border: 0;
+    color: #D1E8EE;
+    display: block;
+    line-height: 60px;
+    position: relative;
+
+    &:after {
+      content: 'PS';
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 60px;
+    }
+
+    span {
+      display: block;
+      text-indent: -9999px;
+    }
+  }
+}

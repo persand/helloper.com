@@ -5,11 +5,16 @@
 @import 'global/setup';
 @import 'global/typography';
 @import 'global/forms';
+@import 'global/grid';
+@import 'global/layout';
 @import 'global/ui';
 
 // REGIONS
 @import 'app/regions/header';
+@import 'app/regions/footer';
 
 // SECTIONS
 @import 'app/sections/home';
+@import 'app/sections/page';
+@import 'app/sections/projects';
 @import 'app/sections/blog';

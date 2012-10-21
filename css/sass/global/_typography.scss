@@ -5,25 +5,26 @@ a {
   border-bottom: 1px solid $color-link;
   color: $color-link;
   text-decoration: none;
-}
 
-a:active {
-  background: #000;
-  color: #000;
-}
+  &:active {
+    background: #000;
+    color: #000;
+  }
 
-a:hover,
-a:active {
-  outline: none;
-}
+  &:hover,
+  &:active {
 
-a:focus,
-a:hover {
-  color: saturate($color-link, .3);
-}
+  }
 
-a:link {
-  -webkit-tap-highlight-color: #33B4DA;
+  &:focus,
+  &:hover {
+    border-bottom-color: $color-text-dark;
+    color: $color-text-dark;
+  }
+
+  &:link {
+    -webkit-tap-highlight-color: #33B4DA;
+  }
 }
 
 /** 2. HEADINGS ---------- */
@@ -36,46 +37,55 @@ h5,
 h6 {
   color: #000;
   font-family: $font-family-headings;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
+  text-indent: -1px;
 }
 
 h1 {
-  font-size: 2.8em; /* 56px */
-  font-weight: 700;
-  letter-spacing: -0.0178em; /* 1px */
-  line-height: 1.0714; /* 60px */
-  margin: 0 0 0.4285em; /* 24px */
+  font-size: 3em; /* 54px */
+  letter-spacing: -0.0185em; /* 1px */
+  line-height: 1.111111; /* 60px */
+  margin: 0 0 0.555555em; /* 30px */
+
+  margin: 0 0 1.111111em -2px;
+}
+
+.lead {
+  @extend h1;
+  font-size: 4.8em;
+  margin: 0 0 0.3em;
 }
 
 h2 {
-  font-size: 1.8em; /* 32px */
-  font-weight: 700;
+  font-size: 1.666666em; /* 30px */
   letter-spacing: -0.0312em; /* 1px */
-  line-height: 1.1875; /* 38px */
-  margin: 0.375em 0; /* 12px */
+  line-height: 1; /* 30px */
+  margin: 0 0 0.666667em; /* 0 0 20px */
+  padding: 0.333333em 0 0; /* 10px 0 0 */
+
+  margin: 0 0 0.733334em; /* 0 0 22px */
+  padding: 0.266666em 0 0; /* 8px 0 0 */
+
+  margin: 0 0 1em;
+  padding: 0;
 }
 
 h3 {
-  font-size: 1.5em; /* 24px */
-  line-height: 1.3333; /* 32px */
-  margin: .5em 0; /* 12px */
+  font-size: 1.333333em; /* 24px */
+  line-height: 1.25; /* 30px */
+  margin: 0;
 }
 
 h4 {
-  font-size: 1.1em;
-  margin: .6em 0 0.3em; /* 12px 0 6px */
+  font-size: inherit;
+  margin: 0;
 }
 
-h5 {
-  line-height: 1.4285; /* 20px */
-  margin: .8571em 0; /* 12px */
-  text-transform: uppercase;
-}
-
+h5,
 h6 {
-  font-size: .8em; /* 14px */
-  line-height: 1.4285; /* 20px */
-  margin: .8571em 0; /* 12px */
+  font-size: 0.777777em; /* 14px */
+  line-height: 2.142857;
+  margin: 0;
   text-transform: uppercase;
 }
 
@@ -85,7 +95,8 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #000;
+  border: 0;
+  color: $color-text-dark;
 }
 
 h1 a:hover,
@@ -94,30 +105,54 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-  background: none;
-  color: #000;
+  color: $color-text-dark;
 }
 
 /** 3. TEXT ---------- */
 
 p {
-  margin: 0 0 .6em; /* 0 0 12px */
+  margin: 0 0 $margin-text-small;
+
+  @include respond-to(medium) {
+    margin: 0 0 $margin-text-medium;
+  }
 }
 
+/*p + p {
+  margin-top: -1.666666em;
+  text-indent: 1.5em;
+}*/
+
 hr {
+  background: url(/images/hr.png) left center repeat-x;
   border: 0;
-  border-top: 1px solid rgba($color-link, .6);
   clear: both;
   display: block;
-  height: 1px;
-  margin: 1.5em 0; /* 30px */
+  height: 3.333333em;
+  margin: 0; /* 30px */
+  padding: 0;
+}
+
+p + hr,
+ul + hr,
+ol + hr,
+dl + hr {
+  margin-top: -$margin-text-small;
+
+  @include respond-to(medium) {
+    margin-top: -$margin-text-medium;
+  }
 }
 
 blockquote {
   border-left: 4px solid rgba($color-link, .6);
   color: $color-link;
-  padding: .3em 0 .3em 1.2em; /* 6px 0 6px 24px */
-  margin: 0 0 1.2em; /* 0 0 24px */
+  padding: 0.833333em;
+  margin: 0 0 $margin-text-small;
+
+  @include respond-to(medium) {
+    margin: 0 0 $margin-text-medium;
+  }
 
   a {
     border-bottom: 1px solid $color-link;
@@ -182,7 +217,11 @@ acronym {
 address {
   display: block;
   font-style: italic;
-  margin: 0 0 .6em; /* 0 0 12px */
+  margin: 0 0 $margin-text-small;
+
+  @include respond-to(medium) {
+    margin: 0 0 $margin-text-medium;
+  }
 }
 
 del {
@@ -198,7 +237,8 @@ mark {
 }
 
 ins {
-  background: rgba($color-link, .2);
+  background: $color-light;
+  background: rgba($color-light, .8);
   padding: 0 0.15em; /* 3px */
   text-decoration: none;
 }
@@ -212,7 +252,7 @@ pre {
 }
 
 code {
-  margin: .6em 0; /* 12px */
+  /*margin: .6em 0;*/ /* 12px */
 }
 
 pre,
@@ -273,14 +313,23 @@ kbd {
 
 li ul,
 li ol {
-  margin: 0 0 0.6em 1.2em; /* 0 0 12px 24px */
+  margin: 0 0 $margin-text-small $margin-text-small;
+
+  @include respond-to(medium) {
+    margin: 0 0 $margin-text-medium 1em;
+  }
 }
 
 ul,
 ol {
-  list-style: disc outside;
-  margin: 0 0 0.6em; /* 0 0 12px */
+  list-style: disc inside;
+  margin: 0 0 $margin-text-small;
   padding: 0;
+
+  @include respond-to(medium) {
+    list-style: disc outside;
+    margin: 0 0 $margin-text-medium;
+  }
 }
 
 ol {
@@ -297,14 +346,25 @@ dt {
 }
 
 dd {
-  margin: 0 0 0.6em; /* 0 0 12px */
+  margin: 0 0 $margin-text-small;
+
+  @include respond-to(medium) {
+    margin: 0 0 $margin-text-medium;
+  }
 }
 
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none;
-  margin: 0;
+nav {
+  ul,
+  ol {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+
+    a {
+      border-color: $color-text-dark;
+      color: $color-text-dark;
+    }
+  }
 }
 
 /** 5. MEDIA ---------- */
@@ -332,7 +392,11 @@ figure:after { clear: both; }
 figure { *zoom: 1; }
 
 figure {
-  margin: 0 0 .6em; /* 0 0 12px */
+  margin: 0 0 $margin-text-small;
+
+  @include respond-to(medium) {
+    margin: 0 0 $margin-text-medium;
+  }
 }
 
 figure img {
@@ -341,13 +405,15 @@ figure img {
 
 figcaption {
   clear: both;
-  color: $color-link;
+  color: $color-text;
+  color: rgba($color-text, .5);
   font-size: .8em;
-  padding: .5em 0 0;
 
   a {
-    border-bottom: 1px solid rgba($color-link, .6);
-    color: rgba($color-link, .6);
+    border-color: $color-text;
+    border-color: rgba($color-text, .5);
+    color: $color-text;
+    color: rgba($color-text, .5);
   }
 }
 
@@ -355,16 +421,19 @@ figcaption {
 
 table {
   background: rgba($color-link, .15);
-  margin: 0 0 .6em; /* 0 0 12px */
+  margin: 0 0 $margin-text-small;
   width: 100%;
+
+  @include respond-to(medium) {
+    margin: 0 0 $margin-text-medium;
+  }
 }
 
 caption {
-  background: rgba($color-link, .25);
-  font-size: 1.2em; /* 24px */
+  background: rgba($color-link, .4);
+  font-size: inherit; /* 24px */
   font-weight: $font-weight-bold;
-  line-height: 1.3333; /* 32px */
-  padding: .3em .6em;
+  padding: 0 0.222222em;
   text-align: left;
 }
 
@@ -387,7 +456,8 @@ tr {
 th,
 td {
   border-right: 1px solid rgba($color-link, .4);
-  padding: .3em .6em;
+  line-height: 1.611111em;
+  padding: 0 0.222222em;
 }
 
 tr th:last-child,
@@ -396,7 +466,6 @@ tr td:last-child {
 }
 
 th {
-  border-top: 1px solid rgba($color-link, .4);
   font-weight: $font-weight-bold;
   text-align: left;
 }

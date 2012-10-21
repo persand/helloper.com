@@ -2,8 +2,26 @@
 
 // PLUGINS ----------
 
-// Breakpoint
-//@import 'breakpoint'; // https://github.com/canarymason/breakpoint;
+// FOUNDATION
+
+$rowWidth: 1000px;
+$columnGutter: 40px;
+$totalColumns: 12;
+$mobileTotalColumns: 4;
+
+$textDirection: ltr;
+$defaultFloat: left;
+$defaultOpposite: right;
+
+$screenSmall: 768px;
+$screenMedium: 1279px;
+$screenXlarge: 1441px;
+
+@import "foundation/functions/all";
+@import "foundation/mixins/clearfix";
+@import "foundation/mixins/respond-to";
+@import "foundation/mixins/semantic-grid";
+@import "foundation/components/grid";
 
 // VARIABLES ----------
 
@@ -15,6 +33,7 @@ $break-large: 1024px;
 // Colors
 
 $color-background: #0B1C33;
+$color-gray: #292E2F;
 $color-text: #222;
 $color-text-dark: #000;
 $color-link: #1b8dad;
@@ -23,13 +42,17 @@ $color-light: #fff;
 
 // Layout
 
-$body_margin: 20px;
+$body-margin: 20px;
 $radius: 5px;
 $page-max-width: 1280px;
 
+// Margins
+$margin-text-small: 1em;
+$margin-text-medium: 1.666666em; // 30 px
+
 // Typography
 
-$font-family: "anonymous-pro", sans-serif;
+$font-family: "anonymous-pro", monospace, sans-serif;
 $font-family-headings: "futura-pt", sans-serif;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
@@ -41,4 +64,32 @@ $font-weight-extra-bold: 800;
   -moz-box-sizing: $box-sizing;
   -webkit-box-sizing: $box-sizing;
   box-sizing: $box-sizing;
+}
+
+@mixin global-transition {
+  @include transition-duration(0.4s);
+}
+
+@mixin respond-to($point) {
+  @if $point == smallest {
+    @media (min-width: 480px) { @content; }
+  }
+  @else if $point == small {
+    @media (min-width: 600px) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $point ==  large {
+    @media (min-width: 992px)  { @content; }
+  }
+  @else if $point == largest {
+    @media (min-width: 1024px)  { @content; }
+  }
+  @else if $point == max-width-small {
+    @media (max-width: 600px)  { @content; }
+  }
+  @else if $point == max-width-medium {
+    @media (max-width: 768px)  { @content; }
+  }
 }

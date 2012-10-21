@@ -1,8 +1,15 @@
+.global-header {
+  text-align: center;
+}
 
 .navigation {
+  border-bottom: 1px dashed rgba($color-link, .5);
+  padding: 2.5em 0;
+
   ul {
     list-style: none;
-    margin: 0 0 4em;
+    margin: 0;
+    text-align: center;
   }
 
   li {
@@ -13,9 +20,9 @@
   a {
     border: 0;
     color: $color-text;
-
-    &.active {
-      border-bottom: 1px solid $color-text;
-    }
   }
+}
+
+.nav-active {
+  border-bottom: 1px solid $color-text;
 }

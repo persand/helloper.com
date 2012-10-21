@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'helloper';
+  src: url("../font/helloper.eot");
+  src: url("../font/helloper.eot?#iefix") format('embedded-opentype'), url("../font/helloper.woff") format('woff'), url("../font/helloper.ttf") format('truetype'), url("../font/helloper.svg#helloper") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'helloper';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  opacity: 0.7;
+/* Uncomment for 3D effect */
+/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+/* fix buttons height */
+  line-height: 1em;
+/* you can be more comfortable with increased icons size */
+/* font-size: 120%; */
+}
+
+.icon-info-1:before { content: '\e803'; } /* '' */
+.icon-info:before { content: '\2139'; } /* 'ℹ' */
+.icon-heart:before { content: '\2665'; } /* '♥' */
+.icon-mail:before { content: '\2709'; } /* '✉' */
+.icon-ok:before { content: '\2713'; } /* '✓' */
+.icon-cancel:before { content: '\2715'; } /* '✕' */
+.icon-eye:before { content: '\e70a'; } /* '' */
+.icon-rss-1:before { content: '\e800'; } /* '' */
+.icon-rss:before { content: '\e73a'; } /* '' */
+.icon-share:before { content: '\e73c'; } /* '' */
+.icon-left-open-1:before { content: '\e802'; } /* '' */
+.icon-left-open:before { content: '\e75d'; } /* '' */
+.icon-right-open:before { content: '\e75e'; } /* '' */
+.icon-right-open-1:before { content: '\e801'; } /* '' */
+.icon-cc:before { content: '\e7a5'; } /* '' */
+.icon-twitter-bird:before { content: '\f303'; } /* '' */
+.icon-github-text:before { content: '\f307'; } /* '' */
+.icon-github:before { content: '\f308'; } /* '' */
+.icon-linkedin:before { content: '\f31a'; } /* '' */
+.icon-globe:before { content: '𝌍'; } /* '\1d30d' */
+.icon-download:before { content: '📥'; } /* '\1f4e5' */
+.icon-mobile:before { content: '📱'; } /* '\1f4f1' */
+.icon-link:before { content: '🔗'; } /* '\1f517' */

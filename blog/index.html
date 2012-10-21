@@ -1,0 +1,38 @@
+---
+layout: default
+title: Blog | Per Sandström
+meta_title: Blog
+meta_description: ""
+body_class: blog
+---
+
+
+<section class="row" role="main">
+  <div class="summaries ten columns centered">
+    <header class="page-header">
+      <h3>Blog posts</h3>
+
+      <p>
+        <a class="button" href="http://feeds.feedburner.com/HelloPer" title="Subcribe via RSS"><i class="icon-rss"></i> Subscribe</a>
+      </p>
+    </header>
+
+  {% for post in site.posts %}
+    <article class="post-summary">
+      <header>
+        <time pubdate>{{ post.date | date_to_string }}</time>
+        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      </header>
+
+      <p>
+        {{ post.summary }}
+      </p>
+
+      <p aria-hidden="true">
+        <a class="button" href="{{ post.url }}">Read more <i class="icon-right-open-1"></i></a>
+      </p>
+    </article>
+  {% endfor %}
+  </div>
+  <!-- / .summaries -->
+</section>

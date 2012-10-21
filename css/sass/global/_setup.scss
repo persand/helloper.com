@@ -19,6 +19,7 @@
 }
 
 html {
+  background: rgba($color-link, .2) url(/images/rhytm.png);
   background: rgba($color-link, .2);
   font: 400 100%/1.5 $font-family; /* 16px */
   overflow-y: scroll;
@@ -29,15 +30,11 @@ html {
 
 body {
   font-size: 1.125em; /* 18px */
-  line-height: 1.6666; /* 30px */
-  padding: 4em 4em 0; /* 40px 20px */
-  max-width: 1000px;
-}
+  line-height: 1.666666; /* 30px */
+  padding: 0;
 
-@media only screen and (max-width: 480px) {
-  body {
-    font-size: 0.875em; /* 14px */
-    line-height: 1.4285; /* 20px */
-    padding: 1.4285; /* 20px */
+  @include respond-to(max-width-small) {
+    font-size: 0.888888em; /* 16px */
+    line-height: 1.571428; /* 22px */
   }
 }

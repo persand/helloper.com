@@ -1,46 +1,84 @@
 ---
-layout: default
+layout: blank
 title: Per Sandström
 body_class: home
 ---
 
-<header class="header" role="header">
-  <figure>
-    <img src="/images/per-sandstrom.jpg" alt="Photo of Per Sandström">
-    <figcaption>Photo by <a href="http://www.evilvendingmachine.net">Peter Olofsson</a></figcaption>
-  </figure>
+<div role="main">
+  <div class="block">
+    <section class="presentation row">
+      <article class="ten columns centered">
+        <header>
+         <figure>
+            <img src="/images/per-sandstrom.jpg" alt="Photo of Per Sandström">
+            <figcaption>Photo by <a href="http://www.evilvendingmachine.net">Peter Olofsson</a></figcaption>
+          </figure>
 
-  <h1>Hello there, my name is Per Sandström.</h1>
-  <p>
-    I design, develop and lead web projects at <a href="http://www.kollegorna.se">Kollegorna</a> – a web agency based in Stockholm, Sweden which I co-founded in 2010.
-  </p>
-  <p>
-    I'm a <a href="http://drupal.org">Drupal</a> specialist.
-  </p>
-</header>
-<!-- / .header -->
+          <h1>Hello there, I'm Per Sandström</h1>
+        </header>
 
-<section role="main">
-  <article class="blog-posts">
-    <h2>Blog</h2>
-    <ul>
-      {% for post in site.posts limit:5 %}
-        <li>
-          <time pubdate>{{ post.date | date_to_string }}</time>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </article>
+        <p>
+          I design, develop and lead web projects at <a href="http://www.kollegorna.se">Kollegorna</a> – a Stockholm based web agency that I co-founded in 2010.
+        </p>
+
+        <p>I'm a <a href="http://drupal.org/user/224831">Drupal</a> expert who also do a bit <a href="https://connect.sensiolabs.com/profile/per">Symfony</a> on the side and recently started a new hot love affair with Ruby.</p>
+
+        <p>When I'm not busy doing client work I maintain and contribute to <a href="/projects/">open source projects</a>. Among those the WordPress theme <a href="http://blaskan.net">Blaskan</a> being to most significant.</p>
+
+        <!--<p><a href="/about" class="button">More about me <i class="icon-right-open-1"></i></a></p>-->
+
+        <ul class="actions social">
+          <li>
+            <a href="mailto:per@helloper.com" title="Email me">
+              <i class="icon-mail"></i>
+              Email
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/persand" title="Code on GitHub">
+              <i class="icon-github"></i>
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/persand" title="Tweety tweet!">
+              <i class="icon-twitter-bird"></i>
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="http://www.linkedin.com/in/psandstrom" title="Profile on LinkedIn">
+              <i class="icon-linkedin"></i>
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+
+      </article>
+    </section>
+    <!-- / .presentation -->
+  </div>
+  <!-- / .block -->
+
+  <section class="blog-posts row">
+    <article class="ten columns centered">
+      <h2>Blog posts</h2>
+      <ul class="posts">
+        {% for post in site.posts limit:10 %}
+          <li>
+            <time pubdate>{{ post.date | date_to_string }}</time>
+            <span><a href="{{ post.url }}">{{ post.title }}</a></span>
+          </li>
+        {% endfor %}
+      </ul>
+      <ul class="actions">
+        <li><a href="/blog">All posts <i class="icon-right-open-1"></i></a></li>
+        <li><a class="button" href="http://feeds.feedburner.com/HelloPer" title="Subcribe via RSS"><i class="icon-rss"></i> Subscribe</a></li>
+      </ul>
+    </article>
+  </section>
   <!-- / .blog-posts -->
+</div>
+<!-- / role="main" -->
 
-  <article class="projects">
-
-  </article>
-  <!-- / .projects -->
-</section>
-
-<footer class="footer" role="contentinfo">
-
-</footer>
-<!-- / .footer -->
+{% include global-footer.html %}
