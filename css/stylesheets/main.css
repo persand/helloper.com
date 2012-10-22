@@ -1,296 +1,296 @@
 /* The Grid ---------------------- */
-/* line 3, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 3, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .row {
   width: 1000px;
   max-width: 100%;
   min-width: 768px;
   margin: 0 auto;
 }
-/* line 4, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 4, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .row .row {
   width: auto;
   max-width: none;
   min-width: 0;
   margin: 0 -20px;
 }
-/* line 7, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 7, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .row.collapse .column, .row.collapse .columns {
   padding: 0;
 }
-/* line 9, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 9, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .row .row {
   width: auto;
   max-width: none;
   min-width: 0;
   margin: 0 -20px;
 }
-/* line 10, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 10, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .row .row.collapse {
   margin: 0;
 }
 
-/* line 14, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 14, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .column, .columns {
   float: left;
   min-height: 1px;
   padding: 0 20px;
   position: relative;
 }
-/* line 15, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 15, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .column.centered, .columns.centered {
   float: none;
   margin: 0 auto;
 }
 
-/* line 18, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 18, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 [class*="column"] + [class*="column"]:last-child {
   float: right;
 }
 
-/* line 19, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 19, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 [class*="column"] + [class*="column"].end {
   float: left;
 }
 
-/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 23, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .one, .row .one {
   width: 8.33333%;
 }
 
-/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 23, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .two, .row .two {
   width: 16.66667%;
 }
 
-/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 23, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .three, .row .three {
   width: 25%;
 }
 
-/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 23, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .four, .row .four {
   width: 33.33333%;
 }
 
-/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 23, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .five, .row .five {
   width: 41.66667%;
 }
 
-/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 23, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .six, .row .six {
   width: 50%;
 }
 
-/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 23, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .seven, .row .seven {
   width: 58.33333%;
 }
 
-/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 23, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .eight, .row .eight {
   width: 66.66667%;
 }
 
-/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 23, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .nine, .row .nine {
   width: 75%;
 }
 
-/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 23, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .ten, .row .ten {
   width: 83.33333%;
 }
 
-/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 23, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .eleven, .row .eleven {
   width: 91.66667%;
 }
 
-/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 23, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .twelve, .row .twelve {
   width: 100%;
 }
 
-/* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 36, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .row .offset-by-one {
   margin-left: 8.33333%;
 }
 
-/* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 36, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .row .offset-by-two {
   margin-left: 16.66667%;
 }
 
-/* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 36, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .row .offset-by-three {
   margin-left: 25%;
 }
 
-/* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 36, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .row .offset-by-four {
   margin-left: 33.33333%;
 }
 
-/* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 36, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .row .offset-by-five {
   margin-left: 41.66667%;
 }
 
-/* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 36, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .row .offset-by-six {
   margin-left: 50%;
 }
 
-/* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 36, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .row .offset-by-seven {
   margin-left: 58.33333%;
 }
 
-/* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 36, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .row .offset-by-eight {
   margin-left: 66.66667%;
 }
 
-/* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 36, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .row .offset-by-nine {
   margin-left: 75%;
 }
 
-/* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 36, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .row .offset-by-ten {
   margin-left: 83.33333%;
 }
 
-/* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 42, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .push-two {
   left: 16.66667%;
 }
 
-/* line 43, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 43, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .pull-two {
   right: 16.66667%;
 }
 
-/* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 42, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .push-three {
   left: 25%;
 }
 
-/* line 43, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 43, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .pull-three {
   right: 25%;
 }
 
-/* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 42, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .push-four {
   left: 33.33333%;
 }
 
-/* line 43, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 43, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .pull-four {
   right: 33.33333%;
 }
 
-/* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 42, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .push-five {
   left: 41.66667%;
 }
 
-/* line 43, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 43, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .pull-five {
   right: 41.66667%;
 }
 
-/* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 42, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .push-six {
   left: 50%;
 }
 
-/* line 43, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 43, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .pull-six {
   right: 50%;
 }
 
-/* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 42, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .push-seven {
   left: 58.33333%;
 }
 
-/* line 43, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 43, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .pull-seven {
   right: 58.33333%;
 }
 
-/* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 42, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .push-eight {
   left: 66.66667%;
 }
 
-/* line 43, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 43, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .pull-eight {
   right: 66.66667%;
 }
 
-/* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 42, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .push-nine {
   left: 75%;
 }
 
-/* line 43, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 43, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .pull-nine {
   right: 75%;
 }
 
-/* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 42, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .push-ten {
   left: 83.33333%;
 }
 
-/* line 43, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 43, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .pull-ten {
   right: 83.33333%;
 }
 
-/* line 46, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 46, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 img, object, embed {
   max-width: 100%;
   height: auto;
 }
 
-/* line 47, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 47, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 object, embed {
   height: 100%;
 }
 
-/* line 48, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 48, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 49, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 49, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 #map_canvas img, .map_canvas img {
   max-width: none!important;
 }
 
 /* Nicolas Gallagher's micro clearfix */
-/* line 52, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 52, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .row {
   *zoom: 1;
 }
-/* line 4, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_clearfix.scss */
+/* line 4, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_clearfix.scss */
 .row:before, .row:after {
   content: "";
   display: table;
 }
-/* line 5, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_clearfix.scss */
+/* line 5, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_clearfix.scss */
 .row:after {
   clear: both;
 }
 
 /* Mobile Grid and Overrides ---------------------- */
 @media only screen and (max-width: 767px) {
-  /* line 57, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 57, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   body {
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
@@ -302,7 +302,7 @@ img {
     padding-right: 0;
   }
 
-  /* line 59, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 59, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .row {
     width: auto;
     min-width: 0;
@@ -310,151 +310,151 @@ img {
     margin-right: 0;
   }
 
-  /* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 60, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .column, .columns {
     width: auto !important;
     float: none;
   }
 
-  /* line 61, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 61, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .column:last-child, .columns:last-child {
     float: none;
   }
 
-  /* line 62, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 62, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   [class*="column"] + [class*="column"]:last-child {
     float: none;
   }
 
-  /* line 63, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 63, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .column:before, .columns:before, .column:after, .columns:after {
     content: "";
     display: table;
   }
 
-  /* line 64, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 64, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .column:after, .columns:after {
     clear: both;
   }
 
-  /* line 67, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 67, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .offset-by-one, .offset-by-two, .offset-by-three, .offset-by-four, .offset-by-five, .offset-by-six, .offset-by-seven, .offset-by-eight, .offset-by-nine, .offset-by-ten {
     margin-left: 0 !important;
   }
 
-  /* line 68, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 68, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .push-two, .push-three, .push-four, .push-five, .push-six, .push-seven, .push-eight, .push-nine, .push-ten {
     left: auto;
   }
 
-  /* line 69, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 69, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .pull-two, .pull-three, .pull-four, .pull-five, .pull-six, .pull-seven, .pull-eight, .pull-nine, .pull-ten {
     right: auto;
   }
 
   /* Mobile 4-column Grid */
-  /* line 82, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 82, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .row .mobile-one {
     width: 25% !important;
     float: left;
     padding: 0 20px;
   }
-  /* line 83, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 83, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .row .mobile-one:last-child {
     float: right;
   }
-  /* line 84, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 84, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .row .mobile-one.end {
     float: left;
   }
-  /* line 87, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 87, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .row.collapse .mobile-one {
     padding: 0;
   }
 
-  /* line 82, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 82, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .row .mobile-two {
     width: 50% !important;
     float: left;
     padding: 0 20px;
   }
-  /* line 83, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 83, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .row .mobile-two:last-child {
     float: right;
   }
-  /* line 84, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 84, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .row .mobile-two.end {
     float: left;
   }
-  /* line 87, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 87, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .row.collapse .mobile-two {
     padding: 0;
   }
 
-  /* line 82, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 82, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .row .mobile-three {
     width: 75% !important;
     float: left;
     padding: 0 20px;
   }
-  /* line 83, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 83, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .row .mobile-three:last-child {
     float: right;
   }
-  /* line 84, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 84, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .row .mobile-three.end {
     float: left;
   }
-  /* line 87, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 87, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .row.collapse .mobile-three {
     padding: 0;
   }
 
-  /* line 82, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 82, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .row .mobile-four {
     width: 100% !important;
     float: left;
     padding: 0 20px;
   }
-  /* line 83, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 83, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .row .mobile-four:last-child {
     float: right;
   }
-  /* line 84, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 84, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .row .mobile-four.end {
     float: left;
   }
-  /* line 87, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 87, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .row.collapse .mobile-four {
     padding: 0;
   }
 
-  /* line 92, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 92, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .push-one-mobile {
     left: 25%;
   }
 
-  /* line 93, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 93, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .pull-one-mobile {
     right: 25%;
   }
 
-  /* line 92, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 92, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .push-two-mobile {
     left: 50%;
   }
 
-  /* line 93, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 93, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .pull-two-mobile {
     right: 50%;
   }
 
-  /* line 92, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 92, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .push-three-mobile {
     left: 75%;
   }
 
-  /* line 93, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 93, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .pull-three-mobile {
     right: 75%;
   }
@@ -470,118 +470,118 @@ the same height. You can optionally uncomment the
 lines below to support arbitrary height, but know
 that IE7/8 do not support :nth-child.
 -------------------------------------------------- */
-/* line 110, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 110, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .block-grid {
   display: block;
   overflow: hidden;
   padding: 0;
 }
-/* line 112, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 112, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .block-grid > li {
   display: block;
   height: auto;
   float: left;
 }
-/* line 113, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 113, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .block-grid.one-up {
   margin: 0;
 }
-/* line 114, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 114, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .block-grid.one-up > li {
   width: 100%;
   padding: 0 0 15px;
 }
-/* line 117, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 117, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .block-grid.two-up {
   margin: 0 -15px;
 }
-/* line 118, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 118, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .block-grid.two-up > li {
   width: 50%;
   padding: 0 15px 15px;
 }
-/* line 119, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 119, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .block-grid.two-up > li:nth-child(2n+1) {
   clear: both;
 }
-/* line 123, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 123, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .block-grid.three-up {
   margin: 0 -12px;
 }
-/* line 124, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 124, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .block-grid.three-up > li {
   width: 33.33%;
   padding: 0 12px 12px;
 }
-/* line 125, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 125, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .block-grid.three-up > li:nth-child(3n+1) {
   clear: both;
 }
-/* line 129, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 129, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .block-grid.four-up {
   margin: 0 -10px;
 }
-/* line 130, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 130, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .block-grid.four-up > li {
   width: 25%;
   padding: 0 10px 10px;
 }
-/* line 131, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 131, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .block-grid.four-up > li:nth-child(4n+1) {
   clear: both;
 }
-/* line 135, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 135, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .block-grid.five-up {
   margin: 0 -8px;
 }
-/* line 136, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 136, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .block-grid.five-up > li {
   width: 20%;
   padding: 0 8px 8px;
 }
-/* line 137, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+/* line 137, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
 .block-grid.five-up > li:nth-child(5n+1) {
   clear: both;
 }
 
 /* Mobile Block Grids */
 @media only screen and (max-width: 767px) {
-  /* line 145, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 145, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .block-grid.mobile > li {
     float: none;
     width: 100%;
     margin-left: 0;
   }
 
-  /* line 149, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 149, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .block-grid > li {
     clear: none !important;
   }
-  /* line 150, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 150, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .block-grid.mobile-two-up > li {
     width: 50%;
   }
-  /* line 151, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 151, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .block-grid.mobile-two-up > li:nth-child(2n+1) {
     clear: both;
   }
-  /* line 154, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 154, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .block-grid.mobile-three-up > li {
     width: 33.33%;
   }
-  /* line 155, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 155, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .block-grid.mobile-three-up > li:nth-child(3n+1) {
     clear: both !important;
   }
-  /* line 158, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 158, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .block-grid.mobile-four-up > li {
     width: 25%;
   }
-  /* line 159, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 159, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .block-grid.mobile-four-up > li:nth-child(4n+1) {
     clear: both;
   }
-  /* line 163, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
+  /* line 163, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/components/_grid.scss */
   .block-grid.mobile-five-up > li:nth-child(5n+1) {
     clear: both;
   }
@@ -600,14 +600,14 @@ that IE7/8 do not support :nth-child.
 /**
  * Box sizing border box
  */
-/* line 17, ../sass/global/_setup.scss */
+/* line 17, /Users/per/Sites/helloper/css/sass/global/_setup.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 21, ../sass/global/_setup.scss */
+/* line 21, /Users/per/Sites/helloper/css/sass/global/_setup.scss */
 html {
   background: rgba(27, 141, 173, 0.2) url(/images/rhytm.png);
   background: rgba(27, 141, 173, 0.2);
@@ -619,7 +619,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 31, ../sass/global/_setup.scss */
+/* line 31, /Users/per/Sites/helloper/css/sass/global/_setup.scss */
 body {
   font-size: 1.125em;
   /* 18px */
@@ -628,7 +628,7 @@ body {
   padding: 0;
 }
 @media (max-width: 600px) {
-  /* line 31, ../sass/global/_setup.scss */
+  /* line 31, /Users/per/Sites/helloper/css/sass/global/_setup.scss */
   body {
     font-size: 0.888888em;
     /* 16px */
@@ -637,30 +637,35 @@ body {
   }
 }
 
+/* line 2, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+.futura {
+  font-family: "futura-pt", sans-serif;
+}
+
 /** 1. LINKS ---------- */
-/* line 4, ../sass/global/_typography.scss */
+/* line 8, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 a {
   border-bottom: 1px solid #1b8dad;
   color: #1b8dad;
   text-decoration: none;
 }
-/* line 9, ../sass/global/_typography.scss */
+/* line 13, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 a:active {
   background: #000;
   color: #000;
 }
-/* line 20, ../sass/global/_typography.scss */
+/* line 24, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 a:focus, a:hover {
   border-bottom-color: black;
   color: black;
 }
-/* line 25, ../sass/global/_typography.scss */
+/* line 29, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 a:link {
   -webkit-tap-highlight-color: #33B4DA;
 }
 
 /** 2. HEADINGS ---------- */
-/* line 37, ../sass/global/_typography.scss */
+/* line 41, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 h1, .lead, .blog .summaries .page-header h3,
 h2,
 .home .presentation article h1,
@@ -681,7 +686,7 @@ h6 {
   text-indent: -1px;
 }
 
-/* line 44, ../sass/global/_typography.scss */
+/* line 48, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 h1, .lead, .blog .summaries .page-header h3 {
   font-size: 3em;
   /* 54px */
@@ -694,13 +699,13 @@ h1, .lead, .blog .summaries .page-header h3 {
   margin: 0 0 1.11111em -2px;
 }
 
-/* line 53, ../sass/global/_typography.scss */
+/* line 57, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 .lead {
   font-size: 4.8em;
   margin: 0 0 0.3em;
 }
 
-/* line 59, ../sass/global/_typography.scss */
+/* line 63, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 h2, .home .presentation article h1, .home .presentation article .lead, .home .presentation article .blog .summaries .page-header h3, .blog .summaries .page-header .home .presentation article h3, .blog .summaries .post-summary h1, .blog .summaries .post-summary .lead, .blog .summaries .post-summary .page-header h3, .blog .summaries .page-header .post-summary h3 {
   font-size: 1.666666em;
   /* 30px */
@@ -720,7 +725,7 @@ h2, .home .presentation article h1, .home .presentation article .lead, .home .pr
   padding: 0;
 }
 
-/* line 73, ../sass/global/_typography.scss */
+/* line 77, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 h3 {
   font-size: 1.333333em;
   /* 24px */
@@ -729,13 +734,13 @@ h3 {
   margin: 0;
 }
 
-/* line 79, ../sass/global/_typography.scss */
+/* line 83, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 h4 {
   font-size: inherit;
   margin: 0;
 }
 
-/* line 85, ../sass/global/_typography.scss */
+/* line 89, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 h5,
 h6 {
   font-size: 0.777777em;
@@ -745,7 +750,7 @@ h6 {
   text-transform: uppercase;
 }
 
-/* line 97, ../sass/global/_typography.scss */
+/* line 101, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 h1 a, .lead a, .blog .summaries .page-header h3 a,
 h2 a,
 .home .presentation article h1 a,
@@ -764,7 +769,7 @@ h6 a {
   color: black;
 }
 
-/* line 107, ../sass/global/_typography.scss */
+/* line 111, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 h1 a:hover, .lead a:hover, .blog .summaries .page-header h3 a:hover,
 h2 a:hover,
 .home .presentation article h1 a:hover,
@@ -783,12 +788,12 @@ h6 a:hover {
 }
 
 /** 3. TEXT ---------- */
-/* line 113, ../sass/global/_typography.scss */
+/* line 117, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 p {
   margin: 0 0 1em;
 }
 @media (min-width: 768px) {
-  /* line 113, ../sass/global/_typography.scss */
+  /* line 117, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
   p {
     margin: 0 0 1.66667em;
   }
@@ -798,7 +803,7 @@ p {
   margin-top: -1.666666em;
   text-indent: 1.5em;
 }*/
-/* line 126, ../sass/global/_typography.scss */
+/* line 130, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 hr {
   background: url(/images/hr.png) left center repeat-x;
   border: 0;
@@ -810,7 +815,7 @@ hr {
   padding: 0;
 }
 
-/* line 139, ../sass/global/_typography.scss */
+/* line 143, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 p + hr,
 ul + hr,
 ol + hr,
@@ -818,7 +823,7 @@ dl + hr {
   margin-top: -1em;
 }
 @media (min-width: 768px) {
-  /* line 139, ../sass/global/_typography.scss */
+  /* line 143, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
   p + hr,
   ul + hr,
   ol + hr,
@@ -827,7 +832,7 @@ dl + hr {
   }
 }
 
-/* line 147, ../sass/global/_typography.scss */
+/* line 151, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 blockquote {
   border-left: 4px solid rgba(27, 141, 173, 0.6);
   color: #1b8dad;
@@ -835,37 +840,37 @@ blockquote {
   margin: 0 0 1em;
 }
 @media (min-width: 768px) {
-  /* line 147, ../sass/global/_typography.scss */
+  /* line 151, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
   blockquote {
     margin: 0 0 1.66667em;
   }
 }
-/* line 157, ../sass/global/_typography.scss */
+/* line 161, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 blockquote a {
   border-bottom: 1px solid #1b8dad;
 }
-/* line 159, ../sass/global/_typography.scss */
+/* line 163, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 blockquote a:hover {
   border-bottom-color: #222222;
   color: #222222;
 }
-/* line 165, ../sass/global/_typography.scss */
+/* line 169, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 blockquote p:last-child {
   margin-bottom: 0;
 }
-/* line 169, ../sass/global/_typography.scss */
+/* line 173, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 blockquote cite {
   color: #222222;
   font-style: italic;
 }
 
-/* line 176, ../sass/global/_typography.scss */
+/* line 180, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 blockquote,
 q {
   quotes: none;
 }
 
-/* line 183, ../sass/global/_typography.scss */
+/* line 187, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -874,61 +879,61 @@ q:after {
   content: none;
 }
 
-/* line 188, ../sass/global/_typography.scss */
+/* line 192, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 q {
   font-style: italic;
 }
 
-/* line 192, ../sass/global/_typography.scss */
+/* line 196, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 cite {
   color: #222222;
   font-style: italic;
 }
 
-/* line 197, ../sass/global/_typography.scss */
+/* line 201, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 strong {
   color: black;
   font-weight: 700;
 }
 
-/* line 203, ../sass/global/_typography.scss */
+/* line 207, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 em,
 dfn {
   color: black;
   font-style: italic;
 }
 
-/* line 208, ../sass/global/_typography.scss */
+/* line 212, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 dfn {
   font-weight: 700;
 }
 
-/* line 213, ../sass/global/_typography.scss */
+/* line 217, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 abbr,
 acronym {
   border-bottom: 1px dotted black;
 }
 
-/* line 217, ../sass/global/_typography.scss */
+/* line 221, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 address {
   display: block;
   font-style: italic;
   margin: 0 0 1em;
 }
 @media (min-width: 768px) {
-  /* line 217, ../sass/global/_typography.scss */
+  /* line 221, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
   address {
     margin: 0 0 1.66667em;
   }
 }
 
-/* line 227, ../sass/global/_typography.scss */
+/* line 231, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 del {
   color: rgba(34, 34, 34, 0.8);
   text-decoration: line-through;
 }
 
-/* line 232, ../sass/global/_typography.scss */
+/* line 236, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 mark {
   background: #1b8dad;
   color: white;
@@ -937,7 +942,7 @@ mark {
   /* 3px */
 }
 
-/* line 239, ../sass/global/_typography.scss */
+/* line 243, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 ins, .posts time {
   background: white;
   background: rgba(255, 255, 255, 0.8);
@@ -946,7 +951,7 @@ ins, .posts time {
   text-decoration: none;
 }
 
-/* line 246, ../sass/global/_typography.scss */
+/* line 250, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 pre {
   padding: .6em;
   /* 12px */
@@ -956,13 +961,13 @@ pre {
   word-wrap: break-word;
 }
 
-/* line 254, ../sass/global/_typography.scss */
+/* line 258, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 code {
   /*margin: .6em 0;*/
   /* 12px */
 }
 
-/* line 262, ../sass/global/_typography.scss */
+/* line 266, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 pre,
 code,
 tt,
@@ -971,31 +976,31 @@ samp {
   font-family: monospace, sans-serif;
 }
 
-/* line 267, ../sass/global/_typography.scss */
+/* line 271, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 sup,
 sub {
   line-height: 90%;
 }
 
-/* line 271, ../sass/global/_typography.scss */
+/* line 275, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 sub {
   font-size: smaller;
   vertical-align: sub;
 }
 
-/* line 276, ../sass/global/_typography.scss */
+/* line 280, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 sup {
   font-size: smaller;
   vertical-align: super;
 }
 
-/* line 285, ../sass/global/_typography.scss */
+/* line 289, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 small {
   font-size: 0.7em;
   /* 14px */
 }
 
-/* line 289, ../sass/global/_typography.scss */
+/* line 293, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 kbd {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1014,14 +1019,14 @@ kbd {
   /* 2px 6px */
 }
 
-/* line 300, ../sass/global/_typography.scss */
+/* line 304, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 ::-moz-selection {
   background: white;
   color: black;
   text-shadow: none;
 }
 
-/* line 306, ../sass/global/_typography.scss */
+/* line 310, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 ::selection {
   background: white;
   color: black;
@@ -1029,20 +1034,20 @@ kbd {
 }
 
 /** 4. LISTS ---------- */
-/* line 315, ../sass/global/_typography.scss */
+/* line 319, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 li ul,
 li ol {
   margin: 0 0 1em 1em;
 }
 @media (min-width: 768px) {
-  /* line 315, ../sass/global/_typography.scss */
+  /* line 319, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
   li ul,
   li ol {
     margin: 0 0 1.66667em 1em;
   }
 }
 
-/* line 324, ../sass/global/_typography.scss */
+/* line 328, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 ul,
 ol {
   list-style: disc inside;
@@ -1050,7 +1055,7 @@ ol {
   padding: 0;
 }
 @media (min-width: 768px) {
-  /* line 324, ../sass/global/_typography.scss */
+  /* line 328, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
   ul,
   ol {
     list-style: disc outside;
@@ -1058,41 +1063,41 @@ ol {
   }
 }
 
-/* line 335, ../sass/global/_typography.scss */
+/* line 339, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 ol {
   list-style: decimal inside;
 }
 
-/* line 339, ../sass/global/_typography.scss */
+/* line 343, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 dl {
   margin: 0;
 }
 
-/* line 343, ../sass/global/_typography.scss */
+/* line 347, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 dt {
   color: black;
   font-weight: 700;
 }
 
-/* line 348, ../sass/global/_typography.scss */
+/* line 352, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 dd {
   margin: 0 0 1em;
 }
 @media (min-width: 768px) {
-  /* line 348, ../sass/global/_typography.scss */
+  /* line 352, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
   dd {
     margin: 0 0 1.66667em;
   }
 }
 
-/* line 358, ../sass/global/_typography.scss */
+/* line 362, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 nav ul,
 nav ol {
   list-style: none;
   list-style-image: none;
   margin: 0;
 }
-/* line 363, ../sass/global/_typography.scss */
+/* line 367, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 nav ul a,
 nav ol a {
   border-color: black;
@@ -1100,24 +1105,24 @@ nav ol a {
 }
 
 /** 5. MEDIA ---------- */
-/* line 372, ../sass/global/_typography.scss */
+/* line 376, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 audio, canvas, video {
   display: inline-block;
   *display: inline;
   *zoom: 1;
 }
 
-/* line 373, ../sass/global/_typography.scss */
+/* line 377, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 audio:not([controls]) {
   display: none;
 }
 
-/* line 374, ../sass/global/_typography.scss */
+/* line 378, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 [hidden] {
   display: none;
 }
 
-/* line 376, ../sass/global/_typography.scss */
+/* line 380, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
@@ -1125,7 +1130,7 @@ img {
 }
 
 /* Fluid images: http://unstoppablerobotninja.com/entry/fluid-images/ */
-/* line 385, ../sass/global/_typography.scss */
+/* line 389, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 img,
 object,
 embed {
@@ -1133,46 +1138,46 @@ embed {
 }
 
 /* Use clearfix on figure */
-/* line 390, ../sass/global/_typography.scss */
+/* line 394, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 figure:before, figure:after {
   content: "";
   display: table;
 }
 
-/* line 391, ../sass/global/_typography.scss */
+/* line 395, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 figure:after {
   clear: both;
 }
 
-/* line 392, ../sass/global/_typography.scss */
+/* line 396, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 figure {
   *zoom: 1;
 }
 
-/* line 394, ../sass/global/_typography.scss */
+/* line 398, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 figure {
   margin: 0 0 1em;
 }
 @media (min-width: 768px) {
-  /* line 394, ../sass/global/_typography.scss */
+  /* line 398, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
   figure {
     margin: 0 0 1.66667em;
   }
 }
 
-/* line 402, ../sass/global/_typography.scss */
+/* line 406, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 figure img {
   float: left;
 }
 
-/* line 406, ../sass/global/_typography.scss */
+/* line 410, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 figcaption {
   clear: both;
   color: #222222;
   color: rgba(34, 34, 34, 0.5);
   font-size: .8em;
 }
-/* line 412, ../sass/global/_typography.scss */
+/* line 416, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 figcaption a {
   border-color: #222222;
   border-color: rgba(34, 34, 34, 0.5);
@@ -1181,20 +1186,20 @@ figcaption a {
 }
 
 /** 6. TABLES ---------- */
-/* line 422, ../sass/global/_typography.scss */
+/* line 426, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 table {
   background: rgba(27, 141, 173, 0.15);
   margin: 0 0 1em;
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 422, ../sass/global/_typography.scss */
+  /* line 426, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
   table {
     margin: 0 0 1.66667em;
   }
 }
 
-/* line 432, ../sass/global/_typography.scss */
+/* line 436, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 caption {
   background: rgba(27, 141, 173, 0.4);
   font-size: inherit;
@@ -1204,27 +1209,27 @@ caption {
   text-align: left;
 }
 
-/* line 440, ../sass/global/_typography.scss */
+/* line 444, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 tbody {
   border: 0;
 }
 
-/* line 444, ../sass/global/_typography.scss */
+/* line 448, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 tbody th {
   border: 0;
 }
 
-/* line 448, ../sass/global/_typography.scss */
+/* line 452, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 thead th {
   text-align: left;
 }
 
-/* line 452, ../sass/global/_typography.scss */
+/* line 456, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 tr {
   border-bottom: 1px solid rgba(27, 141, 173, 0.4);
 }
 
-/* line 457, ../sass/global/_typography.scss */
+/* line 461, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 th,
 td {
   border-right: 1px solid rgba(27, 141, 173, 0.4);
@@ -1232,36 +1237,36 @@ td {
   padding: 0 0.222222em;
 }
 
-/* line 464, ../sass/global/_typography.scss */
+/* line 468, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 tr th:last-child,
 tr td:last-child {
   border-right: 0;
 }
 
-/* line 468, ../sass/global/_typography.scss */
+/* line 472, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 th {
   font-weight: 700;
   text-align: left;
 }
 
-/* line 474, ../sass/global/_typography.scss */
+/* line 478, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 td,
 td img {
   vertical-align: top;
 }
 
-/* line 478, ../sass/global/_typography.scss */
+/* line 482, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 tfoot {
   font-style: italic;
 }
 
-/* line 1, ../sass/global/_forms.scss */
+/* line 1, /Users/per/Sites/helloper/css/sass/global/_forms.scss */
 form {
   background: rgba(27, 141, 173, 0.15);
   padding: 1.8em;
 }
 
-/* line 6, ../sass/global/_forms.scss */
+/* line 6, /Users/per/Sites/helloper/css/sass/global/_forms.scss */
 fieldset {
   border: 0;
   padding: 0;
@@ -1269,12 +1274,12 @@ fieldset {
   /* 0 0 12px */
 }
 
-/* line 12, ../sass/global/_forms.scss */
+/* line 12, /Users/per/Sites/helloper/css/sass/global/_forms.scss */
 fieldset fieldset {
   margin-bottom: 1.2em;
 }
 
-/* line 16, ../sass/global/_forms.scss */
+/* line 16, /Users/per/Sites/helloper/css/sass/global/_forms.scss */
 legend {
   font-family: "futura-pt", sans-serif;
   font-size: 1.2em;
@@ -1285,14 +1290,14 @@ legend {
   margin: 0 0 .6em;
 }
 
-/* line 24, ../sass/global/_forms.scss */
+/* line 24, /Users/per/Sites/helloper/css/sass/global/_forms.scss */
 label {
   display: block;
   font-weight: 700;
   margin: 0;
 }
 
-/* line 32, ../sass/global/_forms.scss */
+/* line 32, /Users/per/Sites/helloper/css/sass/global/_forms.scss */
 input,
 textarea,
 select {
@@ -1305,7 +1310,7 @@ select {
   padding: 0.6em;
 }
 
-/* line 44, ../sass/global/_forms.scss */
+/* line 44, /Users/per/Sites/helloper/css/sass/global/_forms.scss */
 input:focus,
 textarea:focus,
 select:focus {
@@ -1313,7 +1318,7 @@ select:focus {
   margin-left: -5px;
 }
 
-/* line 50, ../sass/global/_forms.scss */
+/* line 50, /Users/per/Sites/helloper/css/sass/global/_forms.scss */
 input[type=radio],
 input[type=checkbox] {
   border: 0;
@@ -1321,13 +1326,13 @@ input[type=checkbox] {
   padding: 0;
 }
 
-/* line 56, ../sass/global/_forms.scss */
+/* line 56, /Users/per/Sites/helloper/css/sass/global/_forms.scss */
 button {
   overflow: visible;
   width: auto;
 }
 
-/* line 62, ../sass/global/_forms.scss */
+/* line 62, /Users/per/Sites/helloper/css/sass/global/_forms.scss */
 button,
 input[type=submit] {
   background: #1b8dad;
@@ -1347,20 +1352,20 @@ input[type=submit] {
   vertical-align: baseline;
 }
 
-/* line 87, ../sass/global/_forms.scss */
+/* line 87, /Users/per/Sites/helloper/css/sass/global/_forms.scss */
 button:active,
 input[type=submit]:active {
   position: relative;
   top: 1px;
 }
 
-/* line 92, ../sass/global/_forms.scss */
+/* line 92, /Users/per/Sites/helloper/css/sass/global/_forms.scss */
 textarea {
   background: white;
   overflow: auto;
 }
 
-/* line 97, ../sass/global/_forms.scss */
+/* line 97, /Users/per/Sites/helloper/css/sass/global/_forms.scss */
 optgroup {
   font-family: inherit;
   font-style: normal;
@@ -1368,32 +1373,32 @@ optgroup {
 }
 
 @media (max-width: 768px) {
-  /* line 4, ../sass/global/_grid.scss */
+  /* line 4, /Users/per/Sites/helloper/css/sass/global/_grid.scss */
   .columns,
   .column {
     padding: 0 1em;
   }
 }
 
-/* line 3, ../sass/global/_layout.scss */
+/* line 3, /Users/per/Sites/helloper/css/sass/global/_layout.scss */
 .block {
   border-bottom: 1px dashed rgba(27, 141, 173, 0.4);
   margin-bottom: 1em;
 }
 @media (min-width: 768px) {
-  /* line 3, ../sass/global/_layout.scss */
+  /* line 3, /Users/per/Sites/helloper/css/sass/global/_layout.scss */
   .block {
     margin-bottom: 5em;
   }
 }
 
-/* line 4, ../sass/global/_ui.scss */
+/* line 4, /Users/per/Sites/helloper/css/sass/global/_ui.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   opacity: 1;
 }
 
-/* line 9, ../sass/global/_ui.scss */
+/* line 9, /Users/per/Sites/helloper/css/sass/global/_ui.scss */
 .button, .actions a {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1405,44 +1410,44 @@ optgroup {
   display: inline-block;
   padding: 0 .4em;
 }
-/* line 16, ../sass/global/_ui.scss */
+/* line 16, /Users/per/Sites/helloper/css/sass/global/_ui.scss */
 .button:hover, .actions a:hover {
   border: 1px dashed #1b8dad;
   border-color: rgba(27, 141, 173, 0.6);
   color: black;
 }
-/* line 22, ../sass/global/_ui.scss */
+/* line 22, /Users/per/Sites/helloper/css/sass/global/_ui.scss */
 .button i, .actions a i {
   color: #222222;
 }
 
-/* line 28, ../sass/global/_ui.scss */
+/* line 28, /Users/per/Sites/helloper/css/sass/global/_ui.scss */
 .actions {
   list-style: none;
   margin: 0;
 }
-/* line 32, ../sass/global/_ui.scss */
+/* line 32, /Users/per/Sites/helloper/css/sass/global/_ui.scss */
 .actions li {
   display: inline-block;
   margin-right: .6em;
 }
-/* line 37, ../sass/global/_ui.scss */
+/* line 37, /Users/per/Sites/helloper/css/sass/global/_ui.scss */
 .actions a {
   margin: 0 0 1em;
 }
 @media (min-width: 768px) {
-  /* line 37, ../sass/global/_ui.scss */
+  /* line 37, /Users/per/Sites/helloper/css/sass/global/_ui.scss */
   .actions a {
     margin: 0 0 1.66667em;
   }
 }
-/* line 47, ../sass/global/_ui.scss */
+/* line 47, /Users/per/Sites/helloper/css/sass/global/_ui.scss */
 .actions.inline li {
   display: block;
   margin-right: 0;
 }
 
-/* line 54, ../sass/global/_ui.scss */
+/* line 54, /Users/per/Sites/helloper/css/sass/global/_ui.scss */
 .logo {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1457,7 +1462,7 @@ optgroup {
   margin-top: 2.5em;
   width: 60px;
 }
-/* line 64, ../sass/global/_ui.scss */
+/* line 64, /Users/per/Sites/helloper/css/sass/global/_ui.scss */
 .logo .text {
   border: 0;
   color: #D1E8EE;
@@ -1465,7 +1470,7 @@ optgroup {
   line-height: 60px;
   position: relative;
 }
-/* line 71, ../sass/global/_ui.scss */
+/* line 71, /Users/per/Sites/helloper/css/sass/global/_ui.scss */
 .logo .text:after {
   content: 'PS';
   left: 0;
@@ -1473,239 +1478,239 @@ optgroup {
   top: 0;
   width: 60px;
 }
-/* line 79, ../sass/global/_ui.scss */
+/* line 79, /Users/per/Sites/helloper/css/sass/global/_ui.scss */
 .logo .text span {
   display: block;
   text-indent: -9999px;
 }
 
-/* line 1, ../sass/app/regions/_header.scss */
+/* line 1, /Users/per/Sites/helloper/css/sass/app/regions/_header.scss */
 .global-header {
   text-align: center;
 }
 
-/* line 5, ../sass/app/regions/_header.scss */
+/* line 5, /Users/per/Sites/helloper/css/sass/app/regions/_header.scss */
 .navigation {
   border-bottom: 1px dashed rgba(27, 141, 173, 0.5);
   padding: 2.5em 0;
 }
-/* line 9, ../sass/app/regions/_header.scss */
+/* line 9, /Users/per/Sites/helloper/css/sass/app/regions/_header.scss */
 .navigation ul {
   list-style: none;
   margin: 0;
   text-align: center;
 }
-/* line 15, ../sass/app/regions/_header.scss */
+/* line 15, /Users/per/Sites/helloper/css/sass/app/regions/_header.scss */
 .navigation li {
   display: inline-block;
   margin-right: 1em;
 }
-/* line 20, ../sass/app/regions/_header.scss */
+/* line 20, /Users/per/Sites/helloper/css/sass/app/regions/_header.scss */
 .navigation a {
   border: 0;
   color: #222222;
 }
 
-/* line 26, ../sass/app/regions/_header.scss */
+/* line 26, /Users/per/Sites/helloper/css/sass/app/regions/_header.scss */
 .nav-active, .home .nav-index a, .projects .nav-projects a, .blog .nav-blog a,
 .blog-post .nav-blog a {
   border-bottom: 1px solid #222222;
 }
 
-/* line 1, ../sass/app/regions/_footer.scss */
+/* line 1, /Users/per/Sites/helloper/css/sass/app/regions/_footer.scss */
 .global-footer {
   border-top: 1px dashed rgba(27, 141, 173, 0.4);
   padding: 2.5em 1em;
   text-align: center;
 }
-/* line 6, ../sass/app/regions/_footer.scss */
+/* line 6, /Users/per/Sites/helloper/css/sass/app/regions/_footer.scss */
 .global-footer p {
   margin: 0;
 }
 
-/* line 8, ../sass/app/sections/_home.scss */
+/* line 8, /Users/per/Sites/helloper/css/sass/app/sections/_home.scss */
 .home .presentation article {
   margin-bottom: 1em;
   padding-top: 1em;
   padding-bottom: 1em;
 }
 @media (min-width: 768px) {
-  /* line 8, ../sass/app/sections/_home.scss */
+  /* line 8, /Users/per/Sites/helloper/css/sass/app/sections/_home.scss */
   .home .presentation article {
     padding-top: 5em;
     padding-bottom: 5em;
   }
 }
 @media (min-width: 768px) {
-  /* line 18, ../sass/app/sections/_home.scss */
+  /* line 18, /Users/per/Sites/helloper/css/sass/app/sections/_home.scss */
   .home .presentation article h1, .home .presentation article .lead, .home .presentation article .blog .summaries .page-header h3, .blog .summaries .page-header .home .presentation article h3 {
     margin: 0 0 1em;
     padding: 0;
   }
 }
-/* line 27, ../sass/app/sections/_home.scss */
+/* line 27, /Users/per/Sites/helloper/css/sass/app/sections/_home.scss */
 .home .presentation article figcaption {
   padding-top: 5px;
 }
 @media (min-width: 768px) {
-  /* line 35, ../sass/app/sections/_home.scss */
+  /* line 35, /Users/per/Sites/helloper/css/sass/app/sections/_home.scss */
   .home .social,
   .home .social a {
     margin: 0;
   }
 }
-/* line 41, ../sass/app/sections/_home.scss */
+/* line 41, /Users/per/Sites/helloper/css/sass/app/sections/_home.scss */
 .home .blog-posts {
   padding-bottom: 1em;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 45, ../sass/app/sections/_home.scss */
+  /* line 45, /Users/per/Sites/helloper/css/sass/app/sections/_home.scss */
   .home .blog-posts h2, .home .blog-posts .presentation article h1, .home .presentation article .blog-posts h1, .home .blog-posts .presentation article .lead, .home .presentation article .blog-posts .lead, .home .blog-posts .presentation article .blog .summaries .page-header h3, .home .presentation article .blog .summaries .page-header .blog-posts h3, .blog .summaries .page-header .home .blog-posts .presentation article h3, .blog .summaries .page-header .home .presentation article .blog-posts h3, .home .blog-posts .blog .summaries .post-summary h1, .blog .summaries .post-summary .home .blog-posts h1, .home .blog-posts .blog .summaries .post-summary .lead, .blog .summaries .post-summary .home .blog-posts .lead, .home .blog-posts .blog .summaries .post-summary .page-header h3, .blog .summaries .post-summary .page-header .home .blog-posts h3, .home .blog-posts .blog .summaries .page-header .post-summary h3, .blog .summaries .page-header .post-summary .home .blog-posts h3 {
     margin: 0 0 1em;
     padding: 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 41, ../sass/app/sections/_home.scss */
+  /* line 41, /Users/per/Sites/helloper/css/sass/app/sections/_home.scss */
   .home .blog-posts {
     padding-bottom: 5em;
   }
 }
 
-/* line 2, ../sass/app/sections/_page.scss */
+/* line 2, /Users/per/Sites/helloper/css/sass/app/sections/_page.scss */
 .page article {
   padding-top: 2em;
   padding-bottom: 2em;
 }
 @media (min-width: 768px) {
-  /* line 2, ../sass/app/sections/_page.scss */
+  /* line 2, /Users/per/Sites/helloper/css/sass/app/sections/_page.scss */
   .page article {
     padding-top: 5em;
     padding-bottom: 5em;
   }
 }
 
-/* line 7, ../sass/app/sections/_projects.scss */
+/* line 7, /Users/per/Sites/helloper/css/sass/app/sections/_projects.scss */
 .projects .page-header {
   margin: 0 0 1.666666em;
   margin: 0 0 3em;
 }
-/* line 12, ../sass/app/sections/_projects.scss */
+/* line 12, /Users/per/Sites/helloper/css/sass/app/sections/_projects.scss */
 .projects article {
   padding-top: 2em;
   padding-bottom: 2em;
 }
 @media (min-width: 768px) {
-  /* line 12, ../sass/app/sections/_projects.scss */
+  /* line 12, /Users/per/Sites/helloper/css/sass/app/sections/_projects.scss */
   .projects article {
     padding-top: 5em;
     padding-bottom: 5em;
   }
 }
-/* line 22, ../sass/app/sections/_projects.scss */
+/* line 22, /Users/per/Sites/helloper/css/sass/app/sections/_projects.scss */
 .projects figure {
   *zoom: 1;
   padding: 0 0 1.666666em;
 }
-/* line 4, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_clearfix.scss */
+/* line 4, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_clearfix.scss */
 .projects figure:before, .projects figure:after {
   content: "";
   display: table;
 }
-/* line 5, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_clearfix.scss */
+/* line 5, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_clearfix.scss */
 .projects figure:after {
   clear: both;
 }
 
-/* line 12, ../sass/app/sections/_blog.scss */
+/* line 12, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
 .blog .summaries {
   padding-top: 2em;
   padding-bottom: 2em;
 }
 @media (min-width: 768px) {
-  /* line 12, ../sass/app/sections/_blog.scss */
+  /* line 12, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
   .blog .summaries {
     padding-top: 5em;
     padding-bottom: 5em;
   }
 }
-/* line 21, ../sass/app/sections/_blog.scss */
+/* line 21, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
 .blog .summaries .page-header {
   padding: 0 0 1em;
 }
 @media (min-width: 768px) {
-  /* line 21, ../sass/app/sections/_blog.scss */
+  /* line 21, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
   .blog .summaries .page-header {
     padding: 0 0 1.66667em;
   }
 }
-/* line 28, ../sass/app/sections/_blog.scss */
+/* line 28, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
 .blog .summaries .page-header h3 {
   margin: 0;
 }
-/* line 33, ../sass/app/sections/_blog.scss */
+/* line 33, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
 .blog .summaries .page-header .button, .blog .summaries .page-header .actions a, .actions .blog .summaries .page-header a {
   margin-top: 1em;
 }
 @media (min-width: 768px) {
-  /* line 33, ../sass/app/sections/_blog.scss */
+  /* line 33, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
   .blog .summaries .page-header .button, .blog .summaries .page-header .actions a, .actions .blog .summaries .page-header a {
     margin-top: 1.66667em;
   }
 }
-/* line 42, ../sass/app/sections/_blog.scss */
+/* line 42, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
 .blog .summaries .post-summary {
   padding: 0 0 1em;
 }
 @media (min-width: 768px) {
-  /* line 42, ../sass/app/sections/_blog.scss */
+  /* line 42, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
   .blog .summaries .post-summary {
     padding: 0 0 1.66667em;
   }
 }
 
-/* line 58, ../sass/app/sections/_blog.scss */
+/* line 58, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
 .blog-post .post {
   padding-top: 2em;
   padding-bottom: 2em;
 }
 @media (min-width: 768px) {
-  /* line 58, ../sass/app/sections/_blog.scss */
+  /* line 58, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
   .blog-post .post {
     padding-top: 5em;
     padding-bottom: 3.333333em;
   }
 }
-/* line 68, ../sass/app/sections/_blog.scss */
+/* line 68, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
 .blog-post [role="complementary"] {
   padding: 0 0 2em;
 }
 @media (min-width: 768px) {
-  /* line 68, ../sass/app/sections/_blog.scss */
+  /* line 68, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
   .blog-post [role="complementary"] {
     padding: 0 0 5em;
   }
 }
 
-/* line 79, ../sass/app/sections/_blog.scss */
+/* line 79, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
 .posts {
   list-style: none;
 }
-/* line 82, ../sass/app/sections/_blog.scss */
+/* line 82, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
 .posts li {
   *zoom: 1;
 }
-/* line 4, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_clearfix.scss */
+/* line 4, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_clearfix.scss */
 .posts li:before, .posts li:after {
   content: "";
   display: table;
 }
-/* line 5, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_clearfix.scss */
+/* line 5, /Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_clearfix.scss */
 .posts li:after {
   clear: both;
 }
-/* line 86, ../sass/app/sections/_blog.scss */
+/* line 86, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
 .posts time {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -1713,17 +1718,17 @@ optgroup {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 91, ../sass/app/sections/_blog.scss */
+/* line 91, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
 .posts span {
   display: block;
   margin: 0 0 1em;
 }
-/* line 95, ../sass/app/sections/_blog.scss */
+/* line 95, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
 li:last-child .posts span {
   margin: 0;
 }
 @media (min-width: 768px) {
-  /* line 91, ../sass/app/sections/_blog.scss */
+  /* line 91, /Users/per/Sites/helloper/css/sass/app/sections/_blog.scss */
   .posts span {
     display: inline;
   }
