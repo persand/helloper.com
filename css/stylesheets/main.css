@@ -621,7 +621,7 @@ html {
 
 /* line 31, /Users/per/Sites/helloper/css/sass/global/_setup.scss */
 body {
-  font-size: 1.125em;
+  font-size: 1.2em;
   /* 18px */
   line-height: 1.666666;
   /* 30px */
@@ -812,10 +812,11 @@ hr {
   height: 3.333333em;
   margin: 0;
   /* 30px */
+  opacity: .4;
   padding: 0;
 }
 
-/* line 143, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 144, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 p + hr,
 ul + hr,
 ol + hr,
@@ -823,7 +824,7 @@ dl + hr {
   margin-top: -1em;
 }
 @media (min-width: 768px) {
-  /* line 143, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+  /* line 144, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
   p + hr,
   ul + hr,
   ol + hr,
@@ -832,7 +833,7 @@ dl + hr {
   }
 }
 
-/* line 151, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 152, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 blockquote {
   border-left: 4px solid rgba(27, 141, 173, 0.6);
   color: #1b8dad;
@@ -840,37 +841,37 @@ blockquote {
   margin: 0 0 1em;
 }
 @media (min-width: 768px) {
-  /* line 151, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+  /* line 152, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
   blockquote {
     margin: 0 0 1.66667em;
   }
 }
-/* line 161, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 162, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 blockquote a {
   border-bottom: 1px solid #1b8dad;
 }
-/* line 163, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 164, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 blockquote a:hover {
   border-bottom-color: #222222;
   color: #222222;
 }
-/* line 169, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 170, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 blockquote p:last-child {
   margin-bottom: 0;
 }
-/* line 173, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 174, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 blockquote cite {
   color: #222222;
   font-style: italic;
 }
 
-/* line 180, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 181, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 blockquote,
 q {
   quotes: none;
 }
 
-/* line 187, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 188, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -879,61 +880,61 @@ q:after {
   content: none;
 }
 
-/* line 192, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 193, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 q {
   font-style: italic;
 }
 
-/* line 196, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 197, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 cite {
   color: #222222;
   font-style: italic;
 }
 
-/* line 201, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 202, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 strong {
   color: black;
   font-weight: 700;
 }
 
-/* line 207, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 208, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 em,
 dfn {
   color: black;
   font-style: italic;
 }
 
-/* line 212, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 213, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 dfn {
   font-weight: 700;
 }
 
-/* line 217, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 218, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 abbr,
 acronym {
   border-bottom: 1px dotted black;
 }
 
-/* line 221, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 222, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 address {
   display: block;
   font-style: italic;
   margin: 0 0 1em;
 }
 @media (min-width: 768px) {
-  /* line 221, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+  /* line 222, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
   address {
     margin: 0 0 1.66667em;
   }
 }
 
-/* line 231, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 232, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 del {
   color: rgba(34, 34, 34, 0.8);
   text-decoration: line-through;
 }
 
-/* line 236, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 237, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 mark {
   background: #1b8dad;
   color: white;
@@ -942,7 +943,7 @@ mark {
   /* 3px */
 }
 
-/* line 243, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 244, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 ins, .posts time {
   background: white;
   background: rgba(255, 255, 255, 0.8);
@@ -951,7 +952,7 @@ ins, .posts time {
   text-decoration: none;
 }
 
-/* line 250, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 251, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 pre {
   padding: .6em;
   /* 12px */
@@ -961,13 +962,13 @@ pre {
   word-wrap: break-word;
 }
 
-/* line 258, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 259, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 code {
   /*margin: .6em 0;*/
   /* 12px */
 }
 
-/* line 266, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 267, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 pre,
 code,
 tt,
@@ -976,31 +977,31 @@ samp {
   font-family: monospace, sans-serif;
 }
 
-/* line 271, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 272, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 sup,
 sub {
   line-height: 90%;
 }
 
-/* line 275, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 276, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 sub {
   font-size: smaller;
   vertical-align: sub;
 }
 
-/* line 280, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 281, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 sup {
   font-size: smaller;
   vertical-align: super;
 }
 
-/* line 289, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 290, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 small {
   font-size: 0.7em;
   /* 14px */
 }
 
-/* line 293, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 294, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 kbd {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1019,14 +1020,14 @@ kbd {
   /* 2px 6px */
 }
 
-/* line 304, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 305, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 ::-moz-selection {
   background: white;
   color: black;
   text-shadow: none;
 }
 
-/* line 310, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 311, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 ::selection {
   background: white;
   color: black;
@@ -1034,20 +1035,20 @@ kbd {
 }
 
 /** 4. LISTS ---------- */
-/* line 319, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 320, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 li ul,
 li ol {
   margin: 0 0 1em 1em;
 }
 @media (min-width: 768px) {
-  /* line 319, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+  /* line 320, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
   li ul,
   li ol {
     margin: 0 0 1.66667em 1em;
   }
 }
 
-/* line 328, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 329, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 ul,
 ol {
   list-style: disc inside;
@@ -1055,7 +1056,7 @@ ol {
   padding: 0;
 }
 @media (min-width: 768px) {
-  /* line 328, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+  /* line 329, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
   ul,
   ol {
     list-style: disc outside;
@@ -1063,41 +1064,41 @@ ol {
   }
 }
 
-/* line 339, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 340, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 ol {
   list-style: decimal inside;
 }
 
-/* line 343, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 344, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 dl {
   margin: 0;
 }
 
-/* line 347, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 348, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 dt {
   color: black;
   font-weight: 700;
 }
 
-/* line 352, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 353, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 dd {
   margin: 0 0 1em;
 }
 @media (min-width: 768px) {
-  /* line 352, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+  /* line 353, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
   dd {
     margin: 0 0 1.66667em;
   }
 }
 
-/* line 362, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 363, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 nav ul,
 nav ol {
   list-style: none;
   list-style-image: none;
   margin: 0;
 }
-/* line 367, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 368, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 nav ul a,
 nav ol a {
   border-color: black;
@@ -1105,24 +1106,24 @@ nav ol a {
 }
 
 /** 5. MEDIA ---------- */
-/* line 376, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 377, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 audio, canvas, video {
   display: inline-block;
   *display: inline;
   *zoom: 1;
 }
 
-/* line 377, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 378, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 audio:not([controls]) {
   display: none;
 }
 
-/* line 378, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 379, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 [hidden] {
   display: none;
 }
 
-/* line 380, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 381, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
@@ -1130,7 +1131,7 @@ img {
 }
 
 /* Fluid images: http://unstoppablerobotninja.com/entry/fluid-images/ */
-/* line 389, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 390, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 img,
 object,
 embed {
@@ -1138,46 +1139,46 @@ embed {
 }
 
 /* Use clearfix on figure */
-/* line 394, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 395, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 figure:before, figure:after {
   content: "";
   display: table;
 }
 
-/* line 395, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 396, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 figure:after {
   clear: both;
 }
 
-/* line 396, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 397, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 figure {
   *zoom: 1;
 }
 
-/* line 398, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 399, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 figure {
   margin: 0 0 1em;
 }
 @media (min-width: 768px) {
-  /* line 398, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+  /* line 399, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
   figure {
     margin: 0 0 1.66667em;
   }
 }
 
-/* line 406, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 407, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 figure img {
   float: left;
 }
 
-/* line 410, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 411, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 figcaption {
   clear: both;
   color: #222222;
   color: rgba(34, 34, 34, 0.5);
   font-size: .8em;
 }
-/* line 416, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 417, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 figcaption a {
   border-color: #222222;
   border-color: rgba(34, 34, 34, 0.5);
@@ -1186,20 +1187,20 @@ figcaption a {
 }
 
 /** 6. TABLES ---------- */
-/* line 426, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 427, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 table {
   background: rgba(27, 141, 173, 0.15);
   margin: 0 0 1em;
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 426, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+  /* line 427, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
   table {
     margin: 0 0 1.66667em;
   }
 }
 
-/* line 436, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 437, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 caption {
   background: rgba(27, 141, 173, 0.4);
   font-size: inherit;
@@ -1209,27 +1210,27 @@ caption {
   text-align: left;
 }
 
-/* line 444, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 445, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 tbody {
   border: 0;
 }
 
-/* line 448, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 449, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 tbody th {
   border: 0;
 }
 
-/* line 452, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 453, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 thead th {
   text-align: left;
 }
 
-/* line 456, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 457, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 tr {
   border-bottom: 1px solid rgba(27, 141, 173, 0.4);
 }
 
-/* line 461, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 462, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 th,
 td {
   border-right: 1px solid rgba(27, 141, 173, 0.4);
@@ -1237,25 +1238,25 @@ td {
   padding: 0 0.222222em;
 }
 
-/* line 468, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 469, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 tr th:last-child,
 tr td:last-child {
   border-right: 0;
 }
 
-/* line 472, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 473, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 th {
   font-weight: 700;
   text-align: left;
 }
 
-/* line 478, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 479, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 td,
 td img {
   vertical-align: top;
 }
 
-/* line 482, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
+/* line 483, /Users/per/Sites/helloper/css/sass/global/_typography.scss */
 tfoot {
   font-style: italic;
 }
