@@ -6,7 +6,7 @@ from fabric.api import *
 from fabric.contrib.project import *
 
 env.user = 'root'
-env.hosts = ['80.169.183.93']
+env.hosts = ['146.185.132.96']
 env.remote_dir = '/mnt/persist/www/helloper.com'
 
 def deploy(where=None):
