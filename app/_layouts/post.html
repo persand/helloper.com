@@ -1,0 +1,27 @@
+---
+layout: landingpage
+---
+
+<div class="l-section">
+  <article class="post" vocab="http://schema.org/" typeof="BlogPosting">
+    <time property="dateCreated" pubdate>{{ page.date | date_to_string }}</time>
+
+    <h1 property="name">{{ page.title }}</h1>
+
+    <div property="articleBody">
+      {{ content }}
+    </div>
+
+    <div class="post-comments" id="disqus_thread" vocab="http://schema.org/" typeof="UserComments"></div>
+    <script type="text/javascript">
+      var disqus_shortname = 'helloper';
+
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+
+  </article>
+</div>

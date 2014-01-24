@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html class="no-js {{ page.html_classes }}" lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="//use.typekit.net/say4lty.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+    {% javascript modernizr %}
+    {% stylesheet app %}
+
+    <meta name="title" content="{{ page.title }}">
+    <meta property="og:title" content="{{ page.title }}">
+    {% if page.meta_image %}
+    <meta property="og:image" content="{% asset_path {{ page.meta_image }} %}">
+    {% else %}
+    <meta property="og:image" content="{% asset_path per-sandstrom-profile.jpg %}">
+    {% endif %}
+    <meta property="og:url" content="{{ site.url }}{{ page.url | remove:'index.html' }}">
+    {% if page.meta_description %}
+    <meta name="decription" content="{{ page.meta_description }}">
+    <meta property="og:description" content="{{ page.meta_description }}">
+    {% else %}
+    <meta name="decription" content="{{ site.data.meta.description }}">
+    <meta property="og:description" content="{{ site.data.meta.description }}">
+    {% endif %}
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/HelloPer">
+  </head>
+  <body>

@@ -1,8 +1,0 @@
-// Foundation grid overrides
-
-.columns,
-.column {
-  @include respond-to(max-width-medium) {
-    padding: 0 $margin-text-small;
-  }
-}

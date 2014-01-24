@@ -1,0 +1,63 @@
+
+// Simple post listing (date + title)
+// Used on front page.
+.posts {
+  list-style: none;
+
+  li {
+    @include clearfix();
+  }
+
+  time {
+    @extend ins;
+    @include border-radius(2px);
+  }
+
+  span {
+    display: block;
+    margin: 0 0 10px;
+
+    li:last-child & {
+      margin: 0;
+    }
+
+    @include breakpoint($ds-breakpoint-tablet) {
+      display: inline-block;
+    }
+  }
+}
+
+/**
+ * Post summary
+ */
+
+.post-summary {
+  background: #fff;
+  padding: ds-em-calc(30px);
+}
+
+
+/**
+ * Post
+ */
+
+.post {
+  background: #fff;
+  padding: ds-em-calc(30px);
+
+  @include breakpoint($ds-breakpoint-tablet) {
+    margin-left: (-(ds-em-calc(10px)));
+    margin-right: (-(ds-em-calc(10px)));
+    padding: ds-em-calc(40px);
+  }
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    margin-left: (-(ds-em-calc(20px)));
+    margin-right: (-(ds-em-calc(20px)));
+    padding: ds-em-calc(50px);
+  }
+}
+
+.post-comments {
+  padding-top: ds-em-calc(30px);
+}

@@ -1,0 +1,147 @@
+/** =PRINT ---------- */
+
+/**
+ * Credits: Hartija & HTML 5 Boilerplate
+ * http://code.google.com/p/hartija/
+ * http://html5boilerplate.com/
+ */
+
+@media print {
+
+  * {
+    background: transparent !important;
+    color: #000;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+
+  body {
+    font-size: 12pt;
+    letter-spacing: 0.2pt;
+    line-height: 1.4;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    word-spacing: 1.1pt;
+  }
+
+  a:after,
+  abbr:after {
+    content: " (" attr(href) ")";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: none;
+  }
+
+  h1 {
+    font-size: 19pt;
+  }
+
+  h2 {
+    font-size: 17pt;
+  }
+
+  h3 {
+    font-size: 15pt;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 12pt;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  code {
+    font: 10pt Courier, monospace;
+  }
+
+  blockquote {
+    margin: 1.3em;
+    padding: 1em;
+  }
+
+  hr {
+    background: #CCC;
+  }
+
+  img {
+    float: $ds-float;
+    margin: 1em 1.5em 1.5em 0;
+    page-break-inside: avoid;
+  }
+
+  a img {
+    border: none;
+  }
+
+  table {
+    margin: 1px;
+    text-align: $ds-float;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  th {
+    border-bottom: 1px solid #333;
+    font-weight: bold;
+  }
+
+  td {
+    border-bottom: 1px solid #333;
+  }
+
+  th,
+  td {
+    padding: 4px 10px 4px 0;
+  }
+
+  tfoot {
+    font-style: italic;
+  }
+
+  caption {
+    background: #FFF;
+    margin-bottom: 2em;
+    text-align: $ds-float;
+  }
+
+}
+
+/**
+ * END OF
+ * PRINT
+ */

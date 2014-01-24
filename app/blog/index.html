@@ -1,0 +1,30 @@
+---
+layout: landingpage
+title: Blog | Per Sandström
+meta_title: Blog
+meta_description: "All blog posts from 2009 up until today."
+---
+
+<header class="heading-page">
+  <h1 class="t-heading-marked">
+    <span>These are</span><br>
+    <span>all my blog posts</span>
+  </h1>
+
+  <p>(<a href="http://feeds.feedburner.com/HelloPer">It's dangerous to go alone! Take this RSS</a>)</p>
+</header>
+
+{% for post in site.posts %}
+<div class="l-section">
+  <article class="post-summary">
+    <header>
+      <time pubdate>{{ post.date | date_to_string }}</time>
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    </header>
+
+    <p>
+      {{ post.summary }}
+    </p>
+  </article>
+</div>
+{% endfor %}

@@ -1,6 +1,23 @@
-.sass-cache*
+# Bundler config.
+/.bundle
 
-_drafts/
-_site/
+# Binaries
+bin/
 
-Users/
+# Drafts
+app/_drafts/
+
+# Build site
+dist/
+
+# Fabric
+fabfile.pyc
+
+# Node modules
+node_modules/
+
+# rbenv
+.rbenv-vars
+
+# Vendor
+/vendor

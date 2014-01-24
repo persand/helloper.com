@@ -1,1 +1,23 @@
+# Paths
+source:      ./app
+destination: ./dist
+
+# Setup
+name: Per Sandström
 permalink: /blog/:year/:month/:title/
+gems: [sass, compass, breakpoint, uglifier, jekyll-assets, jekyll-assets/compass]
+
+# More configuration
+markdown: redcarpet
+pygments: true
+
+# Jekyll Assets configuration
+# https://github.com/ixti/jekyll-assets
+assets:
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - ../vendor/assets
+  js_compressor:  uglifier
+  css_compressor: sass
