@@ -2,7 +2,6 @@
   "name": "helloper",
   "version": "0.0.0",
   "dependencies": {
-    "modernizr": "~2.7.1",
     "normalize-css": "~2.1.3"
   }
 }
