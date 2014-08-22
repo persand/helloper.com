@@ -23,18 +23,22 @@
   }
 
   figcaption {
-    background: #fff;
     clear: both;
-    padding: 20px;
   }
 }
 
 .project-list__item {
+  background: #fff;
+
   @include breakpoint(320px) {
     float: left;
     margin: 0 ds-em-calc(30px) ds-em-calc(30px) 0;
     max-width: ds-em-calc(320px);
   }
+}
+
+.project-list__info {
+  padding: 20px;
 }
 
 .project-list__title {
