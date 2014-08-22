@@ -10,9 +10,6 @@ app/_drafts/
 # Build site
 dist/
 
-# Fabric
-fabfile.pyc
-
 # Node modules
 node_modules/
 
@@ -21,3 +18,4 @@ node_modules/
 
 # Vendor
 /vendor
+app/_assets/vendor
