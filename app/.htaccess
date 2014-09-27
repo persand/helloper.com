@@ -37,5 +37,9 @@ Redirect 301 /drupal-module-unit-png-fix /blog/2009/11/drupal-module-unit-png-fi
 Redirect 301 /service-links-swedish-services /blog/2009/11/service-links-swedish-services/
 Redirect 301 /my-first-20 /blog/2009/10/my-first-20/
 
+# Old stuff
+Redirect 301 /about /
+Redirect 301 /contact /
+
 # Misc
 Redirect 301 /rss/feed /feed.xml
