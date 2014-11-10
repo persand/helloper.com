@@ -3,12 +3,12 @@ layout: landingpage
 ---
 
 <div class="l-section">
-  <article class="post" vocab="http://schema.org/" typeof="BlogPosting">
-    <time property="dateCreated" pubdate>{{ page.date | date_to_string }}</time>
+  <article class="post h-entry" vocab="http://schema.org/" typeof="BlogPosting">
+    <time property="dateCreated" class="dt-published" pubdate>{{ page.date | date_to_string }}</time> by <a rel="author" class="p-author h-card" href="http://www.helloper.com">Per</a>
 
-    <h1 property="name">{{ page.title }}</h1>
+    <h1 property="name" class="p-name"><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></h1>
 
-    <div property="articleBody">
+    <div property="articleBody" class="e-content">
       {{ content }}
     </div>
 
