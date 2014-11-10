@@ -9,6 +9,10 @@
   @include breakpoint($ds-breakpoint-laptop) {
 
   }
+
+  a {
+    color: inherit;
+  }
 }
 
 .t-heading-marked {

@@ -7,25 +7,32 @@ html_classes: home
 
 <div class="l-wrapper">
 
-  <article class="l-section home-presentation">
+  <article class="l-section home-presentation h-card">
     <figure class="profile-photo">
-      <img src="{{ 'per4.jpg' | asset_path }}" alt="Per Sandström">
+      <img src="http://www.helloper.com/media/images/per-sandstrom.jpg" class="u-photo" alt="Per Sandström">
     </figure>
 
-    <h1 class="t-heading-site">Why hello there,<br>I'm Per Sandström</h1>
+    <h1 class="t-heading-site">
+      Why hello there,<br>
+      I'm
+      <a class="p-name u-url" href="http://www.helloper.com" rel="me">
+        <span class="p-given-name">Per</span>
+        <span class="p-family-name">Sandström</span>
+      </a>
+    </h1>
 
     <div class="l-content">
-      <p class="t-lead">Driven by a chronic thirst for knowledge I design, develop and lead web projects at <a href="http://www.kollegorna.se">Kollegorna</a> – a distributed web agency I run with a bunch of geniuses. Did I have you at hello? Let's get in touch. No? Well enjoy your stay at my incredible homepage and get to know me some more.</p>
+      <p class="t-lead"><span class="p-note">Driven by a chronic thirst for knowledge I design, develop and lead web projects at <a href="http://www.kollegorna.se" class="p-org">Kollegorna</a> – a distributed web agency I run with a bunch of geniuses.</span> Did I have you at hello? Let's get in touch. No? Well enjoy your stay at my incredible homepage and get to know me some more.</p>
     </div>
 
     <ul class="actions">
       <li>
-        <a href="mailto:per@helloper.com">
+        <a class="u-email" href="mailto:per@helloper.com">
           Email
         </a>
       </li>
       <li>
-        <a href="callto:+46702420750">
+        <a class="p-tel" href="callto:+46702420750">
           +46 702 420 750
         </a>
       </li>
