@@ -5,11 +5,19 @@ destination: ./dist
 # Setup
 name: Per Sandström
 permalink: /blog/:year/:month/:title/
-gems: [sass, compass, breakpoint, uglifier, jekyll-assets, jekyll-assets/compass]
+exclude:
+ - autoprefixer.yml
 
-# More configuration
-markdown: redcarpet
-pygments: true
+# Dependecies
+gems:
+  - sass
+  - compass
+  - breakpoint
+  - autoprefixer-rails
+  - uglifier
+  - jekyll-assets
+  - jekyll-assets/compass
+  - jekyll-sitemap
 
 # Jekyll Assets configuration
 # https://github.com/ixti/jekyll-assets

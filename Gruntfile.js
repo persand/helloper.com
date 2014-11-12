@@ -3,10 +3,10 @@ module.exports = function(grunt) {
 grunt.initConfig({
   exec: {
     build: {
-      cmd: 'bundle exec jekyll build'
+      cmd: 'bundle exec jekyll b'
     },
     serve: {
-      cmd: 'bundle exec jekyll serve --watch'
+      cmd: 'bundle exec jekyll s'
     },
     deploy: {
       cmd: 'fab deploy'
