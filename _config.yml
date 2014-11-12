@@ -29,3 +29,6 @@ assets:
     - _assets/vendor
   js_compressor:  uglifier
   css_compressor: sass
+
+# Variables
+mixpanel_token: 2622507bdf0bea0ad966ba92c55ec5a9
