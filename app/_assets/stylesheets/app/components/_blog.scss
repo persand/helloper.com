@@ -58,6 +58,20 @@
   }
 }
 
+.post__read-more {
+  padding-top: 20px;
+}
+
+.post__meta {
+  color: #888;
+  text-align: right;
+
+  a {
+    border: 0;
+    color: #888;
+  }
+}
+
 .post-comments {
   padding-top: ds-em-calc(30px);
 }
