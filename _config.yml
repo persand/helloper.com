@@ -4,11 +4,12 @@ destination: ./dist
 
 # Setup
 name: Per Sandström
-permalink: /blog/:year/:month/:title/
+timezone: Europe/Stockholm
 exclude:
  - autoprefixer.yml
 
 # Posts
+permalink: /blog/:year/:month/:title/
 paginate: 9
 paginate_path: "blog/page:num"
 
