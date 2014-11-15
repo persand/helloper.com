@@ -27,13 +27,13 @@ html_classes: home
 
     <ul class="actions">
       <li>
-        <a class="u-email" href="mailto:per@helloper.com">
-          Email
+        <a href="/blog">
+          Blog
         </a>
       </li>
       <li>
-        <a class="p-tel" href="callto:+46702420750">
-          +46 702 420 750
+        <a class="u-email" href="mailto:per@helloper.com">
+          Email
         </a>
       </li>
       <li class="github">
@@ -51,24 +51,13 @@ html_classes: home
           LinkedIn
         </a>
       </li>
+      <li>
+        <a class="p-tel" href="callto:+46702420750">
+          +46 702 420 750
+        </a>
+      </li>
     </ul>
   </article>
-
-  <section class="l-section">
-    <h2 class="t-heading-section">Blog posts</h2>
-    <ul class="posts">
-      {% for post in site.posts limit:5 %}
-        <li>
-          <time pubdate>{{ post.date | date_to_string }}</time>
-          <span><a href="{{ post.url }}">{{ post.title }}</a></span>
-        </li>
-      {% endfor %}
-    </ul>
-    <ul class="actions">
-      <li><a href="/blog">All posts</a></li>
-      <li><a class="button rss-subscribe" href="http://feeds.feedburner.com/HelloPer">Subscribe</a></li>
-    </ul>
-  </section>
 
   <section class="l-section">
     <h2 class="t-heading-section">Projects / Play</h2>
