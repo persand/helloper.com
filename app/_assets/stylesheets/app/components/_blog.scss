@@ -81,3 +81,33 @@
 .post__comments {
   padding-top: ds-em-calc(30px);
 }
+
+// -----------------------------------------------------------------------------
+// Pagination
+// -----------------------------------------------------------------------------
+
+.pagination {
+  text-align: center;
+
+  a {
+    border: 0;
+
+    img {
+      opacity: .8;
+    }
+  }
+}
+
+.pagination__previous {
+  display: inline-block;
+  margin-right: 20px;
+
+  img {
+    @include transform(rotate(-180deg));
+  }
+}
+
+.pagination__next {
+  display: inline-block;
+  margin-left: 20px;
+}

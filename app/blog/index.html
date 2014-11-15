@@ -163,18 +163,20 @@ meta_description: "All blog posts from 2009 up until today."
 <nav class="pagination">
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-      <a href="/blog" class="pagination__previous">&laquo;</a>
+      <a href="/blog" class="pagination__previous">
+        {% image ui/icons/arrow.svg alt="Previous page" %}
+      </a>
     {% else %}
-      <a href="/blog/page{{ paginator.previous_page }}" class="pagination__previous">&laquo;</a>
+      <a href="/blog/page{{ paginator.previous_page }}" class="pagination__previous">
+        {% image ui/icons/arrow.svg alt="Previous page" %}
+      </a>
     {% endif %}
-  {% else %}
-    <!--<span class="pagination__previous">Föregående</span>-->
   {% endif %}
   <span class="pagination__page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
-    <a href="/blog/page{{ paginator.next_page }}" class="pagination__next">&raquo;</a>
-  {% else %}
-    <!--<span class="pagination__next">&raquo;</span>-->
+    <a href="/blog/page{{ paginator.next_page }}" class="pagination__next">
+      {% image ui/icons/arrow.svg alt="Next page" %}
+    </a>
   {% endif %}
 </nav>
 <!-- / .pagination -->
