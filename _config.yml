@@ -8,6 +8,10 @@ permalink: /blog/:year/:month/:title/
 exclude:
  - autoprefixer.yml
 
+# Posts
+paginate: 9
+paginate_path: "blog/page:num"
+
 # Dependecies
 gems:
   - sass
