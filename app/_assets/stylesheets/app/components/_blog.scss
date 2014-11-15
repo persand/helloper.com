@@ -1,45 +1,15 @@
+// -----------------------------------------------------------------------------
+// Posts
+// The main posts listing
+// -----------------------------------------------------------------------------
 
-// Simple post listing (date + title)
-// Used on front page.
 .posts {
-  list-style: none;
 
-  li {
-    @include clearfix();
-  }
-
-  time {
-    @extend ins;
-    @include border-radius(2px);
-  }
-
-  span {
-    display: block;
-    margin: 0 0 10px;
-
-    li:last-child & {
-      margin: 0;
-    }
-
-    @include breakpoint($ds-breakpoint-tablet) {
-      display: inline-block;
-    }
-  }
 }
 
-/**
- * Post summary
- */
-
-.post-summary {
-  background: #fff;
-  padding: ds-em-calc(30px);
-}
-
-
-/**
- * Post
- */
+// -----------------------------------------------------------------------------
+// Post
+// -----------------------------------------------------------------------------
 
 .post {
   background: #fff;
@@ -58,8 +28,40 @@
   }
 }
 
+.post__title {
+
+}
+
+.post__image {
+
+}
+
+.post__video {
+
+}
+
+.post__quote {
+
+}
+
+.post__cite {
+
+}
+
+.post__summary {
+
+}
+
+.post__content {
+
+}
+
 .post__read-more {
   padding-top: 20px;
+}
+
+.post__footer {
+
 }
 
 .post__meta {
@@ -72,6 +74,10 @@
   }
 }
 
-.post-comments {
+.post__source {
+
+}
+
+.post__comments {
   padding-top: ds-em-calc(30px);
 }
