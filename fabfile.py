@@ -6,8 +6,8 @@ from fabric.api import *
 from fabric.contrib.project import *
 
 env.user = 'root'
-env.hosts = ['146.185.132.96']
-env.remote_dir = '/mnt/persist/www/helloper.com'
+env.hosts = ['178.62.81.229']
+env.remote_dir = '/var/www/helloper.com'
 
 def deploy(where=None):
   rsync_project(
