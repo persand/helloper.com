@@ -5,14 +5,15 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title><%= current_page.data.title || "Title" %></title>
-  <%= javascript_include_tag "modernizr" %>
+  <title><%= page_title %></title>
+  <meta name="description" content="<%= page_description %>">
+
+  <%= partial "open_graph" %>
+  <%= partial "twitter_card" %>
+
   <%= stylesheet_link_tag "application" %>
 </head>
 <body>
-  <%= partial "navigation" %>
-  <%= partial "header" %>
-
   <%= yield %>
 
   <%= javascript_include_tag "application" %>
