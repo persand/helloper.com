@@ -1,0 +1,20 @@
+# Bundler config
+/.bundle
+
+# Built site
+/build
+
+# Data
+/data
+
+# Vendor
+/vendor
+
+# Node modules
+/node_modules
+
+# Misc
+.DS_Store
+
+# Amazon configuration
+aws.json

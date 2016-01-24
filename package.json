@@ -1,0 +1,13 @@
+{
+  "name": "helloper-com",
+  "version": "2.0.0",
+  "description": "Middleman setup with Gulp, BrowserSync and Bower",
+  "devDependencies": {
+    "bower": "~1.7.2",
+    "browser-sync": "~2.11.0",
+    "gulp": "~3.9.0",
+    "gulp-util": "~3.0.5",
+    "rsyncwrapper": "~0.4.3",
+    "fs": "0.0.2"
+  }
+}
