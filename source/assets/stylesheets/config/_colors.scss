@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// Colors
+// -----------------------------------------------------------------------------
+
+// Primary
+$ds-color-dark-blue: #1b8dad;
+$ds-color-light-blue: #D1E8EE;
+$ds-color-black: #000;
+$ds-color-dark: #222;
+$ds-color-white: #fff;
+$ds-color-active-white: #F1F8FA;
+$ds-color-dark-gray: #343A3C;
+$ds-color-light-gray: #888;
+$ds-color-shade: #9EAFB3;
+
+
+// -----------------------------------------------------------------------------
+// Items
+// Use these variables in other files for easy color changes
+// -----------------------------------------------------------------------------
+
+$ds-color-background:       $ds-color-light-blue;
+$ds-color-text:             $ds-color-dark;
+$ds-color-text-light:       $ds-color-light-gray;
+$ds-color-link:             $ds-color-dark-blue;
+$ds-color-heading:          $ds-color-black;
+$ds-color-selection:        $ds-color-shade;
+$ds-color-selection-text:   $ds-color-black;
+$ds-color-input:            $ds-color-white;
+$ds-color-input-border:     $ds-color-white;
+$ds-color-input-text:       $ds-color-dark-gray;
+$ds-color-button:           $ds-color-dark-blue;
+$ds-color-button-text:      $ds-color-light-blue;
+$ds-color-border:           $ds-color-shade;

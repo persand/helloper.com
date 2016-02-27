@@ -1,16 +1,22 @@
 ---
-title: Blog
+title: "Blog"
 ---
 
+<h1 class="blog-title">
+  <span>
+    <%= blog.articles.count %> blog posts
+  </span>
+</h1>
+
 <% blog.articles.each do |article| %>
-  <article>
-    <h1>
-      <a href="<%= article.url %>"><%= article.title %></a>
-      <time><%= article.date.strftime('%b %e %Y') %></time>
-    </h1>
-
-    <%= article.summary %>
-
-    <a href="<%= article.url %>">Read more</a>
+  <article class="article-teaser" vocab="http://schema.org/" typeof="BlogPosting">
+    <a property="url" href="<%= article.url %>">
+      <h1 property="name" class="post__title">
+        <%= article.title %>
+      </h1>
+      <time class="post__date" property="dateCreated" pubdate>
+        <%= article.date.strftime('%b %e %Y') %>
+      </time>
+    </a>
   </article>
 <% end %>

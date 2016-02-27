@@ -11,9 +11,12 @@
   <%= partial "partials/open_graph" %>
   <%= partial "partials/twitter_card" %>
 
+  <script src="//use.typekit.net/say4lty.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <link href="//fonts.googleapis.com/css?family=Cousine:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <%= stylesheet_link_tag "application" %>
 </head>
-<body>
+<body<%= body_class %>>
   <%= yield %>
 
   <%= javascript_include_tag "application" %>
