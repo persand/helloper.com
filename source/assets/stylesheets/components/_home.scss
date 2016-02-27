@@ -119,9 +119,13 @@
     }
 
     a {
-      border-bottom: 3px solid $ds-color-link;
+      border-bottom: 2px solid $ds-color-link;
       color: $ds-color-text;
       font-weight: $ds-font-weight-bold;
+
+      @media (min-width: 768px) {
+        border-bottom-width: 3px;
+      }
     }
   }
 
@@ -137,10 +141,10 @@
 
     li {
       display: inline-block;
-      margin: 0 5px 16px;
+      margin: 0 5px 20px;
 
       @media (min-width: 600px) {
-        margin: 0 10px 16px 0;
+        margin: 0 10px 20px 0;
       }
     }
 
