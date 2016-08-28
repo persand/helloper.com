@@ -5,18 +5,18 @@ $blog-max-width: 768px;
 
 .article {
   background: #fff;
-  margin: 0 10px 10px;
+  margin: 20px 10px 10px;
   max-width: $blog-max-width;
   padding: 20px 10px;
   position: relative;
 
   @media (min-width: $ds-breakpoint-tablet) {
-    margin: 0 auto 40px;
-    padding: 0 0 ds-em-calc(50px);
+    margin: 40px auto 40px;
+    padding: 0 0 ds-rem-calc(50px);
   }
 
   @media (min-width: $ds-breakpoint-laptop) {
-    margin: 0 auto 120px;
+    margin: 60px auto 120px;
     padding: 40px 40px 40px;
   }
 
@@ -38,16 +38,43 @@ $blog-max-width: 768px;
     }
   }
 
-  &:last-child:after {
-
+  &__header {
+    border-bottom: 1px solid $ds-color-background;
+    margin-left: -40px;
+    margin-right: -40px;
+    color: $ds-color-light-gray;
+    margin-bottom: 25px;
+    @media (max-width: $ds-breakpoint-tablet) {
+      margin-bottom: 30px;
+    }
   }
 
-  h1 {
+  &__title {
     line-height: 1.1111;
-    margin: 0;
+    margin: 0 0 15px;
 
     @media (max-width: $ds-breakpoint-tablet) {
       font-size: ds-rem-calc(24);
+      margin: 0 0 20px;
+    }
+  }
+
+  &__date {
+    a {
+      color: inherit;
+      cursor: auto;
+    }
+  }
+
+  &__author {
+    color: inherit;
+  }
+
+  &__body {
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }

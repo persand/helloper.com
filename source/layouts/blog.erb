@@ -1,0 +1,38 @@
+<% wrap_layout :layout do %>
+  <article class="article" role="article" vocab="http://schema.org/" typeof="BlogPosting">
+    <header class="article__header">
+      <h1 class="article__title" property="name"><%= current_article.title %></h1>
+
+      <time class="article__date" property="datePublished" datetime="<%= current_article.date.strftime('%Y-%m-%d') %>" pubdate>
+        <a property="url" class="u-url" href="<%= current_article.url %>">
+          <%= current_article.date.strftime('%Y-%m-%d') %>
+        </a>
+      </time>
+
+      by
+
+      <a rel="author" class="article__author" href="http://www.helloper.com">
+        Per
+      </a>
+    </header>
+
+    <section class="article__body" property="articleBody">
+      <%= yield %>
+    </section>
+  </article>
+
+  <section class="blog-index">
+    <% blog.articles.each do |article| %>
+      <article vocab="http://schema.org/" typeof="BlogPosting">
+        <a property="url" href="<%= article.url %>">
+          <h1 property="name" class="post__title">
+            <%= article.title %>
+          </h1>
+          <time class="post__date" property="dateCreated" pubdate>
+            <%= article.date.strftime('%b %e %Y') %>
+          </time>
+        </a>
+      </article>
+    <% end %>
+  </section>
+<% end %>
