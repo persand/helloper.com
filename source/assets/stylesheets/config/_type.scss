@@ -9,6 +9,50 @@
 // https://github.com/zurb/foundation/blob/master/scss/foundation/_functions.scss
 // -----------------------------------------------------------------------------
 
+// -----------------------------------------------------------------------------
+// Load fonts
+// -----------------------------------------------------------------------------
+
+@font-face {
+  font-family: 'cousinebold';
+  src: font-url('cousine-bold-webfont.woff2') format('woff2'),
+       font-url('cousine-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cousinebold_italic';
+  src: font-url('cousine-bolditalic-webfont.woff2') format('woff2'),
+       font-url('cousine-bolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cousineitalic';
+  src: font-url('cousine-italic-webfont.woff2') format('woff2'),
+       font-url('cousine-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cousineregular';
+  src: font-url('cousine-regular-webfont.woff2') format('woff2'),
+       font-url('cousine-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'league_spartanregular';
+  src: font-url('leaguespartan-bold-webfont.woff2') format('woff2'),
+       font-url('leaguespartan-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 // This is the default html and body font-size for the base rem value.
 $ds-rem-base: 16px !default;
 
@@ -72,8 +116,8 @@ $ds-rem-base: 16px !default;
 // Text
 // -----------------------------------------------------------------------------
 
-$ds-font-family: "Cousine", monospace !default;
-$ds-font-family-headings: "futura-pt", sans-serif !default;
+$ds-font-family: "cousineregular", monospace !default;
+$ds-font-family-headings: "league_spartanregular", sans-serif !default;
 $ds-font-size: 100% !default;
 $ds-font-size-body-copy: ds-rem-calc(16) !default;
 $ds-font-size-small: ds-rem-calc(12) !default;
