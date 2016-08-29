@@ -1,3 +1,8 @@
+activate :sprockets
+activate :autoprefixer
+activate :directory_indexes
+activate :syntax
+
 # Configure path for assets
 config[:css_dir] = 'assets/stylesheets'
 config[:js_dir] = 'assets/javascripts'
@@ -19,9 +24,7 @@ activate :blog do |blog|
   blog.sources = "posts/{year}-{month}-{day}-{title}.html"
 end
 
-activate :autoprefixer
-activate :directory_indexes
-activate :syntax
+
 
 page "/feed.xml", :layout => false
 
@@ -29,11 +32,7 @@ set :markdown, fenced_code_blocks: true
 set :markdown_engine, :redcarpet
 
 configure :development do
-  #activate :livereload
-  activate :gzip
-  activate :minify_html
-  activate :minify_css
-  activate :minify_javascript
+  activate :livereload
   set :debug_assets, true
 end
 
@@ -43,7 +42,7 @@ configure :build do
   activate :minify_html
   activate :minify_css
   activate :minify_javascript
-  activate :relative_assets
   activate :asset_hash, :ignore => [/^media*/]
+  activate :relative_assets
   #activate :sitemap, :hostname => "https://www.helloper.com"
 end

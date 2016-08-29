@@ -1,4 +1,48 @@
 @charset "utf-8";
+
+// -----------------------------------------------------------------------------
+// Normalize
+// -----------------------------------------------------------------------------
 @import "normalize-scss/normalize";
-@import "design-system";
+
+// -----------------------------------------------------------------------------
+// Design System
+// Imports base and specific configurations
+// -----------------------------------------------------------------------------
+
+// --
+// Configuration
+// Variables, placeholders, functions and mixins.
+// --
+@import "config/type";
+@import "config/layout";
+@import "config/helpers";
+@import "config/colors";
+@import "config/images";
+@import "config/ui";
+
+// --
+// "A Base rule is applied to an element using an element selector, a descendent
+// selector, or a child selector, along with any pseudo-classes. It doesn’t
+// include any class or ID selectors. It is defining the default styling for how
+// that element should look in all occurrences on the page."
+// Source: https://smacss.com/book/type-base
+// --
+@import "base/setup";
+@import "base/type";
+@import "base/media";
+@import "base/tables";
+@import "base/forms";
+@import "base/print";
+
+// --
+// Components
+//
+// Global, reusable components such as buttons, icon, boxes and typographic
+// extras.
+// --
+@import "components/type";
+@import "components/ui";
+@import "components/home";
+@import "components/blog";
 
