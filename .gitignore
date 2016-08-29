@@ -1,21 +1,20 @@
-# Bundler config.
+# Bundler config
 /.bundle
 
-# Binaries
-bin/
+# Built site
+/build
 
-# Drafts
-app/_drafts/
-
-# Build site
-dist/
-
-# Node modules
-node_modules/
-
-# rbenv
-.rbenv-vars
+# Data
+/data
 
 # Vendor
 /vendor
-app/_assets/vendor
+
+# Node modules
+/node_modules
+
+# Misc
+.DS_Store
+
+# Amazon configuration
+aws.json

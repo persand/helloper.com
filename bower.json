@@ -1,7 +1,7 @@
 {
-  "name": "helloper",
+  "name": "helloper-com",
   "version": "2.0.0",
   "dependencies": {
-    "normalize-scss": "~3.0.0"
+    "normalize-scss"  : "~3.0.3"
   }
 }

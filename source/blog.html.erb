@@ -1,0 +1,31 @@
+---
+title: "Blog"
+body_class: blog-index
+---
+
+<h1>
+  <span>
+    <%= blog.articles.count %> posts
+  </span>
+</h1>
+
+<a href="http://feeds.feedburner.com/HelloPer" class="blog-index__rss" title="Subscribe to the RSS feed">
+  <%= partial "assets/images/icons/rss.svg" %>
+</a>
+
+<a href="/" class="blog-index__home" title="Back home">
+  <%= partial "assets/images/icons/home.svg" %>
+</a>
+
+<% blog.articles.each do |article| %>
+  <article vocab="http://schema.org/" typeof="BlogPosting">
+    <a property="url" href="<%= article.url %>">
+      <h1 property="name" class="post__title">
+        <%= article.title %>
+      </h1>
+      <time class="post__date" property="dateCreated" pubdate>
+        <%= article.date.strftime('%b %e %Y') %>
+      </time>
+    </a>
+  </article>
+<% end %>

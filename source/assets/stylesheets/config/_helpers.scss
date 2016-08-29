@@ -1,0 +1,67 @@
+
+//------------------------------------------------------------------------------
+// Clearfix
+//------------------------------------------------------------------------------
+
+%ds-clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+//------------------------------------------------------------------------------
+// Visually hidden
+//
+// Credits: H5BP
+//------------------------------------------------------------------------------
+
+// Hide only visually, but have it available for screen readers:
+// http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+%ds-visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// Extends the %visuallyhidden to allow the element
+// to be focusable when navigated to via the keyboard:
+// https://www.drupal.org/node/897638
+%ds-visuallyhidden--focusable {
+  &:active,
+  &:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// Font smoothing
+// http://maximilianhoffmann.com/posts/better-font-rendering-on-osx
+// -----------------------------------------------------------------------------
+
+@mixin ds-font-smoothing($value: on) {
+  @if $value == on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}

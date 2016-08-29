@@ -1,0 +1,56 @@
+// -----------------------------------------------------------------------------
+// Media
+// -----------------------------------------------------------------------------
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+img {
+  border: 0;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+svg {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+figure {
+  @extend %ds-clearfix;
+  font-size: $ds-font-size-body-copy;
+  margin: 0 0 $ds-type-margin;
+  overflow: visible;
+
+  img {
+    float: $ds-float;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+figcaption {
+  clear: both;
+  color: $ds-color-dark-gray;
+  font-style: italic;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

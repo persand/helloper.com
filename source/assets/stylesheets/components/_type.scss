@@ -1,0 +1,97 @@
+// -----------------------------------------------------------------------------
+// Utility stuff
+// -----------------------------------------------------------------------------
+
+%ds-t-center {
+  text-align: center;
+}
+.t-center {
+  @extend %ds-t-center;
+}
+
+%ds-t-right {
+  text-align: right;
+}
+.t-right {
+  @extend %ds-t-right;
+}
+
+%ds-t-uppercase {
+  text-transform: uppercase;
+}
+.t-uppercase {
+  @extend %ds-t-uppercase;
+}
+
+%ds-t-small {
+  font-size: 1rem;
+}
+.t-small {
+  @extend %ds-t-small;
+}
+
+// -----------------------------------------------------------------------------
+// Lead
+// -----------------------------------------------------------------------------
+
+%ds-t-lead {
+  font-size: ds-rem-calc(20);
+  line-height: 1.8;
+}
+.t-lead {
+  @extend %ds-t-lead;
+}
+
+// -----------------------------------------------------------------------------
+// Meta
+// -----------------------------------------------------------------------------
+
+%ds-t-meta {
+  color: $ds-color-text-light;
+
+  a {
+    border-bottom: 1px solid $ds-color-dark-gray;
+    color: $ds-color-dark-gray;
+
+    &:hover {
+      color: $ds-color-dark-gray;
+    }
+  }
+}
+.t-meta {
+  @extend %ds-t-meta;
+}
+
+// -----------------------------------------------------------------------------
+// Lists
+// -----------------------------------------------------------------------------
+
+/**
+ * Unstyled
+ */
+%t-list-unstyled {
+  list-style: none;
+  margin-left: 0;
+}
+.t-list-unstyled {
+  @extend %t-list-unstyled;
+}
+
+/**
+ * Inline
+ */
+%t-list-inline {
+  @extend %t-list-unstyled;
+
+  & > li {
+    display: inline-block;
+    margin-right: 0.7rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.t-list-inline {
+  @extend %t-list-inline;
+}

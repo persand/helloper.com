@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title><%= page_title %></title>
+  <meta name="description" content="<%= page_description %>">
+
+  <%= partial "partials/open_graph" %>
+  <%= partial "partials/twitter_card" %>
+
+  <%= stylesheet_link_tag "application" %>
+</head>
+<body<%= body_class %>>
+  <%= yield %>
+
+  <%#= javascript_include_tag "application" %>
+</body>
+</html>

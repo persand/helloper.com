@@ -1,0 +1,62 @@
+// -----------------------------------------------------------------------------
+// Tables
+// -----------------------------------------------------------------------------
+
+table {
+  border: 0;
+  font-size: $ds-font-size-body-copy;
+  margin: 0;
+  width: 100%;
+}
+
+caption {
+  color: $ds-color-heading;
+  font-size: $ds-h3-font-size;
+  padding-bottom: $ds-type-margin;
+  text-align: $ds-float;
+}
+
+thead {
+
+}
+
+tfoot {
+  color: $ds-color-text-light;
+  font-weight: $ds-font-weight;
+}
+
+tbody {
+  border: 0;
+}
+
+th,
+td {
+  border: 0;
+  border-bottom: 1px solid $ds-color-border;
+  border-right: 1px solid $ds-color-border;
+  padding: 6px 10px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    border-right: 0;
+  }
+
+  tr:first-child & {
+    border-top: 1px solid $ds-color-border;
+  }
+}
+
+th {
+  color: $ds-color-heading;
+  font-size: $ds-h4-font-size;
+  text-align: $ds-float;
+  text-transform: uppercase;
+}
+
+td,
+td img {
+  vertical-align: top;
+}

@@ -1,0 +1,321 @@
+// -----------------------------------------------------------------------------
+// Links
+// -----------------------------------------------------------------------------
+
+a,
+a:active {
+  color: $ds-color-link;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: $ds-color-dark-blue;
+}
+
+a:focus {
+
+}
+
+a:link {
+  -webkit-tap-highlight-color: lighten($ds-color-link, 20);
+}
+
+
+// -----------------------------------------------------------------------------
+// Headings
+// -----------------------------------------------------------------------------
+
+%h1-6 {
+  color: $ds-color-heading;
+  font-family: $ds-font-family-headings;
+  font-weight: $ds-font-weight-bold;
+  line-height: $ds-headings-line-height;
+  margin: 1.2rem 0 1rem;
+
+  a {
+    font-weight: inherit;
+  }
+}
+
+%h1 {
+  @extend %h1-6;
+  font-size: $ds-h1-font-size;
+}
+h1 {
+  @extend %h1;
+}
+
+%h2 {
+  @extend %h1-6;
+  font-size: $ds-h2-font-size;
+}
+h2 {
+  @extend %h2;
+}
+
+%h3 {
+  @extend %h1-6;
+  font-size: $ds-h3-font-size;
+  margin-bottom: 0;
+}
+h3 {
+  @extend %h3;
+}
+
+%h4 {
+  @extend %h1-6;
+  font-family: $ds-font-family;
+  font-size: $ds-h4-font-size;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+h4 {
+  @extend %h4;
+}
+
+%h5 {
+  @extend %h1-6;
+  font-family: $ds-font-family;
+  font-size: $ds-h5-font-size;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+h5 {
+  @extend %h5;
+}
+
+%h6 {
+  @extend %h1-6;
+  font-family: $ds-font-family;
+  font-size: $ds-h6-font-size;
+  font-weight: $ds-font-weight;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+h6 {
+  @extend %h6;
+}
+
+
+// -----------------------------------------------------------------------------
+// Body text
+// -----------------------------------------------------------------------------
+
+p,
+blockquote,
+ol,
+ul,
+dl {
+  font-size: $ds-font-size-body-copy;
+}
+
+p {
+  margin: 0 0 $ds-type-margin;
+}
+
+hr {
+  @extend %ds-clearfix;
+  border: 0;
+  margin: $ds-type-margin 0;
+  height: 20px;
+  position: relative;
+  &:after {
+    //content: " ✖ ✖ ✖ ";
+    //content: " · • ● • ·";
+    //content: " × × × ";
+    //content: " ※ ※ ※ ";
+    content: " ⤫ ⤫ ⤫ ";
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote {
+  font-size: ds-rem-calc(30);
+  font-style: italic;
+  font-weight: $ds-font-weight;
+  line-height: 1.45833333;
+  margin: 0 0 $ds-type-margin;
+  position: relative;
+
+  cite {
+    display: block;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+q {
+  font-style: italic;
+}
+
+strong,
+b {
+  font-weight: $ds-font-weight-bold;
+  line-height: inherit;
+}
+
+u {
+  border-bottom: 1px solid $ds-color-text;
+  color: $ds-color-heading;
+  display: inline-block;
+  text-decoration: none;
+}
+
+em,
+dfn,
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+dfn {
+  color: $ds-color-heading;
+  font-weight: $ds-font-weight-bold;
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted $ds-color-border;
+  color: $ds-color-heading;
+  cursor: help;
+}
+
+acronym {
+  text-transform: uppercase;
+}
+
+cite {
+  font-style: normal;
+}
+
+del {
+  background: lighten($ds-color-light-gray, 40);
+  color: $ds-color-light-gray;
+  text-decoration: line-through;
+}
+
+mark {
+  background: $ds-color-selection;
+  color: $ds-color-selection-text;
+  font-weight: $ds-font-weight;
+  padding: 0 ds-rem-calc(3);
+}
+
+ins {
+  background: lighten($ds-color-dark-blue, 55);
+  color: $ds-color-dark-blue;
+  font-weight: $ds-font-weight;
+  padding: 0 ds-rem-calc(3);
+  text-decoration: none;
+}
+
+pre {
+  margin: $ds-type-margin 0;
+  padding: ds-rem-calc(16);
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+pre,
+code,
+tt,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+  font-weight: normal;
+}
+
+sup,
+sub {
+  line-height: 90%;
+}
+
+sub {
+  font-size: smaller;
+  vertical-align: sub;
+}
+
+sup {
+  font-size: smaller;
+  vertical-align: super;
+}
+
+small {
+  font-size: $ds-font-size-small;
+}
+
+kbd {
+  background: lighten(lightgray, 50);
+  border: 1px solid gray;
+  border-radius: ds-rem-calc(4);
+  font: normal normal 0.8em/90% sans-serif;
+  margin: 0 ds-rem-calc(4);
+  padding: ds-rem-calc(2) ds-rem-calc(6);
+}
+
+address {
+  font-style: normal;
+}
+
+::selection {
+  background: $ds-color-selection;
+  color: $ds-color-selection-text;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: $ds-color-selection;
+  color: $ds-color-selection-text;
+  text-shadow: none;
+}
+
+
+// -----------------------------------------------------------------------------
+// Lists
+// -----------------------------------------------------------------------------
+
+ul,
+ol {
+  list-style: disc inside;
+  margin: 0 0 $ds-type-margin;
+  padding: 0;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+li ul,
+li ol {
+  margin-#{$ds-float}: $ds-type-margin;
+  margin-bottom: 0;
+}
+
+dl {
+  margin: 0 0 $ds-type-margin;
+}
+
+dt {
+  color: $ds-color-heading;
+  font-size: $ds-h4-font-size;
+  text-transform: uppercase;
+}
+
+dd {
+  margin: 0 0 $ds-type-margin;
+
+  dl &:last-child {
+    margin: 0;
+  }
+}

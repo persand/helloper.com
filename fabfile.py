@@ -12,7 +12,7 @@ env.remote_dir = '/var/www/helloper.com'
 def deploy(where=None):
   rsync_project(
     env.remote_dir,
-    'dist/',
+    'build/',
     ['.git', '.git*', '.DS_Store', '.sass-cache*'],
     True
   )
