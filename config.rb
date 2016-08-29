@@ -6,7 +6,6 @@ activate :syntax
 # Configure path for assets
 config[:css_dir] = 'assets/stylesheets'
 config[:js_dir] = 'assets/javascripts'
-config[:fonts_dir] = 'assets/fonts'
 config[:images_dir] = 'assets/images'
 config[:partials_dir] = 'partials'
 

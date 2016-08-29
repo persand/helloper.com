@@ -15,40 +15,40 @@
 
 @font-face {
   font-family: 'cousinebold';
-  src: font-url('cousine-bold-webfont.woff2') format('woff2'),
-       font-url('cousine-bold-webfont.woff') format('woff');
+  src: url('/media/fonts/cousine-bold-webfont.woff2') format('woff2'),
+       url('/media/fonts/cousine-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'cousinebold_italic';
-  src: font-url('cousine-bolditalic-webfont.woff2') format('woff2'),
-       font-url('cousine-bolditalic-webfont.woff') format('woff');
+  src: url('/media/fonts/cousine-bolditalic-webfont.woff2') format('woff2'),
+       url('/media/fonts/cousine-bolditalic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'cousineitalic';
-  src: font-url('cousine-italic-webfont.woff2') format('woff2'),
-       font-url('cousine-italic-webfont.woff') format('woff');
+  src: url('/media/fonts/cousine-italic-webfont.woff2') format('woff2'),
+       url('/media/fonts/cousine-italic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'cousineregular';
-  src: font-url('cousine-regular-webfont.woff2') format('woff2'),
-       font-url('cousine-regular-webfont.woff') format('woff');
+  src: url('/media/fonts/cousine-regular-webfont.woff2') format('woff2'),
+       url('/media/fonts/cousine-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'league_spartanregular';
-  src: font-url('leaguespartan-bold-webfont.woff2') format('woff2'),
-       font-url('leaguespartan-bold-webfont.woff') format('woff');
+  src: url('/media/fonts/leaguespartan-bold-webfont.woff2') format('woff2'),
+       url('/media/fonts/leaguespartan-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

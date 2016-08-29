@@ -33,7 +33,7 @@ module MetaHelpers
     if current_page.data.description
       current_page.data.description
     else
-      "@todo"
+      "Designer, developer & more…"
     end
   end
 
