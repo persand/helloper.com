@@ -1,0 +1,82 @@
+==================================================================
+https://keybase.io/per
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.helloper.com
+  * I am per (https://keybase.io/per) on keybase.
+  * I have a public key with fingerprint F47B 8F26 6897 8A95 057C  96FB E142 0B0C 37D7 7136
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.3"
+        },
+        "key": {
+            "fingerprint": "f47b8f2668978a95057c96fbe1420b0c37d77136",
+            "host": "keybase.io",
+            "key_id": "E1420B0C37D77136",
+            "uid": "b503ad03adc3587467504e56499c9000",
+            "username": "per"
+        },
+        "merkle_root": {
+            "ctime": 1418499887,
+            "hash": "ff248ba3ccd110de2a32d16f26ce0df6c1b6b6f1c80a404ba155a2f0d279c16dabf6dd86e462e78edc9990522a0f120ba02279916f9453b893b0c309b2e42fa8",
+            "seqno": 108503
+        },
+        "service": {
+            "hostname": "www.helloper.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1418499905,
+    "expire_in": 157680000,
+    "prev": "640191078a76d7051073924fb614f75a2aa84d793b564ffdb25d8275c09dce3f",
+    "seqno": 10,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - https://gpgtools.org
+
+owFVUntQVFUc5iUCiUhYM5ry2ARHwt1z3/cyEySopGUIORlBLvdxLtxg9+7eXRYB
+UUkqhHAEIqZtWhyInaGSyAc1RFE4yhQ66YDm2ORkgIFDoY1gjKt2LoMz+seZOef8
+vt93vu/7ncPhgX5h/tfSnljC/Gqn/YcmBb8d77e8WmEQVKnMkFxhEIsVaHXqOytv
+gYZkQxEsE3gHNCpqrFWVoPEtR+wCJsnggppDUa0IBYyMkTBUJulwvVlWrAVQs2mK
+zmWQSUZgZZymWY5heY4CFCNytCxAjMSBAESCkRgGI2hEWag6nI+9apjnNCsSut2k
+49NAOsFsfIgvmS8IFCB4SV8iQbEMSTMUICFFkxwncgAAHeiA2oIlG9R0qRaoFRVD
+s6aq835Fp6JXMRJjURvLMkgM7yjU5cs4yQo8IYoShgEJ4jyBSxiNDIkQSDItYgIt
+0DImsoAnASnwGEXxuAwknOFEjJZ4QaYliaUhSeOQYaEkchwHKBzngYyhAHiAIySH
+GDmSIgSWI/RMACfgkMRlnkXqHdBuVZE4wCKnlfpZcyki1HXriS0YKy0tNRbC4mIV
+OTSKqgU12jTVqYpqMaoWOp02R7Lu3Flmm4dDwdy1wGQWFKuEhvboVDEEfTwVpDrJ
+AHfbFA2aFR1BMTSL8gX6Q9CFOGkSYBwG0JgZWmIAhbYEh5OyQGOkzKBYeJ4lJQZZ
+RNORZUnAKYnFGUoEnCRCQn7UKxLKFyBOh1Jg5Z0lGjRUHgxYFeTnH+YXvChA/7d+
+YaHLHn7mNUMRD+xPf5aTHuKbSGLtQf/G7zmcc519PWrdTsnd+U1ktcu9cgN38b06
+T+b96sUxkzc3Lx/dMdy+fTToXLffisuBfbFiwnB/Tv5oYFXRO2e91YPNF04EeC+l
++B/SfMPPPuW13aiM2ZtkDlmL7zr314c+IX9858gdz2/Hb3hO7P9kdhyv2jK9W+vs
+MpmyG35646uqqaK8U77pgzUZa+xRU3X2wCOnr8XFpbecLAnbmuJ+7sj43nFTzDJP
+9C2qZrsb78qfqtr10RlL6k128d2M/Lq2rzdsSvFyU1Fu72tXQ6tfGbkdGmw0TSQ8
+iMZij/4TWdsWOZlw/ordszptbFie/aB5f3N9e9SxqIrpfR//PbT+RetQx2huZVPt
+xekymH33gHQ/95gp+/TAmfKBnuXfFZz8YvNtWW1srx9YW/tkyarq7rMFL1dfn8BX
+9vS4y/PejPwFdqzvdVvCDT+uqEm1mPkZ/uc5G50X/21r6L2hwYhPu+/U9sa1uCLj
+o70Fk9tajgfNjW5zs5+3tV1KIfwDHeny0SsN8bODHbF4aN/Y+cZ3Dx3wZF39I7e+
+dcu99pickKXr9nRSptWR4W83OH/ovdB4a2xuiSuxKdiSuDFhMN39jK/VZVk0o+Rs
+pX/PfPDS81lVVELqn1URS/tMidyXGS90ZHE5TXVpzWy5yRd46vJ/4a0z/Zni92P9
+I/u6B/4H
+=HQxW
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/per
+
+==================================================================

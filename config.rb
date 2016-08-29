@@ -29,7 +29,11 @@ set :markdown, fenced_code_blocks: true
 set :markdown_engine, :redcarpet
 
 configure :development do
-  activate :livereload
+  #activate :livereload
+  activate :gzip
+  activate :minify_html
+  activate :minify_css
+  activate :minify_javascript
   set :debug_assets, true
 end
 

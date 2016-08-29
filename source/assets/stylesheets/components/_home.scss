@@ -1,7 +1,10 @@
 .home {
+  max-width: 500px;
+  margin: 0 auto;
+
   padding: 0 10px;
 
-  @media (min-width: 600px) {
+  @media (min-height: 680px) {
     align-items: center;
     display: flex;
     height: 100vh;
@@ -9,152 +12,107 @@
     width: 100%;
   }
 
-  @media (min-width: 768px) {
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    overflow: hidden;
-    padding: 0 4vw;
-    width: 100%;
-  }
-
-  @media (min-width: 1024px) {
-    padding: 0 3vw;
-  }
-
-  &__content {
+  article {
     padding: 20px 10px;
 
     @media (min-width: 768px) {
       margin: 0 auto;
       max-width: 1040px;
-      padding: 0;
+      padding: 30px 0;
       width: 100%
     }
   }
 
-  figure {
-    text-align: center;
-
-    @media (min-width: 480px) {
-      float: right;
-      margin: 0 0 $ds-type-margin $ds-type-margin;
-    }
-
-    @media (min-width: 768px) {
-      max-width: 210px;
-    }
-
-    @media (min-width: 1024px) {
-      max-width: 240px;
-    }
-
-    img {
-      background: $ds-color-white;
-      border-radius: 50%;
-      float: none;
-      max-width: 120px;
-      padding: 6px;
-
-      @media (min-width: 480px) {
-        max-width: 140px;
-        padding: 8px;
-      }
-
-      @media (min-width: 600px) {
-        max-width: 160px;
-      }
-
-      @media (min-width: 768px) {
-        max-width: 100%;
-      }
-
-      @media (min-width: 1024px) {
-        padding: 12px;
-      }
-    }
+  h1,
+  h2 {
+    font-size: ds-rem-calc(16);
+    line-height: 1.5;
+    margin: 0;
+    text-transform: uppercase;
   }
 
-  h1 {
-    font-size: ds-rem-calc(24);
-    line-height: 1.111111;
-    margin-top: 0;
-    text-align: center;
-
-    @media (min-width: 480px) {
-      text-align: left;
-    }
-
-    @media (min-width: 600px) {
-      font-size: ds-rem-calc(36);
-    }
-
-    @media (min-width: 768px) {
-      font-size: ds-rem-calc(42);
-    }
-
-    @media (min-width: 1024px) {
-      font-size: ds-rem-calc(64);
-      letter-spacing: -0.0185em;
-      margin-bottom: 25px;
-    }
+  h2 {
+    margin-bottom: 10px;
   }
 
-  p {
-    font-size: ds-rem-calc(14);
+  h3 {
+    font-size: ds-rem-calc(12);
     margin: 0 0 10px;
-    max-width: 680px;
+    text-transform: uppercase;
+  }
 
-    @media (min-width: 600px) {
-      margin: 0 0 20px;
+  hr {
+    border: 0;
+    content: ' ';
+    height: 6px;
+
+    &:after {
+      background: rgba(0, 0, 0, .9);
+      content: ' ';
+      height: 6px;
+      margin-left: -20px;
+      position: absolute;
+      width: 40px;
     }
 
-    @media (min-width: 768px) {
-      font-size: ds-rem-calc(16);
+    &:before {
+      background: rgba(0, 0, 0, .9);
+      position: absolute;
+      content: ' ';
+      height: 6px;
+      right: -20px;
+      width: 40px;
     }
 
-    @media (min-width: 1024px) {
-      font-size: ds-rem-calc(20);
-      margin: 0 0 25px;
-    }
+    @media (min-width: 768px), (min-height: 736px) {
+      margin: 40px 0;
 
-    a {
-      border-bottom: 2px solid $ds-color-link;
-      color: $ds-color-text;
-      font-weight: $ds-font-weight-bold;
+      &:before,
+      &:after {
+        width: 60px;
+      }
 
-      @media (min-width: 768px) {
-        border-bottom-width: 3px;
+      &:after {
+        margin-left: -30px;
+      }
+
+      &:before {
+        right: -30px;
       }
     }
+  }
+
+  p, ul {
+    font-size: $ds-font-size-small;
+    line-height: 1.5;
+    margin: 0 0 10px;
   }
 
   ul {
     list-style: none;
-    margin: 0;
-    padding: 10px 0 0;
-    text-align: center;
+  }
 
-    @media (min-width: 600px) {
-      text-align: left;
+  li {
+    background: image-url('icons/rectangle.svg') 0 14px no-repeat;
+    padding: 5px 0 5px 13px;
+
+    &:last-child {
+      padding-bottom: 0;
     }
+  }
 
-    li {
-      display: inline-block;
-      margin: 0 5px 20px;
+  a {
+    border-bottom: 2px solid $ds-color-link;
+    color: $ds-color-text;
+    font-weight: $ds-font-weight-bold;
+  }
 
-      @media (min-width: 600px) {
-        margin: 0 10px 20px 0;
-      }
-    }
+  h4 {
+    @extend p;
+    opacity: .333;
+  }
 
-    a {
-      @extend %ds-button-action;
-      font-size: ds-rem-calc(14);
-
-      @media (min-width: 768px) {
-        font-size: ds-rem-calc(16);
-      }
-    }
+  &__inactive {
+    text-decoration: line-through;
   }
 }
