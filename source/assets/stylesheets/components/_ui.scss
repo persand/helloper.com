@@ -5,12 +5,13 @@
 
 %ds-button {
   background: $ds-color-dark-blue;
-  border: 2px solid darken($ds-color-dark-blue, 10);
+  border: 0;
   border-radius: 0;
   color: $ds-color-light-blue;
   cursor: pointer;
   display: inline-block;
   font-size: ds-rem-calc(14);
+  font-weight: $ds-font-weight-bold;
   line-height: 1;
   padding: 8px 10px 7px;
   position: relative;
@@ -26,9 +27,21 @@
   @extend %ds-button;
 }
 
+%ds-button--secondary {
+  background: rgba(0, 0, 0, .75);
+  color: #fff;
+
+  &:hover {
+    background: $ds-color-text;
+    color: #fff;
+  }
+}
+.button--secondary {
+  @extend %ds-button--secondary;
+}
+
 %ds-button--cta {
   background: #d9e8d7;
-  border-color: #428b36;
   color: #428b36;
 
   &:hover {

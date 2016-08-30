@@ -1,5 +1,5 @@
 <% wrap_layout :layout do %>
-  <article class="article" role="article" vocab="http://schema.org/" typeof="BlogPosting">
+  <article class="post" role="article" vocab="http://schema.org/" typeof="BlogPosting">
     <header class="article__header">
       <h1 class="article__title" property="name"><%= current_article.title %></h1>
 
@@ -20,19 +20,4 @@
       <%= yield %>
     </section>
   </article>
-
-  <section class="blog-index">
-    <% blog.articles.each do |article| %>
-      <article vocab="http://schema.org/" typeof="BlogPosting">
-        <a property="url" href="<%= article.url %>">
-          <h1 property="name" class="post__title">
-            <%= article.title %>
-          </h1>
-          <time class="post__date" property="dateCreated" pubdate>
-            <%= article.date.strftime('%b %e %Y') %>
-          </time>
-        </a>
-      </article>
-    <% end %>
-  </section>
 <% end %>
