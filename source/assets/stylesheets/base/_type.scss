@@ -121,10 +121,6 @@ hr {
   height: 20px;
   position: relative;
   &:after {
-    //content: " ✖ ✖ ✖ ";
-    //content: " · • ● • ·";
-    //content: " × × × ";
-    //content: " ※ ※ ※ ";
     content: " ⤫ ⤫ ⤫ ";
     position: absolute;
     text-align: center;

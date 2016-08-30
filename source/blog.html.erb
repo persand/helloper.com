@@ -3,9 +3,33 @@ title: "Blog"
 body_class: blog
 ---
 
-<h1>
-  Blog
-</h1>
+<header class="blog__header" id="top">
+  <div class="blog__header__content">
+    <h1 class="blog__title">Blog</h1>
+    <h2 class="blog__subtitle">
+      Ye ole typewriter.
+    </h2>
+
+    <p class="blog__description">
+      Brief updates, longer posts, plain links, code and other things…
+    </p>
+
+    <ul class="blog__nav">
+      <li>
+        <a href="http://feeds.feedburner.com/HelloPer" class="button button--secondary">
+          RSS feed
+        </a>
+      </li>
+      <li>
+        <a href="#" class="button button--secondary">
+          Tags
+        </a>
+      </li>
+    </ul>
+
+    <a class="blog__footer-link" href="#footer"><%= image_tag 'nav.svg' %></a>
+  </div>
+</header>
 
 <% blog.articles.each do |article| %>
   <article vocab="http://schema.org/" typeof="BlogPosting" class="post<% unless article.data.type == 'post' %> post--update<% end %>">
@@ -14,7 +38,13 @@ body_class: blog
     </time>
 
     <h1 property="name" class="post__title">
-      <a property="url" href="<%= article.url %>"><%= article.title %></a>
+      <% if article.data.link_url %>
+        <a class="post__external" property="url" href="<%= article.data.link_url %>">
+          <%= article.title %>
+        </a>
+      <% else %>
+        <a property="url" href="<%= article.url %>"><%= article.title %></a>
+      <% end %>
     </h1>
 
     <% if article.data.type == 'post' %>
@@ -23,7 +53,7 @@ body_class: blog
       </div>
 
       <div class="post__read">
-        <a href="<%= article.url %>" class="button button--secondary">Read more &rarr;</a>
+        <a href="<%= article.url %>" class="button button--secondary">More &rarr;</a>
       </div>
     <% else %>
       <div class="post__body">
@@ -33,6 +63,26 @@ body_class: blog
   </article>
 <% end %>
 
-<a href="http://feeds.feedburner.com/HelloPer" class="blog-index__rss" title="Subscribe to the RSS feed">
-RSS
-</a>
+<footer id="footer" class="blog__footer">
+  <div class="blog__footer__content">
+    <p><strong>Hello, I'm Per.</strong></p>
+    <p>
+       I do web projects both for a living and for fun. You're currently in my blog. Being one of the good guys I'm generous both with a <a href="http://feeds.feedburner.com/HelloPer">RSS feed</a> and a <a href="https://creativecommons.org/licenses/by-sa/4.0/" title="CC BY-SA 4.0">license</a> for all my content.
+    </p>
+    <hr>
+    <ul>
+      <li><a href="/about">About me</a></li>
+      <li><a href="/stuff">Stuff I do</a></li>
+    </ul>
+    <hr>
+    <ul>
+      <li><a href="https://twitter.com/persand">Twitter</a></li>
+      <li><a href="https://github.com/persand">GitHub</a></li>
+      <li><a href="#">LinkedIn</a></li>
+      <li><a href="https://facebook.com/permalink">Facebook</a></li>
+    </ul>
+    <hr>
+    <p>Or simply just <a href="/">go home</a>.</p>
+    <p>Thanks for stopping by!</p>
+  </div>
+</footer>
