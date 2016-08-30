@@ -5,7 +5,7 @@ module MetaHelpers
 
   def canonical_url
     host = site_host + '/'
-    path = request.path.gsub('index.html', '')
+    path = current_page.path.gsub('index.html', '')
     host + path
   end
 
@@ -33,7 +33,7 @@ module MetaHelpers
     if current_page.data.description
       current_page.data.description
     else
-      "Designer, developer & more…"
+      data.per.description
     end
   end
 
@@ -41,7 +41,7 @@ module MetaHelpers
     if current_page.data.share_image
       site_host + image_path(current_page.data.share_image)
     else
-      'https://www.helloper.com/media/images/per.jpg'
+      'https://www.helloper.com/media/images/per-16x9.jpg'
     end
   end
 
@@ -57,7 +57,7 @@ module MetaHelpers
     if current_page.data.share_image
       site_host + image_path(current_page.data.share_image)
     else
-      'https://www.helloper.com/media/images/per.jpg'
+      'https://www.helloper.com/media/images/per-16x9.jpg'
     end
   end
 
