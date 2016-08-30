@@ -152,6 +152,7 @@ PLATFORMS
 DEPENDENCIES
   builder (~> 3.2.2)
   jasmine (~> 2.2.0)
+  json
   middleman (~> 4.0.0)
   middleman-autoprefixer
   middleman-blog

@@ -11,3 +11,4 @@ gem "middleman-livereload"
 gem 'middleman-minify-html'
 #gem 'middleman-sitemap'
 gem 'redcarpet', '~> 3.2.3'
+gem 'json'

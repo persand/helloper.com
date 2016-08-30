@@ -1,0 +1,106 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Person",
+  "id": "https://www.helloper.com",
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Hyper Island",
+    "url": "https://www.hyperisland.com/community/people/per-sandstrom",
+    "sameAs": "https://www.hyperisland.com/"
+  },
+  "birthDate": "1983-10-06",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Stockholm",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Stockholm",
+      "addressCountry": "SE"
+    }
+  },
+  "description": "Driven by a chronic thirst for knowledge I design, develop and lead web projects at Kollegorna – a digital agency I run with a bunch of geniuses.",
+  "email": "mailto:per@helloper.com",
+  "familyName": "Sandström",
+  "gender": "Male",
+  "givenName": "Per",
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Stockholm",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SE"
+    }
+  },
+  "image": "https://www.helloper.com/per.jpg",
+  "jobTitle": "Owner, Designer, Devloper",
+  "makesOffer": {
+    "@type": "Offer",
+    "areaServed": "Planet Earth",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Digital design and development",
+      "url": "https://www.kollegorna.se/"
+    },
+    "offeredBy": {
+      "@type": "Organization",
+      "name": "Kollegorna",
+      "url": "https://www.kollegorna.se/"
+    }
+  },
+  "nationality": {
+    "@type": "Country",
+    "name": "Sweden",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SE"
+    }
+  },
+  "owns": [
+    {
+      "@type": "OwnershipInfo",
+      "name": "Kollegorna",
+      "description": "Digital agency building products and services.",
+      "url": "https://www.kollegorna.se/",
+      "ownedFrom": "2010-04-01"
+    },
+    {
+      "@type": "OwnershipInfo",
+      "name": "The Kong Initiative",
+      "description": "Bringing you the widest snowboards around. Free shipping to all EU countries, Norway and Switzerland!",
+      "url": "http://www.konginitiative.com",
+      "ownedFrom": "2015-03-05"
+    },
+    {
+      "@type": "OwnershipInfo",
+      "name": "GPX.io",
+      "description": "Show off your activity. Free, simple, beautiful. You don’t print and frame all your photos – but you do with those that are special. GPX.io helps you frame your most significant activities.",
+      "url": "http://gpx.io",
+      "ownedFrom": "2015-01-01"
+    },
+    {
+      "@type": "OwnershipInfo",
+      "name": "Releasefest",
+      "description": "The best source for recently released swedish digital products and services.",
+      "url": "https://www.releasefest.se",
+      "ownedFrom": "2015-11-20"
+    }
+  ],
+  "telephone": "+46702420750",
+  "url": "https://www.helloper.com",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Kollegorna",
+    "url": "https://www.kollegorna.se/"
+  },
+  "workLocation": {
+    "@type": "Place",
+    "name": "Stockholm",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Stockholm",
+      "postalCode": "11337",
+      "streetAddress": "Karlbergsvägen 52",
+      "addressCountry": "SE"
+    }
+  }
+}
