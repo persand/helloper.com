@@ -41,7 +41,7 @@ module MetaHelpers
     if current_page.data.share_image
       site_host + image_path(current_page.data.share_image)
     else
-      #site_host + image_path('og-image.jpg')
+      'https://www.helloper.com/media/images/per.jpg'
     end
   end
 
@@ -57,7 +57,7 @@ module MetaHelpers
     if current_page.data.share_image
       site_host + image_path(current_page.data.share_image)
     else
-      #site_host + image_path('twitter-card.jpg')
+      'https://www.helloper.com/media/images/per.jpg'
     end
   end
 
