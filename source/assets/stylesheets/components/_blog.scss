@@ -67,6 +67,10 @@ $blog-max-width: 768px;
 
   &__description {
     margin: 0 0 11px;
+
+    @media (max-width: $ds-breakpoint-tablet) {
+      font-size: $ds-font-size-small;
+    }
   }
 
   &__nav {
@@ -134,7 +138,12 @@ $blog-max-width: 768px;
       opacity: .2;
     }
 
-
+    p,
+    ul {
+      @media (max-width: $ds-breakpoint-tablet) {
+        font-size: $ds-font-size-small;
+      }
+    }
 
     ul {
       display: inline-block;
