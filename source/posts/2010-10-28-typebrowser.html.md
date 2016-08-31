@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "Type Browser"
 created: 1288265864

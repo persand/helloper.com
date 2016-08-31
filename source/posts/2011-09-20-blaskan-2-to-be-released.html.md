@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "Blaskan 2.0 about to hit the streets"
 created: 1316518664

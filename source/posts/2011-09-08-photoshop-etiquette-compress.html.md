@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "Photoshop Etiquette rule 41: compress your PSD files"
 created: 1315481864

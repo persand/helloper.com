@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "Swedish services for Service Links 2.x"
 created: 1258202264

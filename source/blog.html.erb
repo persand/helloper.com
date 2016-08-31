@@ -1,31 +1,61 @@
 ---
 title: "Blog"
-body_class: blog-index
+body_class: blog
 ---
 
-<h1>
-  <span>
-    <%= blog.articles.count %> posts
-  </span>
-</h1>
+<header class="blog__header" id="top">
+  <div class="blog__header__content">
+    <h1 class="blog__title">Blog</h1>
+    <h2 class="blog__subtitle">
+      Ye ole typewriter.
+    </h2>
 
-<a href="http://feeds.feedburner.com/HelloPer" class="blog-index__rss" title="Subscribe to the RSS feed">
-  <%= partial "assets/images/icons/rss.svg" %>
-</a>
+    <p class="blog__description">
+      Brief updates, longer posts, plain links, code and other things…
+    </p>
 
-<a href="/" class="blog-index__home" title="Back home">
-  <%= partial "assets/images/icons/home.svg" %>
-</a>
+    <ul class="blog__nav">
+      <li>
+        <a href="http://feeds.feedburner.com/HelloPer" class="button button--secondary">
+          RSS feed
+        </a>
+      </li>
+    </ul>
+
+    <a class="blog__footer-link" href="#footer"><%= image_tag 'nav.svg' %></a>
+  </div>
+</header>
 
 <% blog.articles.each do |article| %>
-  <article vocab="http://schema.org/" typeof="BlogPosting">
-    <a property="url" href="<%= article.url %>">
-      <h1 property="name" class="post__title">
-        <%= article.title %>
-      </h1>
-      <time class="post__date" property="dateCreated" pubdate>
-        <%= article.date.strftime('%b %e %Y') %>
-      </time>
-    </a>
+  <article vocab="http://schema.org/" typeof="BlogPosting" class="post<% unless article.data.type == 'post' %> post--update<% end %>">
+    <time class="post__date" property="dateCreated" pubdate>
+      <a href="<%= article.url %>"><%= article.date.strftime('%b %e %Y') %></a>
+    </time>
+
+    <h1 property="name" class="post__title">
+      <% if article.data.link_url %>
+        <a class="post__external" property="url" href="<%= article.data.link_url %>">
+          <%= article.title %>
+        </a>
+      <% else %>
+        <a property="url" href="<%= article.url %>"><%= article.title %></a>
+      <% end %>
+    </h1>
+
+    <% if article.data.type == 'post' %>
+      <div class="post__summary">
+        <%= article.data.summary %>
+      </div>
+
+      <div class="post__read">
+        <a href="<%= article.url %>" class="button button--secondary">More &rarr;</a>
+      </div>
+    <% else %>
+      <div class="post__body">
+        <%= article.body %>
+      </div>
+    <% end %>
   </article>
 <% end %>
+
+<%= partial "partials/blog_footer" %>

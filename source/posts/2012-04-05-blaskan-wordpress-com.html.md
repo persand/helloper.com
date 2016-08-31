@@ -1,5 +1,4 @@
 ---
-layout: post
 type: link
 title: "Blaskan on WordPress.com"
 created: 1333625864

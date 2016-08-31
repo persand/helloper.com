@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "Blaskan is now on WordPress.org"
 created: 1325421464

@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "FFFFOUND! feed parser for Drupal"
 created: 1314185864

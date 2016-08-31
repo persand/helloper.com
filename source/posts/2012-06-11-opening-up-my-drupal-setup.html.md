@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "Opening up my Drupal setup"
 created: 1339069064
