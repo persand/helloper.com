@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "New WordPress theme: Blaskan"
 created: 1302521864

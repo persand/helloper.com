@@ -20,11 +20,6 @@ body_class: blog
           RSS feed
         </a>
       </li>
-      <li>
-        <a href="#" class="button button--secondary">
-          Tags
-        </a>
-      </li>
     </ul>
 
     <a class="blog__footer-link" href="#footer"><%= image_tag 'nav.svg' %></a>
@@ -63,26 +58,4 @@ body_class: blog
   </article>
 <% end %>
 
-<footer id="footer" class="blog__footer">
-  <div class="blog__footer__content">
-    <p><strong>Hello, I'm Per.</strong></p>
-    <p>
-       I do web projects both for a living and for fun. You're currently in my blog. Being one of the good guys I'm generous both with a <a href="http://feeds.feedburner.com/HelloPer">RSS feed</a> and a <a href="https://creativecommons.org/licenses/by-sa/4.0/" title="CC BY-SA 4.0">license</a> for all my content.
-    </p>
-    <hr>
-    <ul>
-      <li><a href="/about">About me</a></li>
-      <li><a href="/stuff">Stuff I do</a></li>
-    </ul>
-    <hr>
-    <ul>
-      <li><a href="https://twitter.com/persand">Twitter</a></li>
-      <li><a href="https://github.com/persand">GitHub</a></li>
-      <li><a href="#">LinkedIn</a></li>
-      <li><a href="https://facebook.com/permalink">Facebook</a></li>
-    </ul>
-    <hr>
-    <p>Or simply just <a href="/">go home</a>.</p>
-    <p>Thanks for stopping by!</p>
-  </div>
-</footer>
+<%= partial "partials/blog_footer" %>

@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "New WordPress plugin: Bloglovin Follow"
 created: 1316691464

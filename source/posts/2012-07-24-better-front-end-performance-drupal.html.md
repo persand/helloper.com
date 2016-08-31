@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "Better front end performance in Drupal"
 created: 1343133422

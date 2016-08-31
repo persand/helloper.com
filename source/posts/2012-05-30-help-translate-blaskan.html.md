@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "Help translate Blaskan"
 created: 1338377864

@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "WordPress child theme boilerplate for Blaskan"
 created: 1329655064

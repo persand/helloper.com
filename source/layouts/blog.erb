@@ -1,23 +1,37 @@
 <% wrap_layout :layout do %>
-  <article class="post" role="article" vocab="http://schema.org/" typeof="BlogPosting">
-    <header class="article__header">
-      <h1 class="article__title" property="name"><%= current_article.title %></h1>
+  <header class="blog__header" id="top">
+    <div class="blog__header__content">
+      <h1 class="blog__title">
+        <a href="/blog">Blog</a>
+      </h1>
+      <h2 class="blog__subtitle">
+        <a href="/blog">Ye ole typewriter.</a>
+      </h2>
 
-      <time class="article__date" property="datePublished" datetime="<%= current_article.date.strftime('%Y-%m-%d') %>" pubdate>
-        <a property="url" class="u-url" href="<%= current_article.url %>">
-          <%= current_article.date.strftime('%Y-%m-%d') %>
+      <a class="blog__footer-link" href="#footer"><%= image_tag 'nav.svg' %></a>
+    </div>
+  </header>
+
+
+  <article class="post post--page<% unless current_article.data.type == 'post' %> post--update<% end %>" role="article" vocab="http://schema.org/" typeof="BlogPosting">
+    <time class="post__date" property="dateCreated" pubdate>
+      <a href="<%= current_article.url %>"><%= current_article.date.strftime('%b %e %Y') %></a>
+    </time>
+
+    <h1 property="name" class="post__title">
+      <% if current_article.data.link_url %>
+        <a class="post__external" property="url" href="<%= current_article.data.link_url %>">
+          <%= current_article.title %>
         </a>
-      </time>
+      <% else %>
+        <%= current_article.title %>
+      <% end %>
+    </h1>
 
-      by
-
-      <a rel="author" class="article__author" href="http://www.helloper.com">
-        Per
-      </a>
-    </header>
-
-    <section class="article__body" property="articleBody">
+    <section class="post__body" property="articleBody">
       <%= yield %>
     </section>
   </article>
+
+  <%= partial "partials/blog_footer" %>
 <% end %>

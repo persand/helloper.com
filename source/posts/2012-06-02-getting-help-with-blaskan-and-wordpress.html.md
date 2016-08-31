@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "Getting help with Blaskan and WordPress"
 created: 1338637064

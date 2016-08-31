@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "Automate your love life with Flattrstar"
 created: 1360840432

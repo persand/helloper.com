@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "Who wants lunch?"
 created: 1322570264

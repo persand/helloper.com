@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "Positive posters 2010 – Full of optimism"
 created: 1282045064

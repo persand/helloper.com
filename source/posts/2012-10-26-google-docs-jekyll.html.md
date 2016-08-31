@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "Google Docs and Jekyll playing nicely together"
 created: 1350933821

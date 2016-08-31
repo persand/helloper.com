@@ -18,12 +18,9 @@ activate :blog do |blog|
   blog.default_extension = '.md'
   blog.new_article_template = 'article.erb'
   blog.layout = "blog"
-  blog.paginate = true
   blog.permalink = "blog/{year}/{month}/{title}/index.html"
   blog.sources = "posts/{year}-{month}-{day}-{title}.html"
 end
-
-
 
 page "/feed.xml", :layout => false
 

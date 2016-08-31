@@ -1,5 +1,4 @@
 ---
-layout: post
 type: post
 title: "Drupal module for Unit PNG Fix"
 created: 1258547864

@@ -1,5 +1,6 @@
 $ds-breakpoint-tablet: 768px;
 $ds-breakpoint-laptop: 1024px;
+$ds-breakpoint-desktop: 1280px;
 
 $blog-max-width: 768px;
 
@@ -7,15 +8,14 @@ $blog-max-width: 768px;
   &__header {
 
     &__content {
-      //background: rgba(0, 0, 0, .1);
       max-width: $blog-max-width;
       margin: 5px;
       padding: 15px;
       position: relative;
 
       @media (min-width: $ds-breakpoint-tablet) {
-        margin: 40px auto 40px;
-        padding: 0 0 ds-rem-calc(50px);
+        margin: 40px;
+        padding: 0;
       }
 
       @media (min-width: $ds-breakpoint-laptop) {
@@ -24,7 +24,7 @@ $blog-max-width: 768px;
       }
 
       &:after {
-        @media (min-width: $ds-breakpoint-tablet) {
+        @media (min-width: $ds-breakpoint-laptop) {
           background: rgba(0, 0, 0, .75);
           bottom: -67px;
           content: ' ';
@@ -47,6 +47,10 @@ $blog-max-width: 768px;
     font-size: 36px;
     line-height: 1.111;
     margin: 0 0 15px;
+
+    a {
+      color: inherit;
+    }
   }
 
   &__subtitle {
@@ -54,8 +58,11 @@ $blog-max-width: 768px;
     font-family: $ds-font-family;
     font-size: $ds-font-size-body-copy;
     line-height: 1.4;
-
     margin: 0;
+
+    a {
+      color: inherit;
+    }
   }
 
   &__description {
@@ -88,15 +95,22 @@ $blog-max-width: 768px;
   &__footer {
     background: rgba(0, 0, 0, .85);
     color: #fff;
-    height: 100vh;
     margin-top: 20px;
     text-align: center;
 
+    @media (min-width: $ds-breakpoint-tablet) {
+      margin-top: 10px;
+    }
+
+    @media (min-width: $ds-breakpoint-laptop) {
+      margin-top: 20px;
+    }
 
     &__content {
       margin: 0 auto;
       max-width: $blog-max-width;
       padding: 15px;
+      position: relative;
 
       @media (min-width: $ds-breakpoint-tablet) {
         padding: 30px;
@@ -105,15 +119,22 @@ $blog-max-width: 768px;
       @media (min-width: $ds-breakpoint-laptop) {
         padding: 40px;
       }
+
+      @media (min-width: $ds-breakpoint-desktop) {
+        min-height: 100vh;
+      }
     }
 
     p {
+      line-height: 1.8;
       margin-bottom: 10px;
     }
 
     hr {
       opacity: .2;
     }
+
+
 
     ul {
       display: inline-block;
@@ -167,29 +188,21 @@ $blog-max-width: 768px;
   position: relative;
 
   @media (min-width: $ds-breakpoint-tablet) {
-    margin: 40px auto 40px;
+    margin: 10px;
     padding: 30px;
   }
 
   @media (min-width: $ds-breakpoint-laptop) {
     margin: 60px auto 120px;
     padding: 40px;
-  }
 
-  &:after {
-    @media (min-width: $ds-breakpoint-tablet) {
+    &:after {
       background: rgba(0, 0, 0, .75);
       bottom: -67px;
       content: ' ';
       height: 13px;
       left: -60px;
       position: absolute;
-      width: 120px;
-    }
-
-    @media (min-width: $ds-breakpoint-laptop) {
-      height: 13px;
-      left: -60px;
       width: 120px;
     }
   }
@@ -212,6 +225,10 @@ $blog-max-width: 768px;
 
     a {
       color: $ds-color-dark;
+    }
+
+    @media (min-width: 600px) {
+      font-size: ds-rem-calc(28);
     }
   }
 
@@ -240,12 +257,16 @@ $blog-max-width: 768px;
   &__date {
     color: $ds-color-light-gray;
     display: block;
-    font-size: ds-rem-calc(14);
+    font-size: $ds-font-size-small;
     margin: 0 0 4px;
 
     a {
       color: inherit;
       cursor: auto;
+    }
+
+    @media (min-width: $ds-breakpoint-tablet) {
+      font-size: $ds-font-size-body-copy;
     }
   }
 
@@ -263,17 +284,19 @@ $blog-max-width: 768px;
 
   &__body,
   &__summary {
-    font-size: ds-rem-calc(14);
+    @media (max-width: 600px) {
+      font-size: $ds-font-size-small;
 
-    figure,
-    p,
-    ul,
-    ol {
-      font-size: ds-rem-calc(14);
-      margin-bottom: 10px;
+      figure,
+      p,
+      ul,
+      ol {
+        font-size: $ds-font-size-small;
+        margin-bottom: 10px;
 
-      &:last-child {
-        margin-bottom: 0;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -286,10 +309,23 @@ $blog-max-width: 768px;
   }
 }
 
+.post--page {
+  &:after {
+    display: none;
+  }
+
+  .post__title {
+    margin-bottom: 25px;
+
+    @media (min-width: $ds-breakpoint-tablet) {
+      font-size: $ds-h1-font-size;
+    }
+  }
+}
+
 .post--update {
   .post__title {
     font-family: $ds-font-family;
-    //font-size: $ds-font-size-body-copy;
     font-size: ds-rem-calc(14);
     font-weight: $ds-font-weight-bold;
     margin-bottom: 10px;
