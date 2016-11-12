@@ -1,7 +1,8 @@
 ---
 type: post
 title: "So long and godspeed, Blaskan"
-meta_description: "Five and a half years ago I released one of the first free high quality responsive WordPress themes: Blaskan. Now it has found a new home."
+description: "Five and a half years ago I released one of the first free high quality responsive WordPress themes: Blaskan. Now it has found a new home."
+share_image: "/media/images/posts/2016/blaskan-varvet-kristoffer-triumf.jpg"
 summary: "Five and a half years ago I released one of the first free high quality responsive WordPress themes: Blaskan. Now it has found a new home."
 ---
 
