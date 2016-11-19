@@ -4,8 +4,59 @@ layout: page
 body_class: blog
 ---
 
+<header class="blog__header" id="top">
+  <div class="blog__header__content">
+    <h1 class="blog__title">Per Sandström</h1>
+    <h2 class="blog__subtitle">
+      Digital designer, developer, web enthusiast, maker, dad…
+    </h2>
+
+    <p class="blog__description">
+      Stockholm, Sweden
+    </p>
+
+    <ul class="blog__nav">
+      <li>
+        <a href="mailto:per@helloper.com" class="button button--secondary">
+          E-mail
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/persand" class="button button--secondary">
+          Twitter
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/httpsand" class="button button--secondary">
+          Instagram
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/persand" class="button button--secondary">
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://facebook.com/permalink" class="button button--secondary">
+          Facebook
+        </a>
+      </li>
+      <li>
+        <a href="http://www.linkedin.com/in/psandstrom" class="button button--secondary">
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="https://keybase.io/per" class="button button--secondary">
+          Keybase
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
 <section class="post">
-  <h1 class="post__title">About me</h1>
+  <h1 class="post__title">In brief</h1>
   <%= partial "partials/about/intro" %>
 </section>
 
@@ -20,18 +71,8 @@ body_class: blog
 </section>
 
 <section class="post">
-  <h2 class="post__title">Affiliations</h2>
-  <%= partial "partials/about/affiliations" %>
-</section>
-
-<section class="post">
   <h2 class="post__title">Academic achievements</h2>
   <%= partial "partials/about/academic_achievements" %>
-</section>
-
-<section class="post">
-  <h2 class="post__title">What people of high importance are saying about me</h2>
-  <%= partial "partials/about/people_of_high_importance" %>
 </section>
 
 <section class="post">
@@ -40,6 +81,13 @@ body_class: blog
 </section>
 
 <section class="post">
-  <h2 class="post__title">My homepage</h2>
+  <h2 class="post__title">About this homepage</h2>
   <%= partial "partials/about/homepage" %>
 </section>
+
+<p class="t-center">
+  <br><br>
+  <a href="/" class="button button--secondary">
+    Home
+  </a>
+</p>

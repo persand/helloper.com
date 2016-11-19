@@ -1,1 +1,3 @@
-Is served by Middleman on a Digital Ocean VPS with [source code on GitHub](https://github.com/persand/helloper).
+Built with Middleman [(source)](https://github.com/persand/helloper) using the [Kollegorna Middleman Boilerplate](https://github.com/kollegorna/middleman-boilerplate).
+
+Hosted on Digital Ocean.

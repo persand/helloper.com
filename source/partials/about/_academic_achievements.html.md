@@ -1,19 +1,20 @@
-I dropped out of / Still struggling to finish:
+**I dropped out of / Still struggling to finish**
 
-Blackeberg High School
-Natual Science program
-1999 –
-
-Hyper Island
+Hyper Island   
+2002 –   
 Digital Media Creative
-2002 –
 
-I’ve been able to complete:
+Blackeberg High School  
+1999 –  
+Natual Science program    
 
-Tappströmsskolan
-Junior high school
-1996 – 1999
+**I’ve been able to complete**
 
-Närlundaskolan
+Tappströmsskolan   
+1996 – 1999   
+Junior high school  
+
+Närlundaskolan  
+1990 – 1996  
 Lower and intermediary school
-1990 – 1996
+
