@@ -1,7 +1,7 @@
 activate :sprockets
 activate :autoprefixer
 activate :directory_indexes
-activate :syntax
+activate :syntax, :line_numbers => true
 
 # Configure path for assets
 config[:css_dir] = 'assets/stylesheets'
@@ -24,7 +24,7 @@ end
 
 page "/feed.xml", :layout => false
 
-set :markdown, fenced_code_blocks: true
+set :markdown, fenced_code_blocks: true, :smartypants => true
 set :markdown_engine, :redcarpet
 
 configure :development do
