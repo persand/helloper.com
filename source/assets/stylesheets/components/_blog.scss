@@ -344,3 +344,11 @@ $blog-max-width: 768px;
     }
   }
 }
+
+.blog--about {
+  background: #fefefe;
+
+  .post {
+    background: none;
+  }
+}
