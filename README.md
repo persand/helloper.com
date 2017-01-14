@@ -1,4 +1,4 @@
-This is the source of [helloper.com](https://www.helloper.com).
+This is the source of [helloper.com](https://www.helloper.com). It's based on the [Kollegorna Middleman Boilerplate](https://github.com/kollegorna/middleman-boilerplate).
 
 ## Local setup
 
@@ -7,26 +7,30 @@ This is the source of [helloper.com](https://www.helloper.com).
 3. Clone repository
 4. ``$ npm install && gulp install``
 
-### Gulp commands
+## Deployment
 
-The following gulp commands are at your service…
+The master branch is automatically deployed to my [Digital Ocean VPS](https://m.do.co/c/5027f75bc292) using [Codeship](https://www.codeship.com).
 
-``$ gulp middleman``
+## Gulp commands
 
-Runs bundle exec middleman
+    $ gulp install
 
-``$ gulp install``
+Runs bundle install, bower install and bower update.
 
-Runs bundle install and bower install
+    $ gulp middleman
 
-``$ gulp serve``
+Runs bundle exec middleman.
 
-Builds Middleman and create a BrowserSync server that watches all changes
+    $ gulp serve
 
-``$ gulp build``
+Builds Middleman and create a BrowserSync server that watches all changes.
 
-Builds Middleman
+    $ gulp build
 
-``$ gulp deploy``
+Builds Middleman.
 
-Builds Middleman and deploys with rsync
+## Writing posts
+
+    $ bundle exec middleman article NAME
+
+Will generate a file in source/posts.
