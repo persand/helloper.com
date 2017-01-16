@@ -5,7 +5,7 @@ module MetaHelpers
 
   def canonical_url
     host = site_host + '/'
-    path = current_page.path.gsub('index.html', '')
+    path = current_page.url.gsub('index.html', '')
     host + path
   end
 
