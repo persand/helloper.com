@@ -39,7 +39,7 @@ module MetaHelpers
 
   def og_image
     if current_page.data.share_image
-      site_host + image_path(current_page.data.share_image)
+      "https://www.helloper.com#{current_page.data.share_image}"
     else
       'https://www.helloper.com/media/images/per-16x9.jpg'
     end
@@ -55,7 +55,7 @@ module MetaHelpers
 
   def twitter_image
     if current_page.data.share_image
-      site_host + image_path(current_page.data.share_image)
+      "https://www.helloper.com#{current_page.data.share_image}"
     else
       'https://www.helloper.com/media/images/per-16x9.jpg'
     end
