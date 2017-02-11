@@ -1,4 +1,6 @@
-**I dropped out of / Still struggling to finish**
+## Academic achievements
+
+#### Dropped out of:
 
 Hyper Island   
 2002 –   
@@ -8,7 +10,7 @@ Blackeberg High School
 1999 –  
 Natual Science program    
 
-**I’ve been able to complete**
+#### Completed:
 
 Tappströmsskolan   
 1996 – 1999   

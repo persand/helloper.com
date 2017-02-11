@@ -1,93 +1,131 @@
 ---
 title: About Per Sandström
 layout: page
-body_class: blog blog--about
 ---
 
-<header class="blog__header" id="top">
-  <div class="blog__header__content">
-    <h1 class="blog__title">Per Sandström</h1>
-    <h2 class="blog__subtitle">
-      Digital designer, developer, web enthusiast, maker, dad…
-    </h2>
+<header>
+  <h1>Per Sandström</h1>
+  <h2>
+    Digital designer, developer, web enthusiast, maker, dad…
+  </h2>
+  <p>Stockholm, Sweden</p>
 
-    <p class="blog__description">
-      Stockholm, Sweden
-    </p>
-
-    <ul class="blog__nav">
-      <li>
-        <a href="mailto:per@helloper.com" class="button button--secondary">
-          E-mail
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/persand" class="button button--secondary">
-          Twitter
-        </a>
-      </li>
-      <li>
-        <a href="https://instagram.com/httpsand" class="button button--secondary">
-          Instagram
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/persand" class="button button--secondary">
-          GitHub
-        </a>
-      </li>
-      <li>
-        <a href="https://facebook.com/permalink" class="button button--secondary">
-          Facebook
-        </a>
-      </li>
-      <li>
-        <a href="http://www.linkedin.com/in/psandstrom" class="button button--secondary">
-          LinkedIn
-        </a>
-      </li>
-      <li>
-        <a href="https://keybase.io/per" class="button button--secondary">
-          Keybase
-        </a>
-      </li>
-    </ul>
-  </div>
+  <ul class="t-list-inline">
+    <li><a href="mailto:per@helloper.com" class="button button--secondary"> E-mail </a>
+    </li> <li> <a href="https://twitter.com/persand" class="button button--secondary"> Twitter </a> </li> <li> <a href="https://instagram.com/httpsand" class="button button--secondary"> Instagram </a> </li> <li> <a href="https://github.com/persand" class="button button--secondary"> GitHub </a> </li> <li> <a href="https://facebook.com/permalink" class="button button--secondary"> Facebook </a> </li> <li> <a href="https://www.linkedin.com/in/psandstrom" class="button button--secondary"> LinkedIn </a> </li> <li> <a href="https://keybase.io/per" class="button button--secondary"> Keybase </a> </li> </ul>
 </header>
 
-<section class="post">
-  <h1 class="post__title">In brief</h1>
+<section class="box box--no-divider t-lead">
   <%= partial "partials/about/intro" %>
 </section>
 
-<section class="post">
-  <h2 class="post__title">Current work situation</h2>
-  <%= partial "partials/about/work_current" %>
+<section id="work" class="box box--transparent">
+  <h2>Current work situation:</h2>
+
+  <h2>Founder &amp; Head of Production at Kollegorna</h2>
+
+  <h3>A digital agency born in 2010 building products and services.</h3>
+
+  <hr>
+
+  <div class="page__2col">
+    <div class="page__2col_column">
+      <h4>Services:</h4>
+
+      <ul>
+        <li>Concepts</li>
+        <li>Strategy</li>
+        <li>UX and UI design</li>
+        <li>Development</li>
+        <li>Brand Identities</li>
+      </ul>
+    </div>
+
+    <div class="page__2col_column">
+      <h4>Tech stack:</h4>
+
+      <ul>
+        <li>Ruby on Rails</li>
+        <li>Go</li>
+        <li>Node.js</li>
+        <li>Ember.js</li>
+        <li>WordPress <small>(Trellis, Bedrock &amp; Sage)</small></li>
+      </ul>
+    </div>
+  </div>
+
+  <h4>Clients:</h4>
+
+  <p>Privately held and listed companies, startups, organisations, NGOs and government authorities. Our mothership is in Stockholm, but as we’re a distributed agency we’re spread from Santo Domingo in the west to Plovdiv in the east.</p>
+
+  <h4>Links:</h4>
+
+  <ul class="t-list-inline">
+  <li><a href="https://www.kollegorna.se/sv">Hej!</a><br></li>
+  <li><a href="https://www.kollegorna.se/en">Hello!</a><br></li>
+  <li><a href="https://www.kollegorna.se/en/careers">Careers</a><br></li>
+  <li><a href="https://labs.kollegorna.se">Labs</a><br></li>
+  <li><a href="https://github.com/kollegorna">GitHub</a><br></li>
+  <li><a href="https://facebook.com/kollegorna">Facebook</a><br></li>
+  <li><a href="https://twitter.com/kollegorna">Twitter</a><br></li>
+  </ul>
+
+  <hr>
+
+  <h2>Own ventures</h2>
+
+  <p>As if building things for clients wasn’t enough we also do own projects. The most prominent of those are…</p>
+
+  <p><a href="https://www.releasefest.se">Releasefest</a><br>
+  A community driven website where we celebrate swedish digital products and services. Somewhat like ProductHunt but with just swedish sites, services, apps, campaigns and more.</p>
+
+  <p><a href="http://www.konginitiative.com">The Kong Initiative</a><br>
+  Getting your hands on extra wide snowboards has always been hard for europeans. We aim to change that by specializing in only the widest boards on the market. We ship to the entire EU as well as Norway and Switzerland.</p>
+
+  <p><a href="http://gpx.io">GPX.io</a><br>
+  Show off your activity in a simple way on a map. You don’t print and frame all your photos – but you do with those that are special. GPX.io helps you frame your most significant activities.</p>
 </section>
 
-<section class="post">
-  <h2 class="post__title">Previous jobs</h2>
+<section id="work-previous" class="box box--transparent">
   <%= partial "partials/about/work_previous" %>
 </section>
 
-<section class="post">
-  <h2 class="post__title">Academic achievements</h2>
-  <%= partial "partials/about/academic_achievements" %>
+<section id="academic-achievements" class="box box--transparent">
+  <h2>Academic achievements</h2>
+
+  <hr>
+
+  <div class="page__2col">
+    <div class="page__2col_column">
+      <h6>Dropped out of:</h6>
+
+      <p>Hyper Island<br>
+      2002 –<br>
+      Digital Media Creative</p>
+
+      <p>Blackeberg High School<br>
+      1999 –<br>
+      Natual Science program    </p>
+    </div>
+
+    <div class="page__2col_column">
+      <h6>Completed:</h6>
+
+      <p>Tappströmsskolan<br>
+      1996 – 1999<br>
+      Junior high school  </p>
+
+      <p>Närlundaskolan<br>
+      1990 – 1996<br>
+      Lower and intermediary school</p>
+    </div>
+  </div>
 </section>
 
-<section class="post">
-  <h2 class="post__title">How I do my computing</h2>
+<section id="computing" class="box box--transparent">
   <%= partial "partials/about/computing" %>
 </section>
 
-<section class="post">
-  <h2 class="post__title">About this homepage</h2>
+<section id="homepage" class="box box--transparent">
   <%= partial "partials/about/homepage" %>
 </section>
-
-<p class="t-center">
-  <br><br>
-  <a href="/" class="button button--secondary">
-    Home
-  </a>
-</p>

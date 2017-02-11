@@ -35,11 +35,35 @@
 // -----------------------------------------------------------------------------
 
 %ds-t-lead {
-  font-size: ds-rem-calc(20);
-  line-height: 1.8;
+  font-size: ds-rem-calc(22);
 }
 .t-lead {
   @extend %ds-t-lead;
+}
+
+%ds-link-nav {
+  color: $ds-color-text;
+  text-decoration: underline;
+
+  &:hover {
+    background: rgba($ds-color-link, .5);
+  }
+}
+.t-link-nav {
+  @extend %ds-link-nav;
+}
+
+%ds-link-text {
+  box-shadow: inset 0 -5px 0 rgba($ds-color-link, .5);
+  color: $ds-color-text;
+  font-weight: $ds-font-weight-bold;
+
+  &:hover {
+    box-shadow: inset 0 -5px 0 rgba($ds-color-link, .9);
+  }
+}
+.t-link-text {
+  @extend %ds-link-text;
 }
 
 // -----------------------------------------------------------------------------

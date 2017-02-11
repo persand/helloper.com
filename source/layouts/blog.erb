@@ -1,26 +1,14 @@
-<% wrap_layout :layout do %>
-  <header class="blog__header" id="top">
-    <div class="blog__header__content">
-      <h1 class="blog__title">
-        <a href="/blog">Blog</a>
-      </h1>
-      <h2 class="blog__subtitle">
-        <a href="/blog">Ye ole typewriter.</a>
-      </h2>
+<% wrap_layout :layout_blog do %>
+  <%= partial "partials/blog/header" %>
 
-      <a class="blog__footer-link" href="#footer"><%= image_tag 'nav.svg' %></a>
-    </div>
-  </header>
-
-
-  <article class="post post--page<% unless current_article.data.type == 'post' %> post--update<% end %>" role="article" vocab="http://schema.org/" typeof="BlogPosting">
-    <time class="post__date" property="dateCreated" pubdate>
+  <article class="post post--page<% unless current_article.data.type == 'post' %> post--update<% end %>">
+    <time>
       <a href="<%= current_article.url %>"><%= current_article.date.strftime('%b %e %Y') %></a>
     </time>
 
-    <h1 property="name" class="post__title">
+    <h1>
       <% if current_article.data.link_url %>
-        <a class="post__external" property="url" href="<%= current_article.data.link_url %>">
+        <a href="<%= current_article.data.link_url %>">
           <%= current_article.title %>
         </a>
       <% else %>
@@ -28,10 +16,8 @@
       <% end %>
     </h1>
 
-    <section class="post__body" property="articleBody">
-      <%= yield %>
-    </section>
+    <%= yield %>
   </article>
 
-  <%= partial "partials/blog_footer" %>
+  <%= partial "partials/blog/footer" %>
 <% end %>

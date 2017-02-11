@@ -1,0 +1,47 @@
+nav {
+  ol {
+    color: $ds-color-gray;
+
+    li {
+      margin-bottom: 16px;
+    }
+
+    ol {
+      margin-bottom: 0;
+      list-style: none;
+      position: relative;
+
+      li {
+        display: inline;
+        margin-bottom: 0;
+
+        &:after {
+          content: ', ';
+        }
+
+        &:nth-last-child(2):after {
+          content: ' & ';
+        }
+
+        &:last-child:after {
+          content: '';
+        }
+      }
+    }
+  }
+
+  li {
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    a {
+      @extend %ds-link-nav;
+    }
+  }
+}
+
+// Navigation on pages other than index
+.site-nav {
+  padding-bottom: 40px;
+}

@@ -1,8 +1,11 @@
-**Founder & Head of Production at Kollegorna**  
+## Current work situation: 
+## Founder & Head of Production at Kollegorna
 
-A digital agency born in 2010 building products and services.
+### A digital agency born in 2010 building products and services.
 
-**We primarily do**
+---
+
+#### Services:
 
 - Concepts
 - Strategy
@@ -10,31 +13,31 @@ A digital agency born in 2010 building products and services.
 - Development
 - Brand Identities
 
-**Tech stack**
+#### Tech stack:
 
-- Ruby on Rails (most of the stuff)
+- Ruby on Rails
 - Go
 - Node.js
 - Ember.js
-- WordPress (Trellis / Bedrock / Sage)
+- WordPress <small>(Trellis, Bedrock & Sage)</small>
 
-…all depending on the requirements of each project.
+#### Clients:
 
-**For**
+Privately held and listed companies, startups, organisations, NGOs and government authorities. Our mothership is in Stockholm, but as we’re a distributed agency  we’re spread from Santo Domingo in the west to Plovdiv.
 
-Among our clients are both privately held and listed companies, startups, organisations, NGOs and government authorities. Our mothership is in Stockholm, but as we’re a distributed agency  we’re spread from Santo Domingo in the west to Plovdiv.
+#### Links:
 
-**Links**
-
-- [Homepage (Swedish)](https://www.kollegorna.se)  
-- [Homepage (English)](https://www.kollegorna.se/english)  
-- [What it’s like working at Kollegorna](https://www.kollegorna.se/jobs)  
+- [Hej!](https://www.kollegorna.se/sv)  
+- [Hello!](https://www.kollegorna.se/en)  
+- [Careers](https://www.kollegorna.se/en/careers)  
 - [Labs](https://labs.kollegorna.se)  
 - [GitHub](https://github.com/kollegorna)  
 - [Facebook](https://facebook.com/kollegorna)  
 - [Twitter](https://twitter.com/kollegorna)  
 
-**Own ventures**
+---
+
+## Own ventures 
 
 As if building things for clients wasn’t enough we also do own projects. The most prominent of those are…
 
