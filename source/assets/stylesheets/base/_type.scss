@@ -28,12 +28,12 @@ a:link {
 
 %h1-6 {
   color: $ds-color-heading;
-  font-family: $ds-font-family-headings;
-  font-weight: $ds-font-weight-bold;
+  font-weight: $ds-font-weight;
   line-height: $ds-headings-line-height;
-  margin: 1.2rem 0 1rem;
+  margin: 0 0 1rem;
 
   a {
+    color: inherit;
     font-weight: inherit;
   }
 }
@@ -52,6 +52,17 @@ h1 {
 }
 h2 {
   @extend %h2;
+
+  + h2 {
+    //color: $ds-color-gray;
+    margin-top: -1rem;
+  }
+
+  + h3 {
+    color: $ds-color-gray;
+    font-size: $ds-h2-font-size;
+    margin-top: -1rem;
+  }
 }
 
 %h3 {
@@ -65,10 +76,10 @@ h3 {
 
 %h4 {
   @extend %h1-6;
+  color: $ds-color-text;
   font-family: $ds-font-family;
   font-size: $ds-h4-font-size;
-  margin-bottom: 0;
-  text-transform: uppercase;
+  margin: 0 0 $ds-type-margin;
 }
 h4 {
   @extend %h4;
@@ -89,8 +100,8 @@ h5 {
   @extend %h1-6;
   font-family: $ds-font-family;
   font-size: $ds-h6-font-size;
-  font-weight: $ds-font-weight;
-  margin-bottom: 0;
+  font-weight: $ds-font-weight-bold;
+  margin: 0 0 $ds-type-margin;
   text-transform: uppercase;
 }
 h6 {
@@ -102,14 +113,6 @@ h6 {
 // Body text
 // -----------------------------------------------------------------------------
 
-p,
-blockquote,
-ol,
-ul,
-dl {
-  font-size: $ds-font-size-body-copy;
-}
-
 p {
   margin: 0 0 $ds-type-margin;
 }
@@ -117,14 +120,20 @@ p {
 hr {
   @extend %ds-clearfix;
   border: 0;
-  margin: $ds-type-margin 0;
+  margin: 0 0 $ds-type-margin;
+  max-width: 100%;
   height: 20px;
+  overflow: hidden;
   position: relative;
   &:after {
-    content: " ⤫ ⤫ ⤫ ";
+    color: rgba(black, .3);
+    content: '— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — ';
     position: absolute;
-    text-align: center;
     width: 100%;
+  }
+
+  @media (min-width: $ds-breakpoint-tablet) {
+    margin: $ds-type-margin 0 $ds-type-margin*2;
   }
 }
 
@@ -134,7 +143,7 @@ q {
 }
 
 blockquote {
-  font-size: ds-rem-calc(30);
+  font-size: ds-rem-calc(22);
   font-style: italic;
   font-weight: $ds-font-weight;
   line-height: 1.45833333;
@@ -147,6 +156,14 @@ blockquote {
 
   p:last-child {
     margin-bottom: 0;
+  }
+}
+
+time {
+  color: $ds-color-light-gray;
+
+  a {
+    color: inherit;
   }
 }
 
@@ -281,25 +298,33 @@ address {
 // Lists
 // -----------------------------------------------------------------------------
 
+ol,
 ul,
-ol {
-  list-style: disc inside;
+dl {
   margin: 0 0 $ds-type-margin;
   padding: 0;
 }
 
+ul {
+  list-style: disc inside;
+
+  @media (min-width: $ds-breakpoint-laptop) {
+    list-style: disc outside;
+  }
+}
+
 ol {
-  list-style: decimal inside;
+  list-style: decimal-leading-zero inside;
+
+  @media (min-width: $ds-breakpoint-laptop) {
+    list-style: decimal-leading-zero outside;
+  }
 }
 
 li ul,
 li ol {
-  margin-#{$ds-float}: $ds-type-margin;
+  margin-#{$ds-float}: ds-rem-calc(43px);
   margin-bottom: 0;
-}
-
-dl {
-  margin: 0 0 $ds-type-margin;
 }
 
 dt {

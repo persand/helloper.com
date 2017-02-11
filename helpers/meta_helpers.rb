@@ -18,14 +18,14 @@ module MetaHelpers
   end
 
   def page_title
-    separator = ' | '
+    separator = ''
     title = ''
 
     if current_page.path == 'index.html'
       title += current_page.data.title
     else
       title += current_page.data.title + separator if current_page.data.title
-      title << 'Per Sandström'
+      #title << 'Per Sandström'
     end
   end
 

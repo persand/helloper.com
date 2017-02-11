@@ -1,0 +1,47 @@
+<% if current_page.url == '/' %>
+<nav role="navigation"<% unless current_page.url == '/' %> class="site-nav"<% end %>>
+  <% unless current_page.url == '/' %>
+    <hr>
+    <h2>On this website</h2>
+  <% end %>
+  <ol>
+    <% unless current_page.url == '/' %>
+      <li><a href="/">Index</a>
+    <% end %>
+    <li><a href="/about">About me</a></li>
+    <li>
+      <a href="/blog">Rarely updated blog</a>
+      <ol>
+        <li>Top picks: <a href="/blog/2017/01/vcrss/">Raspberry Pi based VCR</a></li>
+        <li><a href="/blog/2016/11/so-long-blaskan/">So long and godspeed, Blaskan</a></li>
+      </ol>
+    </li>
+    <!--<li>Misc stuff
+      <ol>
+        <li><a href="/hot">What's hot</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/api">API</a></li>
+        <li><a href="/links">Links</a></li>
+      </ol>
+      <% unless current_page.url == '/' %>
+        <h2>Elsewhere</h2>
+      <% end %>
+    </li>-->
+    <li>
+      <% if current_page.url == '/' %>
+        Elsewhere
+      <% end %>
+
+      <ol>
+        <li><a href="https://github.com/persand">GitHub</a></li>
+        <li><a href="https://facebook.com/permalink">Facebook</a></li>
+        <li><a href="https://keybase.io/per">Keybase</a></li>
+        <li><a href="https://pinboard.in/u:per">Pinboard</a></li>
+        <li><a href="https://www.linkedin.com/in/psandstrom">LinkedIn</a></li>
+        <li><a href="http://stackexchange.com/users/63883/per-sandstr%C3%B6m">StackExchange</a></li>
+        <li><a href="https://twitter.com/persand">Twitter</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+<% end %>

@@ -9,22 +9,39 @@
 }
 
 html {
-  direction: ltr;
-  text-rendering: optimizeLegibility;
-}
-
-body {
   @include ds-font-smoothing;
   background: $ds-color-background;
   color: $ds-color-text;
+  direction: ltr;
   font-family: $ds-font-family;
-  font-size: $ds-rem-base;
+  font-size: ds-rem-calc(15px);
   font-style: $ds-font-style;
   font-weight: $ds-font-weight;
   line-height: $ds-line-height;
-  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+
+  @include breakpoint($ds-breakpoint-iphone6plus) {
+    font-size: ds-rem-calc($ds-rem-base);
+  }
+}
+
+body {
+  background: $ds-color-background;
   overflow-y: scroll;
-  padding: 0;
   position: relative;
   -webkit-overflow-scrolling: touch;
+
+  &:not([class]) {
+    @extend %ds-page-padding;
+    max-width: $ds-page-max-width;
+    margin: 0 auto;
+
+    header {
+      @extend %ds-header;
+    }
+
+    section {
+      @extend %ds-section;
+    }
+  }
 }

@@ -1,4 +1,34 @@
 // -----------------------------------------------------------------------------
+// Breakpoints
+// -----------------------------------------------------------------------------
+
+$ds-breakpoint-iphone5-width: 320px;
+$ds-breakpoint-iphone5-height: 568px;
+$ds-breakpoint-iphone5: (min-width $ds-breakpoint-iphone5-width);
+
+$ds-breakpoint-iphone6-width: 375px;
+$ds-breakpoint-iphone6-height: 667px;
+$ds-breakpoint-iphone6: (min-width $ds-breakpoint-iphone6-width);
+
+$ds-breakpoint-iphone6plus-width: 414px;
+$ds-breakpoint-iphone6plus-height: 736px;
+$ds-breakpoint-iphone6plus: (min-width $ds-breakpoint-iphone6plus-width);
+
+$ds-breakpoint-ipad-width: 768px;
+$ds-breakpoint-ipad-height: 1024px;
+$ds-breakpoint-ipad: (min-width $ds-breakpoint-ipad-width);
+
+$ds-breakpoint-ipadpro-width: 1024px;
+$ds-breakpoint-ipadpro-height: 1366px;
+$ds-breakpoint-ipadpro: (min-width $ds-breakpoint-ipadpro-width);
+
+$ds-breakpoint-smartphone-large: $ds-breakpoint-iphone6plus-width;
+$ds-breakpoint-tablet: $ds-breakpoint-ipad-width;
+$ds-breakpoint-laptop: 1024px;
+$ds-breakpoint-desktop: 1280px;
+$ds-breakpoint-huge: 1600px;
+
+// -----------------------------------------------------------------------------
 // Directions
 // -----------------------------------------------------------------------------
 
@@ -6,3 +36,8 @@ $ds-float: left !default;
 $ds-float-opposite: right !default;
 $ds-text-direction: ltr !default;
 
+// -----------------------------------------------------------------------------
+// Containers
+// -----------------------------------------------------------------------------
+
+$ds-page-max-width: $ds-breakpoint-ipad-width;
