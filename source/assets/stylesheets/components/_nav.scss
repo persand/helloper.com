@@ -40,8 +40,181 @@ nav {
     }
   }
 }
-
+// -----------------------------------------------------------------------------
 // Navigation on pages other than index
-.site-nav {
-  padding-bottom: 40px;
+// -----------------------------------------------------------------------------
+
+.navigation {
+  .js & {
+    display: none;
+  }
+
+  .js.show-navigation & {
+    display: block;
+  }
+
+
+
+  background: $ds-color-background;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+
+  padding-top: 65px !important;
+
+  nav {
+    @extend %ds-page;
+  }
+}
+
+.navigation-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+
+  h2 {
+    color: #fff;
+    line-height: 50px;
+    margin: 0 auto;
+    max-width: $ds-page-max-width;
+    opacity: 0;
+
+    padding: 0 15px;
+
+    @include breakpoint($ds-breakpoint-iphone6) {
+      padding: 0 20px;
+    }
+
+    @include breakpoint($ds-breakpoint-iphone6plus) {
+      padding: 0 25px;
+    }
+
+    @include breakpoint($ds-breakpoint-tablet) {
+      padding: 0 40px;
+    }
+  }
+
+  .show-navigation & {
+    background: $ds-color-text;
+    height: 50px;
+
+    h2 {
+      opacity: 100;
+    }
+  }
+}
+
+.hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  -webkit-appearance: none;
+
+
+
+
+
+  @include breakpoint($ds-breakpoint-tablet + 20) {
+    background: $ds-color-background;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.is-hidden {
+    display: none;
+  }
+
+  &.is-active {
+    background: none;
+  }
+
+  &.is-used {
+    outline: none;
+  }
+
+  &.is-scrolling-up {
+    .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
+      background-color: white;
+
+      @include breakpoint($ds-breakpoint-tablet + 20) {
+        background-color: $ds-color-text;
+      }
+    }
+  }
+
+  .show-navigation & {
+    .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
+      background-color: white;
+    }
+  }
+}
+
+.hamburger-background {
+  display: none;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  &.is-active {
+    display: block;
+  }
+
+  &.is-hidden {
+    display: none;
+  }
+
+  &:before {
+
+    content:' ';
+
+    position:absolute;
+
+    /*width:200px;
+    height:200px;
+    right:-100px;
+    top:-100px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, $ds-color-background 0%, rgba(255, 255, 255, 0) 100%);*/
+
+    background: $ds-color-text;
+    width: 55px;
+    height: 50px;
+    right: 0;
+    top: 0;
+  }
+}
+
+.navigation-overlay {
+  background: $ds-color-background;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  .js.show-navigation & {
+    display: block;
+  }
+}
+
+.show-navigation {
+  overflow: hidden;
+  [role="main"] {
+    overflow: hidden;
+    pointer-events: none;
+  }
 }

@@ -109,7 +109,7 @@
 
   & > li {
     display: inline-block;
-    margin-right: 0.7rem;
+    margin-right: ds-rem-calc(8);
 
     &:last-child {
       margin-right: 0;

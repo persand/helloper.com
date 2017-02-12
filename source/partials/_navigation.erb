@@ -1,9 +1,9 @@
 <% if current_page.url == '/' %>
-<nav role="navigation"<% unless current_page.url == '/' %> class="site-nav"<% end %>>
-  <% unless current_page.url == '/' %>
-    <hr>
-    <h2>On this website</h2>
-  <% end %>
+<nav>
+<% else %>
+<div class="navigation">
+<nav id="navigation" role="navigation">
+<% end %>
   <ol>
     <% unless current_page.url == '/' %>
       <li><a href="/">Index</a>
@@ -23,15 +23,10 @@
         <li><a href="/api">API</a></li>
         <li><a href="/links">Links</a></li>
       </ol>
-      <% unless current_page.url == '/' %>
-        <h2>Elsewhere</h2>
-      <% end %>
+
     </li>-->
     <li>
-      <% if current_page.url == '/' %>
-        Elsewhere
-      <% end %>
-
+      Elsewhere:
       <ol>
         <li><a href="https://github.com/persand">GitHub</a></li>
         <li><a href="https://facebook.com/permalink">Facebook</a></li>
@@ -43,5 +38,22 @@
       </ol>
     </li>
   </ol>
-</nav>
+
+<% if current_page.url == '/' %>
+  </nav>
+<% else %>
+  </nav>
+  </div>
+  <div class="navigation-button">
+    <h2>Navigation</h2>
+    <button class="hamburger hamburger--vortex is-inactive" type="button"
+            aria-label="Menu" aria-controls="navigation">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
+  <div class="hamburger-background"></div>
+
+  <div class="navigation-overlay"></div>
 <% end %>

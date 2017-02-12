@@ -56,7 +56,6 @@
 // This is the default html and body font-size for the base rem value.
 $ds-rem-base: 18px !default;
 
-
 // -----------------------------------------------------------------------------
 // Strip unit
 // It strips the unit of measure and returns it
@@ -111,6 +110,21 @@ $ds-rem-base: 18px !default;
   @return $remValues;
 }
 
+// -----------------------------------------------------------------------------
+// Font smoothing
+// http://maximilianhoffmann.com/posts/better-font-rendering-on-osx
+// -----------------------------------------------------------------------------
+
+@mixin ds-font-smoothing($value: on) {
+  @if $value == on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
 
 // -----------------------------------------------------------------------------
 // Text
@@ -119,8 +133,7 @@ $ds-rem-base: 18px !default;
 $ds-font-family: 'Cousine', monospace !default;
 $ds-font-family-secondary: 'Montserrat', sans-serif !default;
 $ds-font-size: 100% !default;
-$ds-font-size-body-copy: 100% !default;
-$ds-font-size-small: ds-rem-calc(14) !default;
+$ds-font-size-small: ds-rem-calc(15) !default;
 $ds-font-smoothing: antialiased !default;
 $ds-font-style: normal !default;
 $ds-font-weight-light: 300 !default;
@@ -137,14 +150,13 @@ $ds-line-height: 1.7 !default;
 // http://typecast.com/blog/a-more-modern-scale-for-web-typography
 // -----------------------------------------------------------------------------
 
-$ds-heading-huge-font-size: ds-rem-calc(36) !default;
-$ds-h1-font-size: ds-rem-calc(26) !default;
+$ds-h1-font-size: ds-rem-calc(36) !default;
 $ds-h2-font-size: ds-rem-calc(26) !default;
 $ds-h3-font-size: ds-rem-calc(22) !default;
-$ds-h4-font-size: $ds-font-size-body-copy !default;
+$ds-h4-font-size: $ds-font-size !default;
 $ds-h5-font-size: ds-rem-calc(16) !default;
 $ds-h6-font-size: ds-rem-calc(16) !default;
-$ds-headings-line-height: 1.25 !default;
+$ds-headings-line-height: 1.4 !default;
 
 
 // -----------------------------------------------------------------------------

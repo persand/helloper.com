@@ -14,7 +14,7 @@ html {
   color: $ds-color-text;
   direction: ltr;
   font-family: $ds-font-family;
-  font-size: ds-rem-calc(15px);
+  font-size: $ds-font-size-small;
   font-style: $ds-font-style;
   font-weight: $ds-font-weight;
   line-height: $ds-line-height;
@@ -32,16 +32,16 @@ body {
   -webkit-overflow-scrolling: touch;
 
   &:not([class]) {
-    @extend %ds-page-padding;
-    max-width: $ds-page-max-width;
-    margin: 0 auto;
+    [role="main"] {
+      @extend %ds-page;
 
-    header {
-      @extend %ds-header;
-    }
+      > header {
+        @extend %ds-header;
+      }
 
-    section {
-      @extend %ds-section;
+      > section {
+        @extend %ds-section;
+      }
     }
   }
 }

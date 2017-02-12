@@ -1,21 +1,15 @@
 .home {
-  @extend %ds-page-padding;
-  margin: 0 auto;
-  max-width: $ds-page-max-width;
+  @extend %ds-page;
 
   @media (min-width: 1024px) and (min-height: 680px) {
     align-items: center;
     display: flex;
     height: 100vh;
-    //padding: 0 3vw;
     width: 100%;
   }
 
-  h1, h2 {
-    line-height: 1.3;
-  }
-
   h1 {
+    font-size: $ds-h2-font-size;
     margin: 0;
 
     @media (max-width: $ds-breakpoint-iphone6-width) {
@@ -44,16 +38,6 @@
 
     a {
       @extend %ds-link-text;
-    }
-  }
-
-  nav {
-    @include breakpoint($ds-breakpoint-laptop) {
-      li {
-        ol {
-          margin-left: 0;
-        }
-      }
     }
   }
 }

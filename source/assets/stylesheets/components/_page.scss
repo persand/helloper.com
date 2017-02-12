@@ -1,5 +1,5 @@
 .page {
-  &__2col {
+  .l-2col {
     @extend %ds-clearfix;
 
     @media (min-width: $ds-breakpoint-laptop) {
@@ -10,19 +10,6 @@
       @media (min-width: $ds-breakpoint-laptop) {
         float: left;
         padding: 0 10px;
-        width: 50%;
-      }
-    }
-  }
-}
-
-.page-hot {
-  ul {
-    @extend %ds-clearfix;
-
-    li {
-      @media (min-width: $ds-breakpoint-tablet) {
-        float: left;
         width: 50%;
       }
     }

@@ -325,6 +325,10 @@ li ul,
 li ol {
   margin-#{$ds-float}: ds-rem-calc(43px);
   margin-bottom: 0;
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    margin-left: 0;
+  }
 }
 
 dt {
