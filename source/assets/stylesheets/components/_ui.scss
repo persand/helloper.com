@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// Page padding
+// Basic page layout
 // -----------------------------------------------------------------------------
 
 %ds-page-padding {
@@ -16,6 +16,12 @@
   @include breakpoint($ds-breakpoint-tablet) {
     padding: 40px;
   }
+}
+
+%ds-page {
+  @extend %ds-page-padding;
+  max-width: $ds-page-max-width;
+  margin: 0 auto;
 }
 
 // -----------------------------------------------------------------------------
@@ -127,13 +133,13 @@
 %ds-header {
   h1 {
     font-family: $ds-font-family-secondary;
-    font-size: $ds-heading-huge-font-size;
+    font-size: $ds-h1-font-size;
     font-weight: $ds-font-weight-bold;
     margin: 0 0 10px;
   }
 
   h2 {
-    font-size: $ds-font-size-body-copy;
+    font-size: $ds-font-size;
     margin: 0;
   }
 

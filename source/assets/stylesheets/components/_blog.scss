@@ -1,12 +1,15 @@
 .blog {
-  @extend %ds-page-padding;
-  margin: 0 auto;
-  max-width: $ds-page-max-width;
+  @extend %ds-page;
 
   > header {
+    margin-bottom: $ds-type-margin;
+
+    @include breakpoint($ds-breakpoint-laptop) {
+      margin-bottom: ds-rem-calc(40);
+    }
+
     h1 {
       font-family: $ds-font-family-secondary;
-      font-size: $ds-heading-huge-font-size;
       font-weight: $ds-font-weight-bold;
       line-height: 1.111;
       margin: 0;
@@ -19,9 +22,9 @@
     h2 {
       display: inline-block;
       font-family: $ds-font-family;
-      font-size: $ds-font-size-body-copy;
+      font-size: $ds-font-size;
       line-height: 1.4;
-      margin: 0 0 $ds-type-margin;
+      margin: 0;
 
       a {
         color: inherit;
@@ -76,22 +79,23 @@
 
   &__external {
     &:after {
-      background: #efefef;
+      background: darken($ds-color-background, 10);
       border-radius: 50%;
       content: '→';
       display: inline-block;
       font-size: 18px;
       height: 14px;
-      line-height: 14px;
+      line-height: 16px;
       width: 14px;
       text-align: center;
+      text-indent: 4px;
       transform: rotate(-37deg);
     }
 
     &:hover {
       &:after {
-        background: darken($ds-color-background, 10);
-        text-indent: 4px;
+        background: darken($ds-color-background, 40);
+        text-indent: 6px;
       }
     }
   }
@@ -108,7 +112,7 @@
     }
 
     @media (min-width: $ds-breakpoint-tablet) {
-      font-size: $ds-font-size-body-copy;
+      font-size: $ds-font-size;
     }
   }
 
@@ -122,19 +126,19 @@
 }
 
 .post--teaser {
+  @include breakpoint($ds-breakpoint-laptop) {
+    margin-left: -40px;
+    margin-right: -40px;
+    padding: 40px;
+  }
+
   h1 {
     font-size: ds-rem-calc(22);
     font-weight: $ds-font-weight-bold;
-    line-height: 1.4;
     margin: 0 0 7px;
 
     a {
       color: $ds-color-dark;
-    }
-
-    @media (min-width: 600px) {
-      font-size: ds-rem-calc(28);
-      font-weight: $ds-font-weight;
     }
   }
 }
@@ -144,10 +148,10 @@
     font-family: $ds-font-family;
     font-size: ds-rem-calc(18);
     font-weight: $ds-font-weight-bold;
-    margin-bottom: 10px;
+    margin-bottom: $ds-type-margin;
 
     @media (max-width: $ds-breakpoint-tablet) {
-      font-size: $ds-font-size-body-copy;
+      font-size: $ds-font-size;
     }
   }
 }
@@ -168,11 +172,27 @@
     padding: 25px;
   }
 
+  @include breakpoint($ds-breakpoint-laptop) {
+    margin-left: -40px;
+    margin-right: -40px;
+    padding: 40px;
+  }
+
+  @include breakpoint($ds-breakpoint-desktop) {
+    margin-left: -50px;
+    margin-right: -50px;
+    padding: 50px;
+  }
+
+  h1, h2, h3 {
+    font-family: $ds-font-family-secondary;
+  }
+
   h1 {
     font-size: ds-rem-calc(30);
 
     @media (min-width: $ds-breakpoint-tablet) {
-      font-size: $ds-heading-huge-font-size;
+      font-size: $ds-h1-font-size;
       margin-bottom: 25px;
     }
   }
