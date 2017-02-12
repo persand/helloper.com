@@ -1,5 +1,5 @@
 <% unless current_page.url == '/' %>
-  <%#= partial 'partials/navigation' %>
+  <%= partial 'partials/navigation' %>
 <% end %>
 
 <% if build? %>
@@ -14,5 +14,7 @@
 
   </script>
 <% end %>
+
+  <%= javascript_include_tag "application" %>
 </body>
 </html>

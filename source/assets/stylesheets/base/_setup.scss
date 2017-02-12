@@ -32,9 +32,9 @@ body {
   -webkit-overflow-scrolling: touch;
 
   &:not([class]) {
-    @extend %ds-page;
-
     [role="main"] {
+      @extend %ds-page;
+
       > header {
         @extend %ds-header;
       }
