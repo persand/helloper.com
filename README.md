@@ -9,7 +9,7 @@ This is the source of [helloper.com](https://www.helloper.com). It's based on th
 
 ## Deployment
 
-The master branch is automatically deployed to my [Digital Ocean VPS](https://m.do.co/c/5027f75bc292) using [Codeship](https://www.codeship.com).
+The master branch is automatically deployed to my [512 mb Vultr VPS](http://www.vultr.com/?ref=7125759) using [Codeship](https://www.codeship.com).
 
 ## Gulp commands
 
