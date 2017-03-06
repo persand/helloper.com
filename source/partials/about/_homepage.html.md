@@ -6,7 +6,7 @@ Built with [Middleman](https://middlemanapp.com/) ([source on GitHub](https://gi
 
 ---
 
-[CloudFlare](https://www.cloudflare.com) sits in front with the files hosted on a [Digital Ocean](https://www.digitalocean.com) VPS running [Nginx](https://www.nginx.com/).
+[CloudFlare](https://www.cloudflare.com) sits in front with the files hosted on a [512 mb Vultr VPS](http://www.vultr.com/?ref=7125759) running [Nginx](https://www.nginx.com/).
 
 ---
 
