@@ -1,7 +1,33 @@
+//= require slideout.js/dist/slideout.min.js
+
+var html = document.documentElement;
 
 // -----------------------------------------------------------------------------
 // Navigation
 // -----------------------------------------------------------------------------
+
+var slideout = new Slideout({
+  'panel': document.getElementById('panel'),
+  'menu': document.getElementById('menu'),
+  'padding': 256,
+  'tolerance': 70,
+});
+
+function close(eve) {
+  eve.preventDefault();
+  slideout.close();
+}
+
+html.classList.add('slideout-root');
+
+slideout
+  .on('beforeopen', function() {
+    html.classList.add('slideout-root-overlay');
+  })
+  .on('beforeclose', function() {
+    html.classList.remove('slideout-root-overlay');
+  });
+
 
 // --
 // Hamburger button click behaviour
@@ -13,7 +39,9 @@ hamburger.addEventListener("click", function() {
   hamburger.classList.toggle("is-active");
   hamburger.classList.toggle("is-inactive");
   hamburger.classList.add("is-used");
-  document.documentElement.classList.toggle("show-navigation");
+  //document.documentElement.classList.toggle("show-navigation");
+
+  slideout.toggle();
 });
 
 // --

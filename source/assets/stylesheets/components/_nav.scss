@@ -44,29 +44,65 @@ nav {
 // Navigation on pages other than index
 // -----------------------------------------------------------------------------
 
-.navigation {
-  .js & {
-    display: none;
-  }
-
-  .js.show-navigation & {
-    display: block;
-  }
-
-
-
-  background: $ds-color-background;
+.slideout-menu {
+  display: none;
+  min-height: 100vh;
+  padding-top: 50px;
   position: fixed;
   top: 0;
+  bottom: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+}
+
+.slideout-menu-left {
   left: 0;
-  z-index: 11;
-  width: 100%;
+}
 
-  padding-top: 65px !important;
+.slideout-menu-right {
+  right: 0;
+}
 
-  nav {
-    @extend %ds-page;
-  }
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: $ds-color-background; /* A background-color is required */
+  min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-root:before {
+  content: '';
+  display: block;
+  background-color: rgba(0,0,0,0);
+  transition: background-color 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.slideout-root-overlay:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 256px;
+  right: 0;
+  background-color: rgba(0,0,0,.5);
+  z-index: 99;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+.navigation {
+  padding: 0 15px 15px;
 }
 
 .navigation-button {
@@ -111,13 +147,9 @@ nav {
 .hamburger {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
 
   -webkit-appearance: none;
-
-
-
-
 
   @include breakpoint($ds-breakpoint-tablet + 20) {
     background: $ds-color-background;
