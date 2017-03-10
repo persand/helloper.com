@@ -9,8 +9,9 @@
     }
 
     h1 {
+      font-size: 4rem;
       font-family: $ds-font-family-secondary;
-      font-weight: $ds-font-weight-bold;
+      font-weight: 900;
       line-height: 1.111;
       margin: 0;
 
@@ -101,15 +102,18 @@
     }
   }
 
-  &__date {
+  time {
     color: $ds-color-light-gray;
     display: block;
     font-size: $ds-font-size-small;
     margin: 0 0 4px;
 
     a {
-      color: inherit;
-      cursor: auto;
+      color: $ds-color-light-gray;
+
+      &:hover {
+        color: $ds-color-light-gray;
+      }
     }
 
     @media (min-width: $ds-breakpoint-tablet) {
@@ -187,10 +191,12 @@
 
   h1, h2, h3 {
     font-family: $ds-font-family-secondary;
+    font-weight: $ds-font-weight-bold;
   }
 
   h1 {
     font-size: ds-rem-calc(30);
+    font-weight: 900;
 
     @media (min-width: $ds-breakpoint-tablet) {
       font-size: $ds-h1-font-size;

@@ -46,7 +46,7 @@
   text-decoration: underline;
 
   &:hover {
-    background: rgba($ds-color-link, .5);
+    //background: rgba($ds-color-link, .1);
   }
 }
 .t-link-nav {
@@ -59,7 +59,7 @@
   font-weight: $ds-font-weight-bold;
 
   &:hover {
-    box-shadow: inset 0 -5px 0 rgba($ds-color-link, .9);
+    box-shadow: inset 0 -5px 0 rgba($ds-color-link, .75);
   }
 }
 .t-link-text {
