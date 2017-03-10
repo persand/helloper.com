@@ -10,7 +10,7 @@
 
 html {
   @include ds-font-smoothing;
-  background: $ds-color-background;
+  background: $ds-color-white;
   color: $ds-color-text;
   direction: ltr;
   font-family: $ds-font-family;
@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  background: $ds-color-background;
+  background: $ds-color-white;
   overflow-y: scroll;
   position: relative;
   -webkit-overflow-scrolling: touch;

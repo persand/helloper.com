@@ -9,8 +9,15 @@
   }
 
   h1 {
-    font-size: $ds-h2-font-size;
-    margin: 0;
+    font-family: $ds-font-family-secondary;
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0 0 .75rem;
+
+    @media (min-width: $ds-breakpoint-tablet) {
+      font-size: 4rem;
+      margin: 0 0 2rem;
+    }
 
     @media (max-width: $ds-breakpoint-iphone6-width) {
       span {

@@ -133,9 +133,13 @@
 %ds-header {
   h1 {
     font-family: $ds-font-family-secondary;
-    font-size: $ds-h1-font-size;
-    font-weight: $ds-font-weight-bold;
+    font-size: 2rem;
+    font-weight: 900;
     margin: 0 0 10px;
+
+    @media (min-width: $ds-breakpoint-tablet) {
+      font-size: 4rem;
+    }
   }
 
   h2 {
@@ -159,14 +163,14 @@
 // -----------------------------------------------------------------------------
 
 %ds-section {
-  border-top: 10px solid #9DAFB3;
+  border-top: 10px solid #eee;
   margin-top: ds-rem-calc(30);
   padding-top: ds-rem-calc(30);
   position: relative;
 
   &:before,
   &:after {
-    background: #5E696B;
+    background: #333;
     top: -10px;
     content: ' ';
     height: 10px;

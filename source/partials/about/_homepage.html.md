@@ -10,4 +10,4 @@ Built with [Middleman](https://middlemanapp.com/) ([source on GitHub](https://gi
 
 ---
 
-The fonts in use are [Cousine](https://fonts.google.com/specimen/Cousine) and [Montserrat](https://github.com/JulietaUla/Montserrat).
+The fonts in use are [Cousine](https://fonts.google.com/specimen/Cousine) and [Libre Franklin](https://github.com/impallari/Libre-Franklin).
