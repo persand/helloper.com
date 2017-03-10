@@ -45,14 +45,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Montserrat';
-  src: url('https://files.helloper.com/fonts/montserrat-6.001/Montserrat-Bold.woff2') format('woff2'),
-       url('https://files.helloper.com/fonts/montserrat-6.001/Montserrat-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
-
 // This is the default html and body font-size for the base rem value.
 $ds-rem-base: 18px !default;
 
@@ -131,7 +123,7 @@ $ds-rem-base: 18px !default;
 // -----------------------------------------------------------------------------
 
 $ds-font-family: 'Cousine', monospace !default;
-$ds-font-family-secondary: 'Montserrat', sans-serif !default;
+$ds-font-family-secondary: 'Libre Franklin', sans-serif !default;
 $ds-font-size: 100% !default;
 $ds-font-size-small: ds-rem-calc(15) !default;
 $ds-font-smoothing: antialiased !default;

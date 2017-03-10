@@ -83,6 +83,7 @@
       border-radius: 50%;
       content: '→';
       display: inline-block;
+      font-family: $ds-font-family;
       font-size: 18px;
       height: 14px;
       line-height: 16px;
@@ -133,6 +134,7 @@
   }
 
   h1 {
+    font-family: $ds-font-family-secondary;
     font-size: ds-rem-calc(22);
     font-weight: $ds-font-weight-bold;
     margin: 0 0 7px;
@@ -145,10 +147,9 @@
 
 .post--teaser.post--update {
   h1 {
-    font-family: $ds-font-family;
+    font-family: $ds-font-family-secondary;
     font-size: ds-rem-calc(18);
     font-weight: $ds-font-weight-bold;
-    margin-bottom: $ds-type-margin;
 
     @media (max-width: $ds-breakpoint-tablet) {
       font-size: $ds-font-size;
