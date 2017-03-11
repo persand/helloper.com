@@ -1,5 +1,5 @@
 $nav-bp: 915px;
-$nav-width-large: 300px;
+$nav-width-large: 50%;
 
 nav:not([class]) {
   ol {
@@ -69,8 +69,16 @@ nav:not([class]) {
   }
 
   @include breakpoint($nav-bp) {
-    top: 67px;
+    top: 80px;
     width: $nav-width-large;
+  }
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    top: 100px;
+  }
+
+  @include breakpoint($ds-breakpoint-desktop) {
+    top: 140px;
   }
 }
 
@@ -130,37 +138,49 @@ nav:not([class]) {
   padding: 0 15px 50px;
 
   ol {
+    list-style: none;
+    font-size: 2rem;
+
     > li {
-      border-top: 1px solid #ccc;
-      padding: 10px 0;
+      border-top: 2px solid $ds-color-text;
 
       &:first-child {
         border-top-width: 0;
       }
 
       &:last-child {
-        padding-bottom: 0;
+        border-bottom: 2px solid $ds-color-text;
       }
     }
   }
 
+  a {
+    color: $ds-color-text;
+    display: block;
+    padding: 10px 0;
+
+    &:hover {
+      color: $ds-color-link-hover;
+    }
+
+    @include breakpoint($ds-breakpoint-desktop) {
+      padding: 20px 0;
+    }
+  }
 
   @include breakpoint($nav-bp) {
     padding: 0 20px 20px;
 
     ol {
-      list-style: none;
+      font-size: 1.25rem;
+    }
+  }
 
-      > li {
-        &:first-child {
-          border-top-width: 1px;
-        }
+  @include breakpoint($ds-breakpoint-desktop) {
+    padding: 0 40px 40px;
 
-        &:last-child {
-          border-bottom: 1px solid #ccc;
-          padding-bottom: 10px;
-        }
-      }
+    ol {
+      font-size: 1.5rem;
     }
   }
 }
