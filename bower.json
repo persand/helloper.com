@@ -4,6 +4,7 @@
   "dependencies": {
     "normalize-scss": "~3.0.3",
     "css-hamburgers": "^0.7.0",
-    "slideout.js": "^1.0.1"
+    "slideout.js": "^1.0.1",
+    "outline.js": "git://github.com/lindsayevans/outline.js.git"
   }
 }

@@ -1,3 +1,4 @@
+//= require outline.js/outline.js
 //= require slideout.js/dist/slideout.min.js
 
 var html = document.documentElement;
