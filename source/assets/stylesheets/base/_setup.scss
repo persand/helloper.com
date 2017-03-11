@@ -38,6 +38,7 @@ body {
 
     [role="main"] {
       @extend %ds-page;
+      @extend %ds-text;
 
       > header {
         @extend %ds-header;

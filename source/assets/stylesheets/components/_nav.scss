@@ -136,11 +136,12 @@ nav:not([class]) {
   padding: 0 15px 50px;
 
   ol {
-    list-style: none;
+    list-style-position: inside;
     font-size: 2rem;
 
     > li {
       border-top: 2px solid $ds-color-text;
+      color: $ds-color-gray;
 
       &:first-child {
         border-top-width: 0;
@@ -153,13 +154,9 @@ nav:not([class]) {
   }
 
   a {
-    color: $ds-color-text;
-    display: block;
+    color: $ds-color-black;
+    display: inline-block;
     padding: 10px 0;
-
-    &:hover {
-      color: $ds-color-text;
-    }
 
     @include breakpoint($ds-breakpoint-desktop) {
       padding: 20px 0;
@@ -171,6 +168,12 @@ nav:not([class]) {
 
     ol {
       font-size: 1.25rem;
+
+      > li {
+        &:first-child {
+          border-top-width: 2px;
+        }
+      }
     }
   }
 
@@ -214,12 +217,15 @@ nav:not([class]) {
   bottom: 20px;
   height: 40px;
   left: 20px;
-  outline: none;
   padding: 0;
   pointer-events: auto;
   position: absolute;
   width: 40px;
   -webkit-appearance: none;
+
+  &:hover {
+    opacity: 1;
+  }
 
   @media (max-width: $ds-breakpoint-laptop) {
     .hamburger-inner {
@@ -245,8 +251,6 @@ nav:not([class]) {
   .hamburger-box {
     top: 3px;
   }
-
-
 
   .hamburger-inner,
   .hamburger-inner:before,
