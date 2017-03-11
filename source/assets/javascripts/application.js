@@ -43,6 +43,8 @@ if (isInPage(document.getElementById('menu'))) {
       html.classList.remove('slideout-root-overlay');
     });
 
+  slideout.disableTouch();
+
   function navigation(navigation_settings) {
     if (!slideout.isOpen()) {
       slideout.destroy();
@@ -61,6 +63,8 @@ if (isInPage(document.getElementById('menu'))) {
         .on('beforeclose', function() {
           html.classList.remove('slideout-root-overlay');
         });
+
+      slideout.disableTouch();
     }
   }
 
