@@ -2,30 +2,32 @@
 title: "Blog"
 body_class: blog
 ---
-<%= partial "partials/blog/header" %>
+<main role="main" id="panel">
+  <%= partial "partials/blog/header" %>
 
-<% blog.articles.each do |article| %>
-  <article class="post post--teaser<% unless article.data.type == 'post' %> post--update<% end %>">
-    <time>
-      <a href="<%= article.url %>"><%= article.date.strftime('%b %e %Y') %></a>
-    </time>
+  <% blog.articles.each do |article| %>
+    <article class="post post--teaser<% unless article.data.type == 'post' %> post--update<% end %>">
+      <time>
+        <a href="<%= article.url %>"><%= article.date.strftime('%b %e %Y') %></a>
+      </time>
 
-    <h1>
-      <% if article.data.link_url %>
-        <a class="post__external" href="<%= article.data.link_url %>">
-          <%= article.title %>
-        </a>
+      <h1>
+        <% if article.data.link_url %>
+          <a class="post__external" href="<%= article.data.link_url %>">
+            <%= article.title %>
+          </a>
+        <% else %>
+          <a href="<%= article.url %>"><%= article.title %></a>
+        <% end %>
+      </h1>
+
+      <% if article.data.type == 'post' %>
+        <p><%= article.data.summary %></p>
       <% else %>
-        <a href="<%= article.url %>"><%= article.title %></a>
+        <%= article.body %>
       <% end %>
-    </h1>
+    </article>
+  <% end %>
 
-    <% if article.data.type == 'post' %>
-      <p><%= article.data.summary %></p>
-    <% else %>
-      <%= article.body %>
-    <% end %>
-  </article>
-<% end %>
-
-<%= partial "partials/blog/footer" %>
+  <%= partial "partials/blog/footer" %>
+</main>
