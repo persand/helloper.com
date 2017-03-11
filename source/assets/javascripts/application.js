@@ -6,6 +6,12 @@ function isInPage(node) {
   return (node === document.body) ? false : document.body.contains(node);
 }
 
+function getWidth() {
+  return window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth;
+}
+
 // -----------------------------------------------------------------------------
 // Navigation
 // -----------------------------------------------------------------------------
@@ -16,9 +22,7 @@ if (isInPage(document.getElementById('menu'))) {
   var navigation_settings = {
     'panel': document.getElementById('panel'),
     'menu': document.getElementById('menu'),
-    'width': window.innerWidth ||
-      document.documentElement.clientWidth ||
-      document.body.clientWidth,
+    'width': getWidth(),
     'tolerance': 70
   }
 
@@ -46,9 +50,7 @@ if (isInPage(document.getElementById('menu'))) {
       slideout = new Slideout({
         'panel': navigation_settings.panel,
         'menu': navigation_settings.menu,
-        'padding': window.innerWidth ||
-          document.documentElement.clientWidth ||
-          document.body.clientWidth,
+        'padding': getWidth(),
         'tolerance': navigation_settings.tolerance
       });
 
