@@ -49,15 +49,24 @@ nav:not([class]) {
 
 .slideout-menu {
   background: #fff;
-  display: none;
   min-height: 100vh;
   position: fixed;
+  pointer-events: none;
   top: 0;
+  left: 0;
   bottom: 0;
   width: 100%;
   overflow-y: auto;
+  opacity: 0;
   -webkit-overflow-scrolling: touch;
+  transition: opacity 0.4s;
   z-index: 1000;
+
+  .slideout-root-overlay & {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.4s;
+  }
 
   @include breakpoint($nav-bp) {
     top: 67px;
@@ -65,19 +74,11 @@ nav:not([class]) {
   }
 }
 
-.slideout-menu-left {
-  left: 0;
-}
-
-.slideout-menu-right {
-  right: 0;
-}
-
 .slideout-panel {
   position: relative;
   z-index: 1;
   will-change: transform;
-  background-color: $ds-color-background; /* A background-color is required */
+  background-color: $ds-color-background;
   min-height: 100vh;
 }
 
@@ -102,16 +103,27 @@ nav:not([class]) {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba(0,0,0,.5);
   z-index: 99;
 
+  @media (max-width: $nav-bp) {
+    background-color: rgba(0,0,0,.5);
+  }
+
   @include breakpoint($nav-bp) {
+    animation: slideout-root-overlay 5s;
+    animation-iteration-count: infinite;
     left: $nav-width-large;
+    padding: 60px;
+    font-size: 36px;
   }
 }
 
-.slideout-open .slideout-menu {
-  display: block;
+@keyframes slideout-root-overlay {
+  0%   {background-color: #ccc;}
+  25%  {background-color: #888;}
+  50%  {background-color: #444;}
+  75%  {background-color: #888;}
+  100% {background-color: #ccc;}
 }
 
 .navigation {

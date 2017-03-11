@@ -1,64 +1,66 @@
 .blog {
   @extend %ds-page;
 
-  > header {
-    margin-bottom: $ds-type-margin;
+  main {
+    > header {
+      margin-bottom: $ds-type-margin;
 
-    @include breakpoint($ds-breakpoint-laptop) {
-      margin-bottom: ds-rem-calc(40);
+      @include breakpoint($ds-breakpoint-laptop) {
+        margin-bottom: ds-rem-calc(40);
+      }
+
+      h1 {
+        font-size: 4rem;
+        font-family: $ds-font-family-secondary;
+        font-weight: 900;
+        line-height: 1.111;
+        margin: 0;
+
+        a {
+          color: inherit;
+        }
+      }
+
+      h2 {
+        display: inline-block;
+        font-family: $ds-font-family;
+        font-size: $ds-font-size;
+        line-height: 1.4;
+        margin: 0;
+
+        a {
+          color: inherit;
+        }
+      }
+
+      p {
+        margin: 0 0 11px;
+
+        @media (max-width: $ds-breakpoint-tablet) {
+          font-size: $ds-font-size-small;
+        }
+      }
+
+      ul {
+        display: inline-block;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+
+        li {
+          float: left;
+          margin: 0 5px 5px 0;
+        }
+      }
     }
 
-    h1 {
-      font-size: 4rem;
-      font-family: $ds-font-family-secondary;
-      font-weight: 900;
-      line-height: 1.111;
-      margin: 0;
+    > footer {
+      padding-top: 30px;
+      text-align: center;
 
       a {
-        color: inherit;
+        @extend %ds-link-text;
       }
-    }
-
-    h2 {
-      display: inline-block;
-      font-family: $ds-font-family;
-      font-size: $ds-font-size;
-      line-height: 1.4;
-      margin: 0;
-
-      a {
-        color: inherit;
-      }
-    }
-
-    p {
-      margin: 0 0 11px;
-
-      @media (max-width: $ds-breakpoint-tablet) {
-        font-size: $ds-font-size-small;
-      }
-    }
-
-    ul {
-      display: inline-block;
-      margin: 0;
-      list-style: none;
-      width: 100%;
-
-      li {
-        float: left;
-        margin: 0 5px 5px 0;
-      }
-    }
-  }
-
-  > footer {
-    padding-top: 30px;
-    text-align: center;
-
-    a {
-      @extend %ds-link-text;
     }
   }
 }
