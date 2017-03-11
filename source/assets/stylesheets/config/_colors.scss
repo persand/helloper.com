@@ -14,16 +14,20 @@ $ds-color-gray: #555;
 $ds-color-light-gray: #888;
 $ds-color-shade: #9EAFB3;
 
+$ds-color-blue: #0060C1;
+$ds-color-red: red;
+
 
 // -----------------------------------------------------------------------------
 // Items
 // Use these variables in other files for easy color changes
 // -----------------------------------------------------------------------------
 
-$ds-color-background:       $ds-color-light-blue;
+$ds-color-background:       $ds-color-white;
 $ds-color-text:             $ds-color-dark;
 $ds-color-text-light:       $ds-color-light-gray;
-$ds-color-link:             $ds-color-dark-blue;
+$ds-color-link:             $ds-color-blue;
+$ds-color-link-hover:       $ds-color-red;
 $ds-color-heading:          $ds-color-black;
 $ds-color-selection:        $ds-color-shade;
 $ds-color-selection-text:   $ds-color-black;

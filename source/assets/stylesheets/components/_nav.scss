@@ -1,4 +1,7 @@
-nav {
+$nav-bp: 915px;
+$nav-width-large: 300px;
+
+nav:not([class]) {
   ol {
     color: $ds-color-gray;
 
@@ -45,16 +48,21 @@ nav {
 // -----------------------------------------------------------------------------
 
 .slideout-menu {
+  background: #fff;
   display: none;
   min-height: 100vh;
-  padding-top: 50px;
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 256px;
+  width: 100%;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  z-index: 0;
+  z-index: 1000;
+
+  @include breakpoint($nav-bp) {
+    top: 67px;
+    width: $nav-width-large;
+  }
 }
 
 .slideout-menu-left {
@@ -88,13 +96,18 @@ nav {
 }
 
 .slideout-root-overlay:before {
-  position: absolute;
+  content: ' ';
+  position: fixed;
   top: 0;
   bottom: 0;
-  left: 256px;
   right: 0;
+  left: 0;
   background-color: rgba(0,0,0,.5);
   z-index: 99;
+
+  @include breakpoint($nav-bp) {
+    left: $nav-width-large;
+  }
 }
 
 .slideout-open .slideout-menu {
@@ -102,15 +115,59 @@ nav {
 }
 
 .navigation {
-  padding: 0 15px 15px;
+  padding: 0 15px 50px;
+
+  ol {
+    > li {
+      border-top: 1px solid #ccc;
+      padding: 10px 0;
+
+      &:first-child {
+        border-top-width: 0;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+
+  @include breakpoint($nav-bp) {
+    padding: 0 20px 20px;
+
+    ol {
+      list-style: none;
+
+      > li {
+        &:first-child {
+          border-top-width: 1px;
+        }
+
+        &:last-child {
+          border-bottom: 1px solid #ccc;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
 }
 
 .navigation-button {
+  background: #444;
+  height: 50px;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
+  right: 0;
   z-index: 1000;
-  width: 100%;
+
+  @include breakpoint($nav-bp) {
+    background: none;
+    top: 0;
+    right: auto;
+    bottom: auto;
+  }
 
   h2 {
     color: #fff;
@@ -148,105 +205,21 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
+  outline: none;
 
   -webkit-appearance: none;
 
-  @include breakpoint($ds-breakpoint-tablet + 20) {
-    background: $ds-color-background;
+  @include breakpoint($nav-bp) {
+    padding: 20px;
+  }
 
-    &:before {
-      display: none;
+  .hamburger-inner,
+  .hamburger-inner:before,
+  .hamburger-inner:after {
+    background-color: white;
+
+    @include breakpoint($nav-bp) {
+      background-color: $ds-color-text;
     }
-  }
-
-  &:hover {
-    opacity: 1;
-  }
-
-  &.is-hidden {
-    display: none;
-  }
-
-  &.is-active {
-    background: none;
-  }
-
-  &.is-used {
-    outline: none;
-  }
-
-  &.is-scrolling-up {
-    .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
-      background-color: white;
-
-      @include breakpoint($ds-breakpoint-tablet + 20) {
-        background-color: $ds-color-text;
-      }
-    }
-  }
-
-  .show-navigation & {
-    .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
-      background-color: white;
-    }
-  }
-}
-
-.hamburger-background {
-  display: none;
-  pointer-events: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-
-  &.is-active {
-    display: block;
-  }
-
-  &.is-hidden {
-    display: none;
-  }
-
-  &:before {
-
-    content:' ';
-
-    position:absolute;
-
-    /*width:200px;
-    height:200px;
-    right:-100px;
-    top:-100px;
-    border-radius: 50%;
-    background: radial-gradient(ellipse at center, $ds-color-background 0%, rgba(255, 255, 255, 0) 100%);*/
-
-    background: $ds-color-text;
-    width: 55px;
-    height: 50px;
-    right: 0;
-    top: 0;
-  }
-}
-
-.navigation-overlay {
-  background: $ds-color-background;
-  display: none;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-
-  .js.show-navigation & {
-    display: block;
-  }
-}
-
-.show-navigation {
-  overflow: hidden;
-  [role="main"] {
-    overflow: hidden;
-    pointer-events: none;
   }
 }

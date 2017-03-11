@@ -10,7 +10,7 @@ a:active {
 
 a:hover,
 a:active {
-  color: $ds-color-dark-blue;
+  color: $ds-color-link-hover;
 }
 
 a:focus {
@@ -126,7 +126,7 @@ hr {
   overflow: hidden;
   position: relative;
   &:after {
-    color: rgba(black, .3);
+    color: #888;
     content: '— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — ';
     position: absolute;
     width: 100%;
