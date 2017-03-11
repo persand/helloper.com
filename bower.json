@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "dependencies": {
     "normalize-scss": "~3.0.3",
-    "css-hamburgers": "^0.7.0"
+    "css-hamburgers": "^0.7.0",
+    "slideout.js": "^1.0.1"
   }
 }

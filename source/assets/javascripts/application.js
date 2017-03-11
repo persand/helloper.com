@@ -1,48 +1,87 @@
+//= require slideout.js/dist/slideout.min.js
+
+var html = document.documentElement;
+
+function isInPage(node) {
+  return (node === document.body) ? false : document.body.contains(node);
+}
+
+function getWidth() {
+  return window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth;
+}
 
 // -----------------------------------------------------------------------------
 // Navigation
 // -----------------------------------------------------------------------------
 
-// --
-// Hamburger button click behaviour
-// --
-var hamburger = document.querySelector(".hamburger");
-var hamburger_background = document.querySelector(".hamburger-background");
+if (isInPage(document.getElementById('menu'))) {
+  html.classList.add('slideout-root');
 
-hamburger.addEventListener("click", function() {
-  hamburger.classList.toggle("is-active");
-  hamburger.classList.toggle("is-inactive");
-  hamburger.classList.add("is-used");
-  document.documentElement.classList.toggle("show-navigation");
-});
+  var navigation_settings = {
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'width': getWidth(),
+    'tolerance': 70
+  }
 
-// --
-// Hamburger button scroll behaviour
-// --
-var navigationPreviousPosition = window.pageYOffset || document.documentElement.scrollTop;
-window.onscroll = function() {
-  var navigationCurrentPosition = window.pageYOffset || document.documentElement.scrollTop;
+  var navigation_timeout = false;
 
-  if (navigationPreviousPosition > navigationCurrentPosition) {
-    // Up
-    hamburger.classList.remove("is-hidden");
-    hamburger.classList.add("is-scrolling-up");
-    hamburger_background.classList.add("is-active");
+  var slideout = new Slideout({
+    'panel': navigation_settings.panel,
+    'menu': navigation_settings.menu,
+    'padding': navigation_settings.width,
+    'tolerance': navigation_settings.tolerance
+  });
 
-    if (window.pageYOffset < 60) {
-      hamburger_background.classList.add("is-hidden");
-      hamburger.classList.remove("is-scrolling-up");
-    }
-  } else {
-    // Down
-    hamburger.classList.add("is-hidden");
-    hamburger.classList.remove("is-scrolling-up");
-    hamburger_background.classList.remove("is-active");
+  slideout
+    .on('beforeopen', function() {
+      html.classList.add('slideout-root-overlay');
+    })
+    .on('beforeclose', function() {
+      html.classList.remove('slideout-root-overlay');
+    });
 
-    if (window.pageYOffset > 60) {
-      hamburger_background.classList.remove("is-hidden");
+  function navigation(navigation_settings) {
+    if (!slideout.isOpen()) {
+      slideout.destroy();
+
+      slideout = new Slideout({
+        'panel': navigation_settings.panel,
+        'menu': navigation_settings.menu,
+        'padding': getWidth(),
+        'tolerance': navigation_settings.tolerance
+      });
+
+      slideout
+        .on('beforeopen', function() {
+          html.classList.add('slideout-root-overlay');
+        })
+        .on('beforeclose', function() {
+          html.classList.remove('slideout-root-overlay');
+        });
     }
   }
 
-  navigationPreviousPosition = navigationCurrentPosition;
-};
+  // --
+  // Destroy and recreate slideout menu on resize …
+  // WIP: https://bencentra.com/code/2015/02/27/optimizing-window-resize.html
+  // --
+  window.addEventListener('resize', function() {
+    //clearTimeout(navigation_timeout);
+    navigation_timeout = setTimeout(navigation(navigation_settings), 1000);
+  });
+
+  // --
+  // Hamburger button click behaviour
+  // --
+
+  var hamburger = document.querySelector(".hamburger");
+  hamburger.addEventListener("click", function() {
+    hamburger.classList.toggle("is-active");
+    hamburger.classList.toggle("is-inactive");
+
+    slideout.toggle();
+  });
+}

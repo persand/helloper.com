@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html<%= html_class %> lang="en">
   <head>
+    <script>
+      ;(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,8 +26,4 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700,900" rel="stylesheet">
 
     <%= stylesheet_link_tag "application" %>
-
-    <script>
-      ;(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
-    </script>
   </head>

@@ -1,4 +1,7 @@
-nav {
+$nav-bp: 915px;
+$nav-width-large: 50%;
+
+nav:not([class]) {
   ol {
     color: $ds-color-gray;
 
@@ -44,177 +47,212 @@ nav {
 // Navigation on pages other than index
 // -----------------------------------------------------------------------------
 
-.navigation {
-  .js & {
-    display: none;
-  }
-
-  .js.show-navigation & {
-    display: block;
-  }
-
-
-
-  background: $ds-color-background;
+.slideout-menu {
+  background: #fff;
+  min-height: 100vh;
   position: fixed;
+  pointer-events: none;
   top: 0;
   left: 0;
-  z-index: 11;
+  bottom: 0;
   width: 100%;
-
-  padding-top: 65px !important;
-
-  nav {
-    @extend %ds-page;
-  }
-}
-
-.navigation-button {
-  position: fixed;
-  top: 0;
-  left: 0;
+  overflow-y: auto;
+  opacity: 0;
+  -webkit-overflow-scrolling: touch;
+  transition: opacity 0.4s;
   z-index: 1000;
-  width: 100%;
 
-  h2 {
-    color: #fff;
-    line-height: 50px;
-    margin: 0 auto;
-    max-width: $ds-page-max-width;
-    opacity: 0;
-
-    padding: 0 15px;
-
-    @include breakpoint($ds-breakpoint-iphone6) {
-      padding: 0 20px;
-    }
-
-    @include breakpoint($ds-breakpoint-iphone6plus) {
-      padding: 0 25px;
-    }
-
-    @include breakpoint($ds-breakpoint-tablet) {
-      padding: 0 40px;
-    }
+  .slideout-root-overlay & {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.4s;
   }
 
-  .show-navigation & {
-    background: $ds-color-text;
-    height: 50px;
+  @include breakpoint($nav-bp) {
+    top: 80px;
+    width: $nav-width-large;
+  }
 
-    h2 {
-      opacity: 100;
-    }
+  @include breakpoint($ds-breakpoint-laptop) {
+    top: 100px;
+  }
+
+  @include breakpoint($ds-breakpoint-desktop) {
+    top: 140px;
   }
 }
 
-.hamburger {
-  position: absolute;
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: $ds-color-background;
+  min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-root:before {
+  content: '';
+  display: block;
+  background-color: rgba(0,0,0,0);
+  transition: background-color 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.slideout-root-overlay:before {
+  content: ' ';
+  position: fixed;
   top: 0;
+  bottom: 0;
   right: 0;
+  left: 0;
+  z-index: 99;
 
-  -webkit-appearance: none;
-
-
-
-
-
-  @include breakpoint($ds-breakpoint-tablet + 20) {
-    background: $ds-color-background;
-
-    &:before {
-      display: none;
-    }
+  @media (max-width: $nav-bp) {
+    background-color: rgba(0,0,0,.5);
   }
 
-  &:hover {
-    opacity: 1;
+  @include breakpoint($nav-bp) {
+    animation: slideout-root-overlay 5s;
+    animation-iteration-count: infinite;
+    left: $nav-width-large;
+    padding: 60px;
+    font-size: 36px;
   }
+}
 
-  &.is-hidden {
-    display: none;
-  }
+@keyframes slideout-root-overlay {
+  0%   {background-color: #ccc;}
+  25%  {background-color: #888;}
+  50%  {background-color: #444;}
+  75%  {background-color: #888;}
+  100% {background-color: #ccc;}
+}
 
-  &.is-active {
-    background: none;
-  }
+.navigation {
+  padding: 0 15px 50px;
 
-  &.is-used {
-    outline: none;
-  }
+  ol {
+    list-style: none;
+    font-size: 2rem;
 
-  &.is-scrolling-up {
-    .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
-      background-color: white;
+    > li {
+      border-top: 2px solid $ds-color-text;
 
-      @include breakpoint($ds-breakpoint-tablet + 20) {
-        background-color: $ds-color-text;
+      &:first-child {
+        border-top-width: 0;
+      }
+
+      &:last-child {
+        border-bottom: 2px solid $ds-color-text;
       }
     }
   }
 
-  .show-navigation & {
-    .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
-      background-color: white;
+  a {
+    color: $ds-color-text;
+    display: block;
+    padding: 10px 0;
+
+    &:hover {
+      color: $ds-color-link-hover;
+    }
+
+    @include breakpoint($ds-breakpoint-desktop) {
+      padding: 20px 0;
+    }
+  }
+
+  @include breakpoint($nav-bp) {
+    padding: 0 20px 20px;
+
+    ol {
+      font-size: 1.25rem;
+    }
+  }
+
+  @include breakpoint($ds-breakpoint-desktop) {
+    padding: 0 40px 40px;
+
+    ol {
+      font-size: 1.5rem;
     }
   }
 }
 
-.hamburger-background {
-  display: none;
-  pointer-events: none;
+.navigation-button {
+  height: 50px;
   position: fixed;
-  top: 0;
-  right: 0;
-
-  &.is-active {
-    display: block;
-  }
-
-  &.is-hidden {
-    display: none;
-  }
-
-  &:before {
-
-    content:' ';
-
-    position:absolute;
-
-    /*width:200px;
-    height:200px;
-    right:-100px;
-    top:-100px;
-    border-radius: 50%;
-    background: radial-gradient(ellipse at center, $ds-color-background 0%, rgba(255, 255, 255, 0) 100%);*/
-
-    background: $ds-color-text;
-    width: 55px;
-    height: 50px;
-    right: 0;
-    top: 0;
-  }
-}
-
-.navigation-overlay {
-  background: $ds-color-background;
-  display: none;
-  height: 100%;
+  bottom: 0;
   left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
+  right: 0;
+  z-index: 1000;
 
-  .js.show-navigation & {
-    display: block;
+
+  @media (max-width: $nav-bp) {
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    height: 180px;
+    pointer-events: none;
+  }
+
+  @include breakpoint($nav-bp) {
+    background: none;
+    top: 0;
+    height: 40px;
+    right: auto;
+    bottom: auto;
   }
 }
 
-.show-navigation {
-  overflow: hidden;
-  [role="main"] {
-    overflow: hidden;
-    pointer-events: none;
+.hamburger {
+  background: #fff;
+  border: 2px solid $ds-color-text;
+  border-radius: 50%;
+  bottom: 20px;
+  height: 40px;
+  left: 20px;
+  outline: none;
+  padding: 0;
+  pointer-events: auto;
+  position: absolute;
+  width: 40px;
+  -webkit-appearance: none;
+
+  @media (max-width: $ds-breakpoint-laptop) {
+    .hamburger-inner {
+      transform: scale(0.75);
+    }
+  }
+
+  @include breakpoint($nav-bp) {
+    bottom: auto;
+    top: 20px;
+  }
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    height: 60px;
+    width: 60px;
+  }
+
+  @include breakpoint($ds-breakpoint-desktop) {
+    left: 40px;
+    top: 40px;
+  }
+
+  .hamburger-box {
+    top: 3px;
+  }
+
+
+
+  .hamburger-inner,
+  .hamburger-inner:before,
+  .hamburger-inner:after {
+    background-color: $ds-color-text;
   }
 }

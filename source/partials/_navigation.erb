@@ -1,59 +1,18 @@
-<% if current_page.url == '/' %>
-<nav>
-<% else %>
-<div class="navigation">
-<nav id="navigation" role="navigation">
-<% end %>
-  <ol>
-    <% unless current_page.url == '/' %>
-      <li><a href="/">Index</a>
-    <% end %>
-    <li><a href="/about">About me</a></li>
-    <li>
-      <a href="/blog">Rarely updated blog</a>
-      <ol>
-        <li>Top picks: <a href="/blog/2017/01/vcrss/">Raspberry Pi based VCR</a></li>
-        <li><a href="/blog/2016/11/so-long-blaskan/">So long and godspeed, Blaskan</a></li>
-      </ol>
-    </li>
-    <!--<li>Misc stuff
-      <ol>
-        <li><a href="/hot">What's hot</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/api">API</a></li>
-        <li><a href="/links">Links</a></li>
-      </ol>
-
-    </li>-->
-    <li>
-      Elsewhere:
-      <ol>
-        <li><a href="https://github.com/persand">GitHub</a></li>
-        <li><a href="https://facebook.com/permalink">Facebook</a></li>
-        <li><a href="https://keybase.io/per">Keybase</a></li>
-        <li><a href="https://pinboard.in/u:per">Pinboard</a></li>
-        <li><a href="https://www.linkedin.com/in/psandstrom">LinkedIn</a></li>
-        <li><a href="http://stackexchange.com/users/63883/per-sandstr%C3%B6m">StackExchange</a></li>
-        <li><a href="https://twitter.com/persand">Twitter</a></li>
-      </ol>
-    </li>
-  </ol>
-
-<% if current_page.url == '/' %>
+<section id="menu" class="slideout-menu">
+  <nav id="navigation" class="navigation" role="navigation">
+    <ol>
+      <li><a href="/">Index</a></li>
+      <li><a href="/about">About me</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ol>
   </nav>
-<% else %>
-  </nav>
-  </div>
-  <div class="navigation-button">
-    <h2>Navigation</h2>
-    <button class="hamburger hamburger--vortex is-inactive" type="button"
-            aria-label="Menu" aria-controls="navigation">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
-  </div>
-  <div class="hamburger-background"></div>
+</section>
 
-  <div class="navigation-overlay"></div>
-<% end %>
+<div class="navigation-button">
+  <button class="hamburger hamburger--vortex is-inactive" type="button"
+          aria-label="Menu" aria-controls="navigation">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+</div>
