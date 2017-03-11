@@ -116,20 +116,22 @@ nav:not([class]) {
   }
 
   @include breakpoint($nav-bp) {
-    animation: slideout-root-overlay 5s;
+    animation: slideout-root-overlay 2s;
     animation-iteration-count: infinite;
     left: $nav-width-large;
     padding: 60px;
     font-size: 36px;
+    transition-timing-function: ease-in-out;
   }
 }
 
 @keyframes slideout-root-overlay {
-  0%   {background-color: #ccc;}
-  25%  {background-color: #888;}
-  50%  {background-color: #444;}
-  75%  {background-color: #888;}
-  100% {background-color: #ccc;}
+  0%   {background-color: #eee;}
+  20%  {background-color: #eee;}
+  40%  {background-color: #ccc;}
+  60%  {background-color: #ccc;}
+  80%  {background-color: #eee;}
+  100% {background-color: #eee;}
 }
 
 .navigation {
@@ -222,9 +224,17 @@ nav:not([class]) {
   position: absolute;
   width: 40px;
   -webkit-appearance: none;
+  transition: all .4s ease-in-out;
 
   &:hover {
+    background: black;
     opacity: 1;
+
+    .hamburger-inner,
+    .hamburger-inner:before,
+    .hamburger-inner:after {
+      background-color: white;
+    }
   }
 
   @media (max-width: $ds-breakpoint-laptop) {
@@ -256,5 +266,6 @@ nav:not([class]) {
   .hamburger-inner:before,
   .hamburger-inner:after {
     background-color: $ds-color-text;
+    transition: all .4s ease-in-out;
   }
 }

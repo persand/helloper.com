@@ -12,11 +12,10 @@
     font-family: $ds-font-family-secondary;
     font-size: 2rem;
     font-weight: 900;
-    margin: 0 0 .75rem;
+    margin: 0;
 
     @media (min-width: $ds-breakpoint-tablet) {
       font-size: 4rem;
-      margin: 0 0 2rem;
     }
 
     @media (max-width: $ds-breakpoint-iphone6-width) {
@@ -27,9 +26,13 @@
   }
 
   h2 {
-    margin: 0 0 8px;
+    font-family: $ds-font-family;
+    font-weight: $ds-font-weight;
+    margin: 0 0 20px;
 
     @media (max-width: $ds-breakpoint-tablet) {
+      margin: 0 0 10px;
+
       &:before {
         content: 'This is ';
       }
