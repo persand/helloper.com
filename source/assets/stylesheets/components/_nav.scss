@@ -3,8 +3,6 @@ $nav-width-large: 50%;
 
 nav:not([class]) {
   ol {
-    color: $ds-color-gray;
-
     li {
       margin-bottom: 16px;
     }
@@ -39,7 +37,7 @@ nav:not([class]) {
     }
 
     a {
-      @extend %ds-link-nav;
+      @extend %ds-link-text;
     }
   }
 }
@@ -160,7 +158,7 @@ nav:not([class]) {
     padding: 10px 0;
 
     &:hover {
-      color: $ds-color-link-hover;
+      color: $ds-color-text;
     }
 
     @include breakpoint($ds-breakpoint-desktop) {

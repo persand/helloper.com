@@ -2,6 +2,8 @@
   @extend %ds-page;
 
   main {
+    padding-bottom: 100px;
+
     > header {
       margin-bottom: $ds-type-margin;
 
@@ -203,6 +205,14 @@
     @media (min-width: $ds-breakpoint-tablet) {
       font-size: $ds-h1-font-size;
       margin-bottom: 25px;
+    }
+  }
+
+  p,
+  li {
+    a {
+      @extend %ds-link-text;
+      font-weight: $ds-font-weight;
     }
   }
 }

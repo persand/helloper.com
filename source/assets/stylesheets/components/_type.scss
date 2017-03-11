@@ -54,9 +54,8 @@
 }
 
 %ds-link-text {
-  box-shadow: inset 0 -5px 0 rgba($ds-color-link, .5);
-  color: $ds-color-text;
-  font-weight: $ds-font-weight-bold;
+  box-shadow: inset 0 -5px 0 rgba($ds-color-link, .25);
+  color: black;
   transition: box-shadow .2s ease-in-out;
 
   &:hover {
