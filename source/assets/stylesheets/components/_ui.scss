@@ -132,7 +132,6 @@
 
 %ds-header {
   h1 {
-    font-family: $ds-font-family-secondary;
     font-size: 2rem;
     font-weight: 900;
     margin: 0 0 10px;
@@ -143,7 +142,9 @@
   }
 
   h2 {
-    font-size: $ds-font-size;
+    font-family: $ds-font-family;
+    font-size: $ds-h3-font-size;
+    font-weight: $ds-font-weight;
     margin: 0;
   }
 
@@ -238,7 +239,7 @@
 
   > * {
     &:last-child {
-      margin: 0;
+      margin-bottom: 0;
     }
   }
 }

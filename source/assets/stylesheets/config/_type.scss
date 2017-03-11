@@ -131,7 +131,7 @@ $ds-font-style: normal !default;
 $ds-font-weight-light: 300 !default;
 $ds-font-weight: 400 !default;
 $ds-font-weight-bold: 700 !default;
-$ds-font-weight-extra-bold: 800 !default;
+$ds-font-weight-black: 900 !default;
 $ds-line-height: 1.7 !default;
 
 
@@ -145,10 +145,10 @@ $ds-line-height: 1.7 !default;
 $ds-h1-font-size: ds-rem-calc(36) !default;
 $ds-h2-font-size: ds-rem-calc(26) !default;
 $ds-h3-font-size: ds-rem-calc(22) !default;
-$ds-h4-font-size: $ds-font-size !default;
-$ds-h5-font-size: ds-rem-calc(16) !default;
-$ds-h6-font-size: ds-rem-calc(16) !default;
-$ds-headings-line-height: 1.4 !default;
+$ds-h4-font-size: ds-rem-calc(16) !default;
+$ds-h5-font-size: ds-rem-calc(14) !default;
+$ds-h6-font-size: ds-rem-calc(14) !default;
+$ds-headings-line-height: 1.2 !default;
 
 
 // -----------------------------------------------------------------------------

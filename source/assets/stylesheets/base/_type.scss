@@ -28,7 +28,8 @@ a:link {
 
 %h1-6 {
   color: $ds-color-heading;
-  font-weight: $ds-font-weight;
+  font-family: $ds-font-family-secondary;
+  font-weight: $ds-font-weight-bold;
   line-height: $ds-headings-line-height;
   margin: 0 0 1rem;
 
@@ -48,19 +49,22 @@ h1 {
 
 %h2 {
   @extend %h1-6;
+  font-family: $ds-font-family-secondary;
   font-size: $ds-h2-font-size;
+  font-weight: $ds-font-weight-bold;
 }
 h2 {
   @extend %h2;
 
   + h2 {
-    //color: $ds-color-gray;
     margin-top: -1rem;
   }
 
   + h3 {
     color: $ds-color-gray;
+    font-family: $ds-font-family-secondary;
     font-size: $ds-h2-font-size;
+    font-weight: $ds-font-weight;
     margin-top: -1rem;
   }
 }
@@ -77,9 +81,9 @@ h3 {
 %h4 {
   @extend %h1-6;
   color: $ds-color-text;
-  font-family: $ds-font-family;
   font-size: $ds-h4-font-size;
   margin: 0 0 $ds-type-margin;
+  text-transform: uppercase;
 }
 h4 {
   @extend %h4;
@@ -90,7 +94,6 @@ h4 {
   font-family: $ds-font-family;
   font-size: $ds-h5-font-size;
   margin-bottom: 0;
-  text-transform: uppercase;
 }
 h5 {
   @extend %h5;
@@ -306,10 +309,10 @@ dl {
 }
 
 ul {
-  list-style: disc inside;
+  list-style: circle inside;
 
   @media (min-width: $ds-breakpoint-laptop) {
-    list-style: disc outside;
+    list-style: circle outside;
   }
 }
 

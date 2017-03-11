@@ -1,7 +1,5 @@
 .page {
-
-
-  .l-2col {
+  &__2col {
     @extend %ds-clearfix;
 
     @media (min-width: $ds-breakpoint-laptop) {
