@@ -19,20 +19,11 @@ function getWidth() {
 if (isInPage(document.getElementById('menu'))) {
   html.classList.add('slideout-root');
 
-  var navigation_settings = {
+  var slideout = new Slideout({
     'panel': document.getElementById('panel'),
     'menu': document.getElementById('menu'),
-    'width': getWidth(),
+    'padding': getWidth(),
     'tolerance': 70
-  }
-
-  var navigation_timeout = false;
-
-  var slideout = new Slideout({
-    'panel': navigation_settings.panel,
-    'menu': navigation_settings.menu,
-    'padding': navigation_settings.width,
-    'tolerance': navigation_settings.tolerance
   });
 
   slideout
@@ -45,47 +36,10 @@ if (isInPage(document.getElementById('menu'))) {
 
   slideout.disableTouch();
 
-  function navigation(navigation_settings) {
-    if (!slideout.isOpen()) {
-      slideout.destroy();
-
-      slideout = new Slideout({
-        'panel': navigation_settings.panel,
-        'menu': navigation_settings.menu,
-        'padding': getWidth(),
-        'tolerance': navigation_settings.tolerance
-      });
-
-      slideout
-        .on('beforeopen', function() {
-          html.classList.add('slideout-root-overlay');
-        })
-        .on('beforeclose', function() {
-          html.classList.remove('slideout-root-overlay');
-        });
-
-      slideout.disableTouch();
-    }
-  }
-
-  // --
-  // Destroy and recreate slideout menu on resize …
-  // WIP: https://bencentra.com/code/2015/02/27/optimizing-window-resize.html
-  // --
-  window.addEventListener('resize', function() {
-    //clearTimeout(navigation_timeout);
-    navigation_timeout = setTimeout(navigation(navigation_settings), 1000);
-  });
-
-  // --
-  // Hamburger button click behaviour
-  // --
-
   var hamburger = document.querySelector(".hamburger");
   hamburger.addEventListener("click", function() {
     hamburger.classList.toggle("is-active");
     hamburger.classList.toggle("is-inactive");
-
     slideout.toggle();
   });
 }
