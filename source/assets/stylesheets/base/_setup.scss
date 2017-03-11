@@ -34,6 +34,8 @@ body {
   -webkit-overflow-scrolling: touch;
 
   &:not([class]) {
+    padding-bottom: 140px;
+
     [role="main"] {
       @extend %ds-page;
 

@@ -166,7 +166,6 @@ nav:not([class]) {
 }
 
 .navigation-button {
-  background: #444;
   height: 50px;
   position: fixed;
   bottom: 0;
@@ -174,64 +173,66 @@ nav:not([class]) {
   right: 0;
   z-index: 1000;
 
+
+  @media (max-width: $nav-bp) {
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    height: 180px;
+    pointer-events: none;
+  }
+
   @include breakpoint($nav-bp) {
     background: none;
     top: 0;
+    height: 40px;
     right: auto;
     bottom: auto;
-  }
-
-  h2 {
-    color: #fff;
-    line-height: 50px;
-    margin: 0 auto;
-    max-width: $ds-page-max-width;
-    opacity: 0;
-
-    padding: 0 15px;
-
-    @include breakpoint($ds-breakpoint-iphone6) {
-      padding: 0 20px;
-    }
-
-    @include breakpoint($ds-breakpoint-iphone6plus) {
-      padding: 0 25px;
-    }
-
-    @include breakpoint($ds-breakpoint-tablet) {
-      padding: 0 40px;
-    }
-  }
-
-  .show-navigation & {
-    background: $ds-color-text;
-    height: 50px;
-
-    h2 {
-      opacity: 100;
-    }
   }
 }
 
 .hamburger {
-  position: absolute;
-  top: 0;
-  left: 0;
+  background: #fff;
+  border: 2px solid $ds-color-text;
+  border-radius: 50%;
+  bottom: 20px;
+  height: 40px;
+  left: 20px;
   outline: none;
-
+  padding: 0;
+  pointer-events: auto;
+  position: absolute;
+  width: 40px;
   -webkit-appearance: none;
 
-  @include breakpoint($nav-bp) {
-    padding: 20px;
+  @media (max-width: $ds-breakpoint-laptop) {
+    .hamburger-inner {
+      transform: scale(0.75);
+    }
   }
+
+  @include breakpoint($nav-bp) {
+    bottom: auto;
+    top: 20px;
+  }
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    height: 60px;
+    width: 60px;
+  }
+
+  @include breakpoint($ds-breakpoint-desktop) {
+    left: 40px;
+    top: 40px;
+  }
+
+  .hamburger-box {
+    top: 3px;
+  }
+
+
 
   .hamburger-inner,
   .hamburger-inner:before,
   .hamburger-inner:after {
-    background-color: white;
-
-    @include breakpoint($nav-bp) {
-      background-color: $ds-color-text;
-    }
+    background-color: $ds-color-text;
   }
 }
