@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "dependencies": {
     "normalize-scss": "~3.0.3",
-    "persand-design-system": "persand/design-system",
+    "persand-design-system": "persand/design-system#1.x.x",
     "css-hamburgers": "^0.7.0",
     "slideout.js": "^1.0.1",
     "outline.js": "git://github.com/lindsayevans/outline.js.git"
