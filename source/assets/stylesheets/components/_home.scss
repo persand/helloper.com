@@ -34,10 +34,12 @@
     font-family: $ds-font-family-secondary;
     font-size: 2rem;
     font-weight: 900;
-    margin: 0;
+    line-height: 1;
+    margin: 0 0 8px;
 
     @media (min-width: $ds-breakpoint-tablet) {
       font-size: 4rem;
+      margin: 0 0 16px;
     }
 
     @media (max-width: $ds-breakpoint-iphone6-width) {
@@ -49,6 +51,7 @@
 
   h2 {
     font-family: $ds-font-family;
+    font-size: $ds-h3-font-size;
     font-weight: $ds-font-weight;
     margin: 0 0 20px;
 
@@ -62,6 +65,10 @@
       span {
         display: none;
       }
+    }
+
+    @include breakpoint($ds-breakpoint-tablet) {
+      font-size: $ds-h2-font-size;
     }
   }
 
