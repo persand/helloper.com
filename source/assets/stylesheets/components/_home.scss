@@ -8,6 +8,28 @@
     width: 100%;
   }
 
+  figure {
+    float: right;
+    height: 100px;
+    width: 100px;
+
+    @media (min-width: $ds-breakpoint-iphone6-width) {
+      height: 120px;
+      padding-top: 6px;
+      width: 120px;
+    }
+
+    @media (min-width: $ds-breakpoint-tablet) {
+      height: 140px;
+      padding-top: 20px;
+      width: 140px;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
   h1 {
     font-family: $ds-font-family-secondary;
     font-size: 2rem;
