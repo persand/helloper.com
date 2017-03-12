@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// Basic page layout
+// -----------------------------------------------------------------------------
+
+%ds-page {
+  @extend %ds-page-padding;
+  max-width: $ds-page-max-width;
+  margin: 0 auto;
+
+  padding: 15px 15px 40px;
+
+  @include breakpoint($ds-breakpoint-iphone6) {
+    padding: 20px;
+  }
+
+  @include breakpoint($ds-breakpoint-iphone6plus) {
+    padding: 25px;
+  }
+
+  @include breakpoint($ds-breakpoint-tablet) {
+    padding: 40px;
+  }
+}
+.l-page {
+  @extend %ds-page;
+}
