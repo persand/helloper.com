@@ -42,11 +42,13 @@
 }
 
 %ds-link-nav {
+  box-shadow: inset 0 -1px 0 $ds-color-text;
   color: $ds-color-text;
-  text-decoration: underline;
+  transition: all .2s ease-in-out;
 
   &:hover {
-    //background: rgba($ds-color-link, .1);
+    box-shadow: inset 0 -1px 0 $ds-color-link-hover;
+    color: $ds-color-link-hover;
   }
 }
 .t-link-nav {

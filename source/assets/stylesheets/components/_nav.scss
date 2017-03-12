@@ -2,6 +2,7 @@ $nav-bp: 915px;
 $nav-width-large: 50%;
 
 nav:not([class]) {
+  color: $ds-color-gray;
   ol {
     li {
       margin-bottom: 16px;
@@ -37,7 +38,7 @@ nav:not([class]) {
     }
 
     a {
-      @extend %ds-link-text;
+      @extend %ds-link-nav;
     }
   }
 }
