@@ -5,60 +5,23 @@
 // -----------------------------------------------------------------------------
 @import "breakpoint";
 @import "normalize-scss/normalize";
+@import "persand-design-system/scss/design-system";
 
 // --
 // CSS Hamburgers
 // --
-//$hamburger-padding-x: 0;
-//$hamburger-padding-y: 0;
 $hamburger-layer-width: 25px;
 $hamburger-layer-height: 2px;
 $hamburger-layer-border-radius: 1px;
 @import "css-hamburgers/_sass/hamburgers/hamburgers";
 
 // -----------------------------------------------------------------------------
-// Design System
-// Imports base and specific configurations
+// Site components
 // -----------------------------------------------------------------------------
 
-// --
-// Configuration
-// Variables, placeholders, functions and mixins.
-// --
-@import "config/type";
-@import "config/layout";
-@import "config/helpers";
-@import "config/colors";
-@import "config/images";
-@import "config/ui";
-
-// --
-// "A Base rule is applied to an element using an element selector, a descendent
-// selector, or a child selector, along with any pseudo-classes. It doesn’t
-// include any class or ID selectors. It is defining the default styling for how
-// that element should look in all occurrences on the page."
-// Source: https://smacss.com/book/type-base
-// --
-@import "base/setup";
-@import "base/type";
-@import "base/media";
-@import "base/tables";
-//@import "base/forms";
-@import "base/print";
-
-// --
-// Components
-//
-// Global, reusable components such as buttons, icon, boxes and typographic
-// extras.
-// --
-@import "components/type";
-@import "components/ui";
-@import "components/layout";
 @import "components/nav";
 @import "components/home";
 @import "components/blog";
-@import "components/page";
 
 // --
 // Rouge
