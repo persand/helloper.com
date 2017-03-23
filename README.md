@@ -11,6 +11,9 @@ This is the source of [helloper.com](https://www.helloper.com). It's based on th
 
 The master branch is automatically deployed to my [512 mb Vultr VPS](http://www.vultr.com/?ref=7125759) using [Codeship](https://www.codeship.com).
 
+More info:  
+[Automatically deploy Middleman with Codeship to a VPS](https://www.helloper.com/blog/2017/03/automatically-deploy-middleman-codeship-vps/)
+
 ## Gulp commands
 
     $ gulp install
