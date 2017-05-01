@@ -106,18 +106,18 @@
     }
   }
 
-  time {
+  &__date {
     color: $ds-color-light-gray;
     display: block;
     font-size: $ds-font-size-small;
     margin: 0 0 4px;
 
-    a {
+    &:hover {
       color: $ds-color-light-gray;
+    }
 
-      &:hover {
-        color: $ds-color-light-gray;
-      }
+    time {
+      color: $ds-color-light-gray;
     }
 
     @media (min-width: $ds-breakpoint-tablet) {
