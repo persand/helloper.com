@@ -208,4 +208,33 @@
       margin-bottom: 25px;
     }
   }
+
+  footer {
+    color: $ds-color-light-gray;
+    font-size: $ds-font-size-small;
+    padding-top: 25px;
+
+    @media (min-width: $ds-breakpoint-tablet) {
+      font-size: $ds-font-size;
+      padding-top: 35px;
+    }
+
+    @include breakpoint($ds-breakpoint-laptop) {
+      padding-top: 45px;
+    }
+
+    img {
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+    }
+
+    a {
+      color: $ds-color-light-gray;
+
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
 }
