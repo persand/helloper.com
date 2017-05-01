@@ -43,8 +43,15 @@
     }
 
     @media (max-width: $ds-breakpoint-iphone6-width) {
-      span {
+      .intro {
         display: none;
+      }
+    }
+
+    a {
+      cursor: default;
+      &:hover {
+        color: inherit;
       }
     }
   }
