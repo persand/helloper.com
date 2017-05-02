@@ -1,6 +1,5 @@
 //= require outline.js/outline.js
 //= require slideout.js/dist/slideout.min.js
-//= require tippyjs/dist/tippy.min.js
 
 var html = document.documentElement;
 
@@ -45,14 +44,3 @@ if (isInPage(document.getElementById('menu'))) {
     slideout.toggle();
   });
 }
-
-// -----------------------------------------------------------------------------
-// Tippy.js
-// -----------------------------------------------------------------------------
-new Tippy('.tippy', {
-    position: 'right',
-    animation: 'scale',
-    duration: 300,
-    arrow: true,
-    theme: 'helloper'
-});
