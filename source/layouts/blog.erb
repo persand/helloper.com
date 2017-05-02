@@ -1,12 +1,15 @@
 <% wrap_layout :layout_blog do %>
   <%#= partial "partials/blog/header" %>
 
-  <article class="post post--page<% unless current_article.data.type == 'post' %> post--update<% end %>">
-    <time>
-      <a href="<%= current_article.url %>"><%= current_article.date.strftime('%b %e %Y') %></a>
-    </time>
+  <article class="post post--page<% unless current_article.data.type == 'post' %> post--update<% end %> h-entry">
+    <a href="<%= current_article.url %>" class="u-url post__date">
+      <time class="dt-published">
+        <%= current_article.date.strftime('%b %e %Y') %>
+      </time>
+    </a>
 
-    <h1>
+
+    <h1 class="p-name">
       <% if current_article.data.link_url %>
         <a href="<%= current_article.data.link_url %>">
           <%= current_article.title %>
@@ -16,7 +19,11 @@
       <% end %>
     </h1>
 
-    <%= yield %>
+    <div class="e-content"><%= yield %></div>
+
+    <footer class="p-author h-card">
+      Written by <%= image_tag 'per.jpg', alt: 'Per Sandström', class: 'u-photo' %> <a href="/about" class="p-name"><span class="p-given-name">Per</span> <span class="p-family-name">Sandström</span></a>
+    </footer>
   </article>
 
   <%= partial "partials/blog/footer" %>

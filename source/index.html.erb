@@ -3,15 +3,15 @@ title: Per Sandströms Homepage
 body_class: home
 ---
 
-<article role="main">
+<article role="main" class="h-card">
   <figure>
-    <%= image_tag 'per.jpg', alt: 'Per Sandström' %>
+    <%= image_tag 'per.jpg', alt: 'Per Sandström', class: 'u-photo' %>
   </figure>
 
-  <h1><span>Hello,</span> I'm Per Sandström!</h1>
-  <h2><span>Welcome to</span> my homepage.</h2>
+  <h1><span class="intro">Hello,</span> I'm <a class="p-name u-url" href="https://www.helloper.com"><span class="p-given-name">Per</span> <span class="p-family-name">Sandström</span></a>!</h1>
+  <h2><span class="intro">Welcome to</span> my homepage.</h2>
 
-  <p>Driven by a chronic thirst for knowledge I design, develop and lead projects at <a href="https://www.kollegorna.se/en">Kollegorna</a> – a digital agency I run with a bunch of geniuses.</p>
+  <p class="p-note">Driven by a chronic thirst for knowledge I design, develop and lead projects at <a href="https://www.kollegorna.se/en" class="p-org">Kollegorna</a> – a digital agency I run with a bunch of geniuses.</p>
 
   <hr>
 
@@ -37,16 +37,14 @@ body_class: home
         </ol>
       </li>-->
       <li>
-        Elsewhere:
-        <ol>
-          <li><a href="https://github.com/persand">GitHub</a></li>
-          <li><a href="https://facebook.com/permalink">Facebook</a></li>
-          <li><a href="https://keybase.io/per">Keybase</a></li>
-          <li><a href="https://pinboard.in/u:per">Pinboard</a></li>
-          <li><a href="https://www.linkedin.com/in/psandstrom">LinkedIn</a></li>
-          <li><a href="http://stackexchange.com/users/63883/per-sandstr%C3%B6m">StackExchange</a></li>
-          <li><a href="https://twitter.com/persand">Twitter</a></li>
-        </ol>
+        <a href="mailto:per@helloper.com" class="u-email" rel="me">Email me</a> or see me elsewhere:
+        <a href="https://github.com/persand" rel="me">GitHub</a>,
+        <a href="https://facebook.com/permalink" rel="me">Facebook</a>,
+        <a href="https://keybase.io/per" rel="me">Keybase</a>,
+        <a href="https://pinboard.in/u:per" rel="me">Pinboard</a>,
+        <a href="https://www.linkedin.com/in/psandstrom" rel="me">LinkedIn</a>,
+        <a href="http://stackexchange.com/users/63883/per-sandstr%C3%B6m" rel="me">StackExchange</a>,
+        <a href="https://twitter.com/persand" rel="me">Twitter</a>…
       </li>
     </ol>
   </nav>
