@@ -53,5 +53,6 @@ new Tippy('.tippy', {
     position: 'right',
     animation: 'scale',
     duration: 300,
-    arrow: true
+    arrow: true,
+    theme: 'helloper'
 });
