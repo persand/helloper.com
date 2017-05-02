@@ -211,13 +211,14 @@
 
   footer {
     color: $ds-color-light-gray;
-    font-size: $ds-font-size-small;
+    //font-size: $ds-font-size-small;
     padding-top: 25px;
 
     @media (min-width: $ds-breakpoint-tablet) {
-      font-size: $ds-font-size;
       padding-top: 35px;
     }
+
+
 
     @include breakpoint($ds-breakpoint-laptop) {
       padding-top: 45px;
@@ -225,16 +226,64 @@
 
     img {
       border-radius: 50%;
-      height: 30px;
-      width: 30px;
+      float: right;
+
+      margin: 0 12px 0 0;
+      height: 60px;
+      width: 60px;
+
+      @media (min-width: $ds-breakpoint-tablet) {
+        height: 54px;
+        margin: 0 20px 30px 0;
+        width: 54px;
+      }
+
+      @media (min-width: $ds-breakpoint-laptop) {
+        float: left;
+        margin-left: -74px;
+      }
     }
 
     a {
-      color: $ds-color-light-gray;
+      border-bottom: 1px solid rgba($ds-color-light-gray, .25);
+      color: $ds-color-black;
+    }
+  }
+}
 
-      &:hover {
-        color: inherit;
-      }
+.blog-cta {
+  text-align: center;
+
+  a {
+    border: 2px solid $ds-color-black;
+    border-bottom-width: 7px;
+    box-shadow: inset 0 -1px 0 black, 5px 5px 0 rgba($ds-color-link, .25), -5px -5px 0  rgba($ds-color-link, .25);
+    color: $ds-color-black;
+    display: inline-block;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 5px 4px 2px;
+    position: relative;
+    transition: box-shadow .4s ease-in-out;
+
+    &:before,
+    &:after {
+      content: "▶";
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      top: 1px;
+      width: 26px;
+    }
+
+    &:after {
+      content: "◀";
+    }
+
+    &:hover {
+      box-shadow: inset 0 -300px 0 white, 5px 5px 0 rgba($ds-color-link, .25), -5px -5px 0  rgba($ds-color-link, .25);
+      border-bottom-width: 7px;
+      padding-bottom: 2px;
     }
   }
 }
