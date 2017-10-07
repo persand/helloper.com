@@ -1,0 +1,29 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": <%= "Per Sandströms Homepage".to_json %>,
+  "description": <%= data.per.description.to_json %>,
+  "home_page_url": "https://www.helloper.com/",
+  "feed_url": "https://www.helloper.com/feed.json",
+  "favicon": "#",
+  "author": {
+    "name": <%= "Per Sandström".to_json %>
+  },
+  "items": [
+    <% blog.articles.each do |article| %>
+      {
+        "id": "<%= article.url %>",
+        "url": "<%= article.url %>",
+        "title": <%= article.title.to_json %>,
+        "content_html": <%= article.body.to_json %>,
+        "date_published": "<%= article.date.strftime('%b %e %Y') %>"
+      },
+    <% end %>
+    {
+      "id": "https://www.helloper.com/about",
+      "url": "https://www.helloper.com/about",
+      "title": "<%= "About Per Sandström".to_json %>",
+      "content_html": "Nice to meet you! Get to know me better on this page.",
+      "date_published": "2016-11-12T13:37:00-07:00"
+    }
+  ]
+}
